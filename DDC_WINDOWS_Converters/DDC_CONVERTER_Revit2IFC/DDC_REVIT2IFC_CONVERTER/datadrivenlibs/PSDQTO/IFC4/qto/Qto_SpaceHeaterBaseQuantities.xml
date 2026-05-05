@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<QtoSetDef xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.buildingsmart-tech.org/xml/qto/QTO_IFC4.xsd">
+  <IfcVersion version="IFC4" />
+  <Name>Qto_SpaceHeaterBaseQuantities</Name>
+  <Definition>Base quantities that are common to the definition of all types of space heaters.</Definition>
+  <Applicability />
+  <ApplicableClasses>
+    <ClassName>IfcSpaceHeater</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcSpaceHeater</ApplicableTypeValue>
+  <QtoDefs>
+    <QtoDef>
+      <Name>Length</Name>
+      <Definition>Length of the water tube inside the component, if applicable.</Definition>
+      <QtoType>Q_LENGTH</QtoType>
+      <NameAliases>
+        <NameAlias lang="en">Length</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+      </DefinitionAliases>
+    </QtoDef>
+    <QtoDef>
+      <Name>GrossWeight</Name>
+      <Definition>Weight of the element itself, not including contained fluid.</Definition>
+      <QtoType>Q_WEIGHT</QtoType>
+      <NameAliases>
+        <NameAlias lang="en">Gross Weight</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+      </DefinitionAliases>
+    </QtoDef>
+    <QtoDef>
+      <Name>NetWeight</Name>
+      <Definition>Weight of the element, including contained fluid as designed.</Definition>
+      <QtoType>Q_WEIGHT</QtoType>
+      <NameAliases>
+        <NameAlias lang="en">Net Weight</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+      </DefinitionAliases>
+    </QtoDef>
+  </QtoDefs>
+  <QtoDefinitionAliases>
+    <QtoDefinitionAlias lang="en" />
+  </QtoDefinitionAliases>
+</QtoSetDef>

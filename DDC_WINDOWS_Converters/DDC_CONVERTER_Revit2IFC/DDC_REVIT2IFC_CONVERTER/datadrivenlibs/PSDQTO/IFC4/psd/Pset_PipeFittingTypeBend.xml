@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<PropertySetDef xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ifdguid="e6a9bd00d1f211e1800000215ad4efdf" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4" />
+  <Name>Pset_PipeFittingTypeBend</Name>
+  <Definition>Pipe fitting type attributes for bend shapes.</Definition>
+  <Applicability />
+  <ApplicableClasses>
+    <ClassName>IfcPipeFitting/BEND</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcPipeFitting/BEND</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef ifdguid="ed383480d1f211e1800000215ad4efdf">
+      <Name>BendAngle</Name>
+      <Definition>The change of direction of flow.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositivePlaneAngleMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Bend Angle</NameAlias>
+        <NameAlias lang="ja-JP">曲がり角度</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="ja-JP">流れの方向を変える</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="f2957f00d1f211e1800000215ad4efdf">
+      <Name>BendRadius</Name>
+      <Definition>The radius of bending if circular arc or zero if sharp bend.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Bend Radius</NameAlias>
+        <NameAlias lang="ja-JP">曲率半径</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="ja-JP">円弧の曲率半径？</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+  </PropertyDefs>
+  <PsetDefinitionAliases>
+    <PsetDefinitionAlias lang="en" />
+  </PsetDefinitionAliases>
+</PropertySetDef>

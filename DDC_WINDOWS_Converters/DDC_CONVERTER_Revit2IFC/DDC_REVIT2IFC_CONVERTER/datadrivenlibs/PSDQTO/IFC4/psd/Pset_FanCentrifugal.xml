@@ -1,0 +1,384 @@
+<?xml version="1.0"?>
+<PropertySetDef xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ifdguid="747dac00d1e311e1800000215ad4efdf" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4" />
+  <Name>Pset_FanCentrifugal</Name>
+  <Definition>Centrifugal fan occurrence attributes attached to an instance of IfcFan.</Definition>
+  <Applicability />
+  <ApplicableClasses>
+    <ClassName>IfcFan/CENTRIFUGAL</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcFan/CENTRIFUGAL</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef ifdguid="7cd5e700d1e311e1800000215ad4efdf">
+      <Name>DischargePosition</Name>
+      <Definition>Centrifugal fan discharge position.
+
+TOPHORIZONTAL: Top horizontal discharge. 
+TOPANGULARDOWN: Top angular down discharge. 
+DOWNBLAST: Downblast discharge. 
+BOTTOMANGULARDOWN: Bottom angular down discharge. 
+BOTTOMHORIZONTAL: Bottom horizontal discharge. 
+BOTTOMANGULARUP: Bottom angular up discharge. 
+UPBLAST: Upblast discharge. 
+TOPANGULARUP: Top angular up discharge. 
+OTHER: Other type of fan arrangement.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_CentrifugalFanDischargePosition">
+            <EnumItem>TOPHORIZONTAL</EnumItem>
+            <EnumItem>TOPANGULARDOWN</EnumItem>
+            <EnumItem>TOPANGULARUP</EnumItem>
+            <EnumItem>DOWNBLAST</EnumItem>
+            <EnumItem>BOTTOMANGULARDOWN</EnumItem>
+            <EnumItem>BOTTOMHORIZONTAL</EnumItem>
+            <EnumItem>BOTTOMANGULARUP</EnumItem>
+            <EnumItem>UPBLAST</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+          <ConstantList>
+            <ConstantDef>
+              <Name>TOPHORIZONTAL</Name>
+              <NameAliases>
+                <NameAlias lang="en">Top Horizontal</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Top horizontal discharge</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>TOPANGULARDOWN</Name>
+              <NameAliases>
+                <NameAlias lang="en">Top Angular Down</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Top angular down discharge</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>TOPANGULARUP</Name>
+              <NameAliases>
+                <NameAlias lang="en">Top Angular Up</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Top angular up discharge</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>DOWNBLAST</Name>
+              <NameAliases>
+                <NameAlias lang="en">Down Blast</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Downblast discharge</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>BOTTOMANGULARDOWN</Name>
+              <NameAliases>
+                <NameAlias lang="en">Bottom Angular Down</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Bottom angular down discharge</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>BOTTOMHORIZONTAL</Name>
+              <NameAliases>
+                <NameAlias lang="en">Bottom Horizontal</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Bottom horizontal discharge</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>BOTTOMANGULARUP</Name>
+              <NameAliases>
+                <NameAlias lang="en">Bottom Angular Up</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Bottom angular up discharge</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>UPBLAST</Name>
+              <NameAliases>
+                <NameAlias lang="en">Upblast</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Upblast discharge</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>OTHER</Name>
+              <NameAliases>
+                <NameAlias lang="en">(other)</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Value is not listed.</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>NOTKNOWN</Name>
+              <NameAliases>
+                <NameAlias lang="en">(unknown)</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Value is unknown.</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>UNSET</Name>
+              <NameAliases>
+                <NameAlias lang="en">(unset)</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Value has not been specified.</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+          </ConstantList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Discharge Position</NameAlias>
+        <NameAlias lang="ja-JP">吐出位置</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="ja-JP">遠心送風機の吐出位置
+TOPHORIZONTAL: 上部水平 
+TOPANGULARDOWN: 上部角度付き下向き 
+DOWNBLAST: 下向き
+BOTTOMANGULARDOWN: 下部角度付き下向き
+BOTTOMHORIZONTAL: 下部水平
+BOTTOMANGULARUP: 下部角度付き上向き
+UPBLAST: 上向き
+TOPANGULARUP: 上部角度付き上向き. 
+OTHER: その他</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="94ad6b00d1e311e1800000215ad4efdf">
+      <Name>DirectionOfRotation</Name>
+      <Definition>The direction of the centrifugal fan wheel rotation when viewed from the drive side of the fan.
+
+CLOCKWISE: Clockwise. 
+COUNTERCLOCKWISE: Counter-clockwise. 
+OTHER: Other type of fan rotation.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_CentrifugalFanRotation">
+            <EnumItem>CLOCKWISE</EnumItem>
+            <EnumItem>COUNTERCLOCKWISE</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+          <ConstantList>
+            <ConstantDef>
+              <Name>CLOCKWISE</Name>
+              <NameAliases>
+                <NameAlias lang="en">Clockwise</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Clockwise</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>COUNTERCLOCKWISE</Name>
+              <NameAliases>
+                <NameAlias lang="en">Counter-clockwise</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Counter-clockwise</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>OTHER</Name>
+              <NameAliases>
+                <NameAlias lang="en">(other)</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Value is not listed.</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>NOTKNOWN</Name>
+              <NameAliases>
+                <NameAlias lang="en">(unknown)</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Value is unknown.</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>UNSET</Name>
+              <NameAliases>
+                <NameAlias lang="en">(unset)</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Value has not been specified.</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+          </ConstantList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Direction Of Rotation</NameAlias>
+        <NameAlias lang="ja-JP">角度方向</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="ja-JP">ファンの駆動側から見たホイール回転方向
+CLOCKWISE　　時計回り
+ COUNTERCLOCKWISE　反時計回り
+ OTHER　その他</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="a262f080d1e311e1800000215ad4efdf">
+      <Name>Arrangement</Name>
+      <Definition>Defines the fan and motor drive arrangement as defined by AMCA.
+
+ARRANGEMENT1: Arrangement 1. 
+ARRANGEMENT2: Arrangement 2. 
+ARRANGEMENT3: Arrangement 3. 
+ARRANGEMENT4: Arrangement 4. 
+ARRANGEMENT7: Arrangement 7. 
+ARRANGEMENT8: Arrangement 8. 
+ARRANGEMENT9: Arrangement 9. 
+ARRANGEMENT10: Arrangement 10. 
+OTHER: Other type of fan drive arrangement.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_CentrifugalFanArrangement">
+            <EnumItem>ARRANGEMENT1</EnumItem>
+            <EnumItem>ARRANGEMENT2</EnumItem>
+            <EnumItem>ARRANGEMENT3</EnumItem>
+            <EnumItem>ARRANGEMENT4</EnumItem>
+            <EnumItem>ARRANGEMENT7</EnumItem>
+            <EnumItem>ARRANGEMENT8</EnumItem>
+            <EnumItem>ARRANGEMENT9</EnumItem>
+            <EnumItem>ARRANGEMENT10</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+          <ConstantList>
+            <ConstantDef>
+              <Name>ARRANGEMENT1</Name>
+              <NameAliases>
+                <NameAlias lang="en">Arrangement1</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Arrangement 1</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>ARRANGEMENT2</Name>
+              <NameAliases>
+                <NameAlias lang="en">Arrangement2</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Arrangement 2</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>ARRANGEMENT3</Name>
+              <NameAliases>
+                <NameAlias lang="en">Arrangement3</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Arrangement 3</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>ARRANGEMENT4</Name>
+              <NameAliases>
+                <NameAlias lang="en">Arrangement4</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Arrangement 4</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>ARRANGEMENT7</Name>
+              <NameAliases>
+                <NameAlias lang="en">Arrangement7</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Arrangement 7</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>ARRANGEMENT8</Name>
+              <NameAliases>
+                <NameAlias lang="en">Arrangement8</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Arrangement 8</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>ARRANGEMENT9</Name>
+              <NameAliases>
+                <NameAlias lang="en">Arrangement9</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Arrangement 9</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>ARRANGEMENT10</Name>
+              <NameAliases>
+                <NameAlias lang="en">Arrangement10</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Arrangement 10</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>OTHER</Name>
+              <NameAliases>
+                <NameAlias lang="en">(other)</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Value is not listed.</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>NOTKNOWN</Name>
+              <NameAliases>
+                <NameAlias lang="en">(unknown)</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Value is unknown.</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>UNSET</Name>
+              <NameAliases>
+                <NameAlias lang="en">(unset)</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Value has not been specified.</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+          </ConstantList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Arrangement</NameAlias>
+        <NameAlias lang="ja-JP">配置</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="ja-JP">ファンとモーターの配置（AMCAによる定義）
+ARRANGEMENT1, ARRANGEMENT2, ARRANGEMENT3, ARRANGEMENT4, ARRANGEMENT7, ARRANGEMENT8, ARRANGEMENT9, ARRANGEMENT10, OTHER, NOTKNOWN, UNSET</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+  </PropertyDefs>
+  <PsetDefinitionAliases>
+    <PsetDefinitionAlias lang="en" />
+    <PsetDefinitionAlias lang="ja-JP">IfcFanの値に付け加えられた遠心送風機の属性</PsetDefinitionAlias>
+  </PsetDefinitionAliases>
+</PropertySetDef>

@@ -1,0 +1,484 @@
+<?xml version="1.0"?>
+<PropertySetDef xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ifdguid="0e8d2680d1db11e1800000215ad4efdf" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4" />
+  <Name>Pset_DoorCommon</Name>
+  <Definition>Properties common to the definition of all occurrences of IfcDoor.</Definition>
+  <Applicability />
+  <ApplicableClasses>
+    <ClassName>IfcDoor</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcDoor</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef ifdguid="2795d780d1db11e1800000215ad4efdf">
+      <Name>Reference</Name>
+      <Definition>Reference ID for this specified type in this project (e.g. type 'A-1'), Also referred to as "construction type". It should be provided as an alternative to the name of the "object type", if the software does not support object types.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcIdentifier" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="de-DE">Bauteiltyp</NameAlias>
+        <NameAlias lang="en">Reference</NameAlias>
+        <NameAlias lang="fr-FR">Reference</NameAlias>
+        <NameAlias lang="ja-JP">参照記号</NameAlias>
+        <NameAlias lang="zh-CN">参考号</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="de-DE">Bezeichnung zur Zusammenfassung gleichartiger Bauteile zu einem Bauteiltyp (auch Konstruktionstyp genannt). Alternativ zum Namen des "Typobjekts", insbesondere wenn die Software keine Typen unterstützt.</DefinitionAlias>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="fr-FR">Référence à l'identifiant d'un type spécifié dans le contexte du projet (exemple : "type A1") pour désigner un "type de construction". Une alternative au nom d'un objet type lorsque les objets types ne sont pas gérés par le logiciel.</DefinitionAlias>
+        <DefinitionAlias lang="ja-JP">このプロジェクトにおける参照記号(例：A-1)。分類コードではなく内部で使用されるプロジェクトタイプとして使用されるもの。</DefinitionAlias>
+        <DefinitionAlias lang="zh-CN">若未采用已知的分类系统，则该属性为该项目中该类型构件的参考编号（例如，类型A-1）。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="32e90300d1db11e1800000215ad4efdf">
+      <Name>Status</Name>
+      <Definition>Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as "New" - element designed as new addition, "Existing" - element exists and remains, "Demolish" - element existed but is to be demolished,  "Temporary" - element will exists only temporary (like a temporary support structure).</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_ElementStatus">
+            <EnumItem>NEW</EnumItem>
+            <EnumItem>EXISTING</EnumItem>
+            <EnumItem>DEMOLISH</EnumItem>
+            <EnumItem>TEMPORARY</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+          <ConstantList>
+            <ConstantDef>
+              <Name>NEW</Name>
+              <Definition>element designed as new addition</Definition>
+              <NameAliases>
+                <NameAlias lang="en">New</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>EXISTING</Name>
+              <Definition>element exists and is to remain</Definition>
+              <NameAliases>
+                <NameAlias lang="en">Existing</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>DEMOLISH</Name>
+              <Definition>element exists but is to be demolished</Definition>
+              <NameAliases>
+                <NameAlias lang="en">Demolish</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>TEMPORARY</Name>
+              <Definition>element will exist only temporarily (such as a temporary support structure)</Definition>
+              <NameAliases>
+                <NameAlias lang="en">Temporary</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>OTHER</Name>
+              <NameAliases>
+                <NameAlias lang="en">(other)</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Value is not listed.</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>NOTKNOWN</Name>
+              <NameAliases>
+                <NameAlias lang="en">(unknown)</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Value is unknown.</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>UNSET</Name>
+              <NameAliases>
+                <NameAlias lang="en">(unset)</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Value has not been specified.</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+          </ConstantList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="de-DE">Status</NameAlias>
+        <NameAlias lang="en">Status</NameAlias>
+        <NameAlias lang="fr-FR">Statut</NameAlias>
+        <NameAlias lang="ja-JP">状態</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="de-DE">Status bzw. Phase des Bauteils insbesondere beim Bauen im Bestand. "Neu" (new) neues Bauteil als Ergänzung, "Bestand" (existing) bestehendes Bauteil, dass erhalten bleibt, "Abbruch" (demolish) Bauteil, das abgebrochen wird, "Temporär" (temporary) Bauteil und andere Bauelemente, die vorübergehend eingebaut werden (wie Abstützungen, etc.)</DefinitionAlias>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="fr-FR">Statut de l'élément, principalement utilisé dans les projets de rénovation et de réhabilitation. Le statut a pour valeur NOUVEAU pour un nouvel élément, EXISTANT pour un élément existant qui est conservé, DEMOLI pour un élément existant à démolir et TEMPORAIRE pour un élément temporaire (comme une structure support provisoire).</DefinitionAlias>
+        <DefinitionAlias lang="ja-JP">要素（主にリノベーションまたは改修プロジェクトにおいて）の状態。 状態は、「新規(New)」－新しく追加される要素。「既存」－要素は存在し、かつ残りもの。「破壊」－要素は存在したが、廃棄されるもの。「一時的」－一時的に存在する要素（一時的にサポートしている構造のようなもの）。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="7ba0bc00d1db11e1800000215ad4efdf">
+      <Name>FireRating</Name>
+      <Definition>Fire rating for this object. It is given according to the national fire safety code or regulation.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcLabel" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="de-DE">Feuerwiderstandsklasse</NameAlias>
+        <NameAlias lang="en">Fire Rating</NameAlias>
+        <NameAlias lang="fr-FR">ResistanceAuFeu</NameAlias>
+        <NameAlias lang="ja-JP">耐火等級</NameAlias>
+        <NameAlias lang="zh-CN">防火等级</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="de-DE">Feuerwiderstandsklasse für den Brandschutz gemäß der nationalen oder regionalen Richtlinie die für den Brandschutz der Brandschutztür gewährleistet werden muss.</DefinitionAlias>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="fr-FR">Classement au feu de l'élément donné selon la classification nationale de sécurité incendie.</DefinitionAlias>
+        <DefinitionAlias lang="ja-JP">主要な耐火等級。関連する建築基準法、消防法などの国家基準を参照。</DefinitionAlias>
+        <DefinitionAlias lang="zh-CN">该构件的防火等级。
+该属性的依据为国家防火安全分级。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="95420380d1db11e1800000215ad4efdf">
+      <Name>AcousticRating</Name>
+      <Definition>Acoustic rating for this object.
+It is provided according to the national building code. It indicates the sound transmission resistance of this object by an index ratio (instead of providing full sound absorbtion values).</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcLabel" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="de-DE">Schallschutzklasse</NameAlias>
+        <NameAlias lang="en">Acoustic Rating</NameAlias>
+        <NameAlias lang="fr-FR">IsolationAcoustique</NameAlias>
+        <NameAlias lang="ja-JP">遮音等級</NameAlias>
+        <NameAlias lang="zh-CN">隔音等级</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="de-DE">Schallschutzklasse gemäß der nationalen oder regionalen Richtlinie die als Mindestanforderung für die Schalldämmung der Tür gewährleistet sein muss.</DefinitionAlias>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="fr-FR">Classement acoustique de cet objet. Donné selon le Code National du Bâtiment. Il indique la résistance à la transmission du son de cet objet par une valeur de référence (au lieu de fournir les valeurs totales d'absorption du son).</DefinitionAlias>
+        <DefinitionAlias lang="ja-JP">遮音等級情報。関連する建築基準法を参照。</DefinitionAlias>
+        <DefinitionAlias lang="zh-CN">该构件的隔音等级。
+该属性的依据为国家建筑规范。为表示该构件隔音效果的比率（而不是完全吸收声音的值）。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="b4409580d1db11e1800000215ad4efdf">
+      <Name>SecurityRating</Name>
+      <Definition>Index based rating system indicating security level.
+It is giving according to the national building code.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcLabel" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="de-DE">Widerstandsklasse</NameAlias>
+        <NameAlias lang="en">Security Rating</NameAlias>
+        <NameAlias lang="fr-FR">NiveauSecurite</NameAlias>
+        <NameAlias lang="ja-JP">防犯等級</NameAlias>
+        <NameAlias lang="zh-CN">安全等级</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="de-DE">Widerstandsklasse für den Einbruchschutz gemäß der nationalen oder regionalen Richtlinie die als Mindestanforderung für die Einbruchhemmung der Tür gewährleistet sein muss.</DefinitionAlias>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="fr-FR">Système de classification par indices, indiquant le niveau de sécurité.</DefinitionAlias>
+        <DefinitionAlias lang="ja-JP">防犯等級情報。関連する基準を参照。</DefinitionAlias>
+        <DefinitionAlias lang="zh-CN">表示安全程度的参考性等级。
+该属性的依据为国家建筑规范。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="cde1dd00d1db11e1800000215ad4efdf">
+      <Name>DurabilityRating</Name>
+      <Definition>Durability against mechanical stress. It is given according to the national code or regulation.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcLabel" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="de-DE">Beanspruchungsklasse</NameAlias>
+        <NameAlias lang="en">Durability Rating</NameAlias>
+        <NameAlias lang="fr-FR">Durabilité</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="de-DE">Mechanische Widerstandsfähigkeit gegen immer wiederkehrende Bewegungen und Einflüsse gemäß der nationalen oder regionalen Richtlinie.</DefinitionAlias>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="fr-FR">Durabilité au stress mécanique, selon une classification ou règlementation nationale.</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="ec47d880d1db11e1800000215ad4efdf">
+      <Name>HygrothermalRating</Name>
+      <Definition>Resistence against hygrothermal impact from different temperatures and humidities inside and outside. It is given according to the national code or regulation.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcLabel" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="de-DE">Klimaklasse</NameAlias>
+        <NameAlias lang="en">Hygrothermal Rating</NameAlias>
+        <NameAlias lang="fr-FR">Résistance hygrothermique</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="de-DE">Hygrothermische Widerstandsfähigkeit gegen Temperatur- und Feuchteunterschiede gemäß der nationalen oder regionalen Richtlinie als Mindestanforderung gegen die Verformung der Tür.</DefinitionAlias>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="fr-FR">Résistance à l'impact hygrothermique des différences de température et d'humidité entre l'intérieur et l'extérieur, selon une classification ou règlementation nationale.</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="5030f04224d94c74aba753294170b227">
+      <Name>WaterTightnessRating</Name>
+      <Definition>Water tightness rating for this object.
+It is provided according to the national building code.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcLabel" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="da9b78dfa88b4538887d4c597a1059dd">
+      <Name>MechanicalLoadRating</Name>
+      <Definition>Mechanical load rating for this object.
+It is provided according to the national building code.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcLabel" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="9be0892ff9324135bdafcd98782a64ff">
+      <Name>WindLoadRating</Name>
+      <Definition>Wind load resistance rating for this object.
+It is provided according to the national building code.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcLabel" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="23b68500d1dc11e1800000215ad4efdf">
+      <Name>Infiltration</Name>
+      <Definition>Infiltration flowrate of outside air for the filler object based on the area of the filler object at a pressure level of 50 Pascals. It shall be used, if the length of all joints is unknown.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcVolumetricFlowRateMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="de-DE">Luftdurchlässigkeit</NameAlias>
+        <NameAlias lang="en">Infiltration</NameAlias>
+        <NameAlias lang="fr-FR">TauxInfiltration</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="de-DE">Luftaustausch über die Fugen der geschlossenen Tür  (Q-Wert). Gibt die Luftdurchlässigkeit der gesamten Tür bei einem Luftdruckniveau von 50 Pascal an.</DefinitionAlias>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="fr-FR">Taux d'infiltration de l'air extérieur lorsqu'on soumet la porte à une pression de 50 pascals. Cette valeur sera utilisée si la longueur des joints n'est pas connue.</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="0aadd400d1dc11e1800000215ad4efdf">
+      <Name>IsExternal</Name>
+      <Definition>Indication whether the element is designed for use in the exterior (TRUE) or not (FALSE). If (TRUE) it is an external element and faces the outside of the building.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcBoolean" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="de-DE">Außenbauteil</NameAlias>
+        <NameAlias lang="en">Is External</NameAlias>
+        <NameAlias lang="fr-FR">EstExterieur</NameAlias>
+        <NameAlias lang="ja-JP">外部区分</NameAlias>
+        <NameAlias lang="zh-CN">是否外部构件</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="de-DE">Angabe, ob dieses Bauteil ein Aussenbauteil ist (JA) oder ein Innenbauteil (NEIN). Als Aussenbauteil grenzt es an den Aussenraum (oder Erdreich, oder Wasser).</DefinitionAlias>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="fr-FR">Indique si l'élément est conçu pour être utilisé à l'extérieur (VRAI) ou non (FAUX). Si VRAI, c'est un élément extérieur qui donne sur l'extérieur du bâtiment.</DefinitionAlias>
+        <DefinitionAlias lang="ja-JP">外部の部材かどうかを示すブーリアン値。もしTRUEの場合、外部の部材で建物の外側に面している。</DefinitionAlias>
+        <DefinitionAlias lang="zh-CN">表示该图元是否设计为外部构件。若是，则该图元为外部图元，朝向建筑物的外部。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="42b51700d1dc11e1800000215ad4efdf">
+      <Name>ThermalTransmittance</Name>
+      <Definition>Thermal transmittance coefficient (U-Value) of a material.
+It applies to the total door construction.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcThermalTransmittanceMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="de-DE">U-Wert</NameAlias>
+        <NameAlias lang="en">Thermal Transmittance</NameAlias>
+        <NameAlias lang="fr-FR">TransmissionThermique</NameAlias>
+        <NameAlias lang="ja-JP">熱貫流率</NameAlias>
+        <NameAlias lang="zh-CN">导热系数</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="de-DE">Wärmedurchgangskoeffizient (U-Wert) der Materialschichten.
+Hier der Gesamtwärmedurchgangskoeffizient der Tür.</DefinitionAlias>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="fr-FR">Coefficient de transmission thermique (U) d'un matériau. Il s'applique à l'ensemble de la porte.</DefinitionAlias>
+        <DefinitionAlias lang="ja-JP">熱貫流率U値。</DefinitionAlias>
+        <DefinitionAlias lang="zh-CN">材料的导热系数（U值）。
+适用于门的整体结构。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="5d878b80d1dc11e1800000215ad4efdf">
+      <Name>GlazingAreaFraction</Name>
+      <Definition>Fraction of the glazing area relative to the total area of the filling element. 
+It shall be used, if the glazing area is not given separately for all panels within the filling element.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveRatioMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="de-DE">Glasflächenanteil</NameAlias>
+        <NameAlias lang="en">Glazing Area Fraction</NameAlias>
+        <NameAlias lang="fr-FR">FractionSurfaceVitree</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="de-DE">Anteil der verglasten Fläche an der Gesamtfläche der Tür.</DefinitionAlias>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="fr-FR">Part de surface de vitrage par rapport à la surface totale de l'élément de remplissage. Doit être utilisée si la surface de vitrage n'est pas donnée séparément pour tous les panneaux occupant l'ouverture.</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="76903c80d1dc11e1800000215ad4efdf">
+      <Name>HandicapAccessible</Name>
+      <Definition>Indication that this object is designed to be accessible by the handicapped. 
+It is giving according to the requirements of the national building code.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcBoolean" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="de-DE">Behindertengerecht</NameAlias>
+        <NameAlias lang="en">Handicap Accessible</NameAlias>
+        <NameAlias lang="fr-FR">AccessibleHandicapes</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="de-DE">Angabe, ob die Tür behindertengerecht gemäß der nationalen oder regionalen Verordnung ist (JA), oder nicht (NEIN).</DefinitionAlias>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="fr-FR">Indique que cet objet est conçu pour être accessible aux handicapés. Indication donnée selon le Code National.</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="8f98ed80d1dc11e1800000215ad4efdf">
+      <Name>FireExit</Name>
+      <Definition>Indication whether this object is designed to serve as an exit in the case of fire (TRUE) or not (FALSE).
+Here it defines an exit door in accordance to the national building code.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcBoolean" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="de-DE">Notausgang</NameAlias>
+        <NameAlias lang="en">Fire Exit</NameAlias>
+        <NameAlias lang="fr-FR">Sortie Secours</NameAlias>
+        <NameAlias lang="ja-JP">非常口区分</NameAlias>
+        <NameAlias lang="zh-CN">是否为紧急出口</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="de-DE">Angabe, ob die Tür ein Notausgang gemäß der nationalen oder regionalen Brandschutzverordnung ist (JA), oder nicht (NEIN)..</DefinitionAlias>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="fr-FR">Indique si cet objet est conçu pour servir de sortie en cas d'incendie (VRAI) ou non (FAUX). Définition de la sortie de secours selon le Code National.</DefinitionAlias>
+        <DefinitionAlias lang="ja-JP">このオブジェクトが火災時の非常口として設計されているかどうかを示すブーリアン値。ここでは関連する建築基準法における出口ドアとして定義している。</DefinitionAlias>
+        <DefinitionAlias lang="zh-CN">表示该构件是否设计为火灾时的紧急出口。
+该属性的依据为国家建筑规范。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="aa6b6200d1dc11e1800000215ad4efdf">
+      <Name>HasDrive</Name>
+      <Definition>Indication whether this object has an automatic drive to operate it (TRUE) or no drive (FALSE)</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcBoolean" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="de-DE">Antrieb</NameAlias>
+        <NameAlias lang="en">Has Drive</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="de-DE">Angabe, ob dieses Bauteil einen automatischen Antrieb zum Öffnen und Schließen besitzt (JA) oder nicht (NEIN).</DefinitionAlias>
+        <DefinitionAlias lang="en" />
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="beaf5f00d1dc11e1800000215ad4efdf">
+      <Name>SelfClosing</Name>
+      <Definition>Indication whether this object is designed to close automatically after use (TRUE) or not (FALSE).</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcBoolean" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="de-DE">Selbstschliessend</NameAlias>
+        <NameAlias lang="en">Self Closing</NameAlias>
+        <NameAlias lang="fr-FR">FermetureAutomatique</NameAlias>
+        <NameAlias lang="ja-JP">自動ドア閉機能区分</NameAlias>
+        <NameAlias lang="zh-CN">是否自动关闭</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="de-DE">Angabe, ob die Tür sicher und selbständig nach der Benutzung durch einen Türschließer schließt (Ja) oder nicht (NEIN).</DefinitionAlias>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="fr-FR">Indique si cet objet est conçu pour une fermeture automatique après usage (VRAI) ou non (FAUX)</DefinitionAlias>
+        <DefinitionAlias lang="ja-JP">このドアが自動的に閉まる機能を有するかどうかのブーリアン値。</DefinitionAlias>
+        <DefinitionAlias lang="zh-CN">表示该构件是否设计为自动关闭。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="cec73e80d1dc11e1800000215ad4efdf">
+      <Name>SmokeStop</Name>
+      <Definition>Indication whether the object is designed to provide a smoke stop (TRUE) or not (FALSE).</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcBoolean" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="de-DE">Rauchschutz</NameAlias>
+        <NameAlias lang="en">Smoke Stop</NameAlias>
+        <NameAlias lang="fr-FR">CoupeFumee</NameAlias>
+        <NameAlias lang="ja-JP">煙止め機能区分</NameAlias>
+        <NameAlias lang="zh-CN">是否防烟</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="de-DE">Angabe, ob die Tür einen Rauchschutz gemäß der nationalen oder regionalen Brandschutzverordnung gewährleistet (JA) oder nicht (NEIN). Rauchschutztüren müssen selbstschließend sein.</DefinitionAlias>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="fr-FR">Indique si la porte est conçue pour une fonction coupe-fumée (VRAI) ou non (FAUX)</DefinitionAlias>
+        <DefinitionAlias lang="ja-JP">このドアが煙を止める機能を有するかどうかのブーリアン値。</DefinitionAlias>
+        <DefinitionAlias lang="zh-CN">表示该构件是否设计为防烟。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+  </PropertyDefs>
+  <PsetDefinitionAliases>
+    <PsetDefinitionAlias lang="en" />
+    <PsetDefinitionAlias lang="fr-FR">Définition de l'IAI : propriétés communes à la définition de toutes les instances de la classe IfcDoor</PsetDefinitionAlias>
+    <PsetDefinitionAlias lang="ja-JP">IfcDoor(ドア)オブジェクトに関する共通プロパティセット定義。</PsetDefinitionAlias>
+    <PsetDefinitionAlias lang="zh-CN">所有IfcDoor实例的定义中通用的属性。</PsetDefinitionAlias>
+  </PsetDefinitionAliases>
+</PropertySetDef>

@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<PropertySetDef xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ifdguid="70d72e80d1bd11e1800000215ad4efdf" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4" />
+  <Name>Pset_ActuatorTypeHydraulicActuator</Name>
+  <Definition>A device that hydraulically actuates a control element.</Definition>
+  <Applicability />
+  <ApplicableClasses>
+    <ClassName>IfcActuator/HYDRAULICACTUATOR</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcActuator/HYDRAULICACTUATOR</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef ifdguid="759be280d1bd11e1800000215ad4efdf">
+      <Name>InputPressure</Name>
+      <Definition>Maximum design pressure for the actuator.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPressureMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Input Pressure</NameAlias>
+        <NameAlias lang="ja-JP">入力圧力</NameAlias>
+        <NameAlias lang="ko-KR">입력 압력</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="ja-JP">アクチュエータへの最大設計圧力。</DefinitionAlias>
+        <DefinitionAlias lang="ko-KR">액츄에이터의 최대 설계 압력</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="7af92d00d1bd11e1800000215ad4efdf">
+      <Name>InputFlowrate</Name>
+      <Definition>Maximum hydraulic flowrate requirement.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcVolumetricFlowRateMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Input Flowrate</NameAlias>
+        <NameAlias lang="ja-JP">入力流量</NameAlias>
+        <NameAlias lang="ko-KR">입력 유량</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="ja-JP">最大流量。</DefinitionAlias>
+        <DefinitionAlias lang="ko-KR">최대 유량</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+  </PropertyDefs>
+  <PsetDefinitionAliases>
+    <PsetDefinitionAlias lang="en" />
+    <PsetDefinitionAlias lang="ja-JP">制御要素を水圧（油圧）で作動させるデバイス。</PsetDefinitionAlias>
+  </PsetDefinitionAliases>
+</PropertySetDef>

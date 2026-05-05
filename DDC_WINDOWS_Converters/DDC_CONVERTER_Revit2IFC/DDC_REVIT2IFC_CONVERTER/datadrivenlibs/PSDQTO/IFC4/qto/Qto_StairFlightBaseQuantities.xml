@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<QtoSetDef xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.buildingsmart-tech.org/xml/qto/QTO_IFC4.xsd">
+  <IfcVersion version="IFC4" />
+  <Name>Qto_StairFlightBaseQuantities</Name>
+  <Definition>Base quantities that are common to the definition of all occurrences of stair flights.</Definition>
+  <Applicability />
+  <ApplicableClasses>
+    <ClassName>IfcStairFlight</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcStairFlight</ApplicableTypeValue>
+  <QtoDefs>
+    <QtoDef>
+      <Name>Length</Name>
+      <Definition>Total length of the stair flight along the walking line.</Definition>
+      <QtoType>Q_LENGTH</QtoType>
+      <NameAliases>
+        <NameAlias lang="de-DE">Länge</NameAlias>
+        <NameAlias lang="en">Length</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="de-DE">Gesamtlänge des Treppenlaufs gemessen entlang der Lauflinie des Treppenlaufs.</DefinitionAlias>
+        <DefinitionAlias lang="en" />
+      </DefinitionAliases>
+    </QtoDef>
+    <QtoDef>
+      <Name>GrossVolume</Name>
+      <Definition>Total gross volume of the stair flight. Openings, recesses, and projections are not taken into account. </Definition>
+      <QtoType>Q_VOLUME</QtoType>
+      <NameAliases>
+        <NameAlias lang="de-DE">Bruttovolumen</NameAlias>
+        <NameAlias lang="en">Gross Volume</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="de-DE">Gesamtes Bruttovolumen des Treppenlaufs. Alle Öffnungen werden übermessen.</DefinitionAlias>
+        <DefinitionAlias lang="en" />
+      </DefinitionAliases>
+    </QtoDef>
+    <QtoDef>
+      <Name>NetVolume</Name>
+      <Definition>Total net volume of the stair flight. Openings and recesses are taken into account by subtraction, projections by addition. </Definition>
+      <QtoType>Q_VOLUME</QtoType>
+      <NameAliases>
+        <NameAlias lang="de-DE">Nettovolumen</NameAlias>
+        <NameAlias lang="en">Net Volume</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="de-DE">Gesamtes Nettovolumen des Treppenlaufs. Alle Öffnungen werden abgezogen.</DefinitionAlias>
+        <DefinitionAlias lang="en" />
+      </DefinitionAliases>
+    </QtoDef>
+  </QtoDefs>
+  <QtoDefinitionAliases>
+    <QtoDefinitionAlias lang="de-DE">Basismengen für alle Bauelemente vom Typ Treppenlauf.</QtoDefinitionAlias>
+    <QtoDefinitionAlias lang="en" />
+  </QtoDefinitionAliases>
+</QtoSetDef>

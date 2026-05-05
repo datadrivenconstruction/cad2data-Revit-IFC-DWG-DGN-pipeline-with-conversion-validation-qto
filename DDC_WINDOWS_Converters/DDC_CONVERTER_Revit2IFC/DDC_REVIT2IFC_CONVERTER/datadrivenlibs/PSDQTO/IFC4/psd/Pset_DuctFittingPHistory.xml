@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<PropertySetDef xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ifdguid="f1a62280d1dd11e1800000215ad4efdf" templatetype="PSET_PERFORMANCEDRIVEN" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4" />
+  <Name>Pset_DuctFittingPHistory</Name>
+  <Definition>Duct fitting performance history common attributes.</Definition>
+  <Applicability />
+  <ApplicableClasses>
+    <ClassName>IfcDuctFitting</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcDuctFitting</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef ifdguid="f66ad680d1dd11e1800000215ad4efdf">
+      <Name>LossCoefficient</Name>
+      <Definition>Dimensionless loss coefficient used for calculating fluid resistance representing the ratio of total pressure loss to velocity pressure at a referenced cross-section.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcTimeSeries" />
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Loss Coefficient</NameAlias>
+        <NameAlias lang="ja-JP">損失係数</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="ja-JP">参照された断面での動圧に対する全圧損失の比を表わす流体抵抗の計算に使用される無次元の損失係数</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="f8cd3080d1dd11e1800000215ad4efdf">
+      <Name>AtmosphericPressure</Name>
+      <Definition>Ambient atmospheric pressure.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcTimeSeries" />
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Atmospheric Pressure</NameAlias>
+        <NameAlias lang="ja-JP">大気圧</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="ja-JP">周囲の大気圧</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="fb2f8a80d1dd11e1800000215ad4efdf">
+      <Name>AirFlowLeakage</Name>
+      <Definition>Volumetric leakage flow rate.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcTimeSeries" />
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Air Flow Leakage</NameAlias>
+        <NameAlias lang="ja-JP">漏れ量</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="ja-JP">体積漏れ流量</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+  </PropertyDefs>
+  <PsetDefinitionAliases>
+    <PsetDefinitionAlias lang="en" />
+    <PsetDefinitionAlias lang="ja-JP">ダクト継手の性能履歴共通属性。</PsetDefinitionAlias>
+  </PsetDefinitionAliases>
+</PropertySetDef>

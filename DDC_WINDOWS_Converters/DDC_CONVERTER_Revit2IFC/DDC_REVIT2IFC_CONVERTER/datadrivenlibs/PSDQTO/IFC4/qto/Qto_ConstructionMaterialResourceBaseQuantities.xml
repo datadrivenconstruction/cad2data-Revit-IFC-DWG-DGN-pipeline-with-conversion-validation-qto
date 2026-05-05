@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<QtoSetDef xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.buildingsmart-tech.org/xml/qto/QTO_IFC4.xsd">
+  <IfcVersion version="IFC4" />
+  <Name>Qto_ConstructionMaterialResourceBaseQuantities</Name>
+  <Definition>Base quantities that are common to the definition of all occurrences of construction material resources.</Definition>
+  <Applicability />
+  <ApplicableClasses>
+    <ClassName>IfcConstructionMaterialResource</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcConstructionMaterialResource</ApplicableTypeValue>
+  <QtoDefs>
+    <QtoDef>
+      <Name>GrossVolume</Name>
+      <Definition>Total gross volume of the material, including material placed and wasted.</Definition>
+      <QtoType>Q_VOLUME</QtoType>
+      <NameAliases>
+        <NameAlias lang="en">Gross Volume</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+      </DefinitionAliases>
+    </QtoDef>
+    <QtoDef>
+      <Name>NetVolume</Name>
+      <Definition>Total net volume of the material, including material placed but excluding material wasted.</Definition>
+      <QtoType>Q_VOLUME</QtoType>
+      <NameAliases>
+        <NameAlias lang="en">Net Volume</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+      </DefinitionAliases>
+    </QtoDef>
+    <QtoDef>
+      <Name>GrossWeight</Name>
+      <Definition>Total gross weight of the material, including material placed and wasted.</Definition>
+      <QtoType>Q_WEIGHT</QtoType>
+      <NameAliases>
+        <NameAlias lang="en">Gross Weight</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+      </DefinitionAliases>
+    </QtoDef>
+    <QtoDef>
+      <Name>NetWeight</Name>
+      <Definition>Total net weight of the material, including material placed but excluding material wasted.</Definition>
+      <QtoType>Q_WEIGHT</QtoType>
+      <NameAliases>
+        <NameAlias lang="en">Net Weight</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+      </DefinitionAliases>
+    </QtoDef>
+  </QtoDefs>
+  <QtoDefinitionAliases>
+    <QtoDefinitionAlias lang="en" />
+  </QtoDefinitionAliases>
+</QtoSetDef>

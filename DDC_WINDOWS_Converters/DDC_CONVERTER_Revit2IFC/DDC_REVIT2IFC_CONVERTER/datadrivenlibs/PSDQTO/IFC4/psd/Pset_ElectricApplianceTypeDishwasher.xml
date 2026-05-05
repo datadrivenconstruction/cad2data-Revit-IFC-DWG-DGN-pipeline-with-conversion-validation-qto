@@ -1,0 +1,120 @@
+<?xml version="1.0"?>
+<PropertySetDef xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ifdguid="a42ab500d1df11e1800000215ad4efdf" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4" />
+  <Name>Pset_ElectricApplianceTypeDishwasher</Name>
+  <Definition>Common properties for dishwasher appliances.  HISTORY: Added in IFC4.</Definition>
+  <Applicability />
+  <ApplicableClasses>
+    <ClassName>IfcElectricAppliance/DISHWASHER</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcElectricAppliance/DISHWASHER</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef ifdguid="b0af0d80d1df11e1800000215ad4efdf">
+      <Name>DishwasherType</Name>
+      <Definition>Type of dishwasher.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_ElectricApplianceDishwasherType">
+            <EnumItem>POTWASHER</EnumItem>
+            <EnumItem>TRAYWASHER</EnumItem>
+            <EnumItem>DISHWASHER</EnumItem>
+            <EnumItem>BOTTLEWASHER</EnumItem>
+            <EnumItem>CUTLERYWASHER</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>UNKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+          <ConstantList>
+            <ConstantDef>
+              <Name>POTWASHER</Name>
+              <NameAliases>
+                <NameAlias lang="en">Pot Washer</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>TRAYWASHER</Name>
+              <NameAliases>
+                <NameAlias lang="en">Tray Washer</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>DISHWASHER</Name>
+              <NameAliases>
+                <NameAlias lang="en">Dish Washer</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>BOTTLEWASHER</Name>
+              <NameAliases>
+                <NameAlias lang="en">Bottle Washer</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>CUTLERYWASHER</Name>
+              <NameAliases>
+                <NameAlias lang="en">Cutlery Washer</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>OTHER</Name>
+              <NameAliases>
+                <NameAlias lang="en">(other)</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Value is not listed.</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>UNKNOWN</Name>
+              <NameAliases>
+                <NameAlias lang="en">Unknown</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>UNSET</Name>
+              <NameAliases>
+                <NameAlias lang="en">(unset)</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Value has not been specified.</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+          </ConstantList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Dishwasher Type</NameAlias>
+        <NameAlias lang="ja-JP">食器洗浄機のタイプ</NameAlias>
+        <NameAlias lang="ko-KR">식기 세척기의 유형</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="ja-JP">食器洗浄機のタイプ。</DefinitionAlias>
+        <DefinitionAlias lang="ko-KR">식기 세척기의 유형</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+  </PropertyDefs>
+  <PsetDefinitionAliases>
+    <PsetDefinitionAlias lang="en" />
+    <PsetDefinitionAlias lang="ja-JP">食器洗浄機の共通のプロパティ。
+IFC4にて追加。</PsetDefinitionAlias>
+  </PsetDefinitionAliases>
+</PropertySetDef>

@@ -1,0 +1,121 @@
+<?xml version="1.0"?>
+<QtoSetDef xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.buildingsmart-tech.org/xml/qto/QTO_IFC4.xsd">
+  <IfcVersion version="IFC4" />
+  <Name>Qto_PlateBaseQuantities</Name>
+  <Definition>Base quantities that are common to the definition of all occurrences of plates.</Definition>
+  <Applicability />
+  <ApplicableClasses>
+    <ClassName>IfcPlate</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcPlate</ApplicableTypeValue>
+  <QtoDefs>
+    <QtoDef>
+      <Name>Width</Name>
+      <Definition>Nominal width (or thickness) of the plate. Only given, if the plate is prismatic (constant thickess). </Definition>
+      <QtoType>Q_LENGTH</QtoType>
+      <NameAliases>
+        <NameAlias lang="de-DE">Dicke</NameAlias>
+        <NameAlias lang="en">Width</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="de-DE">Dicke der Platte, der Wert wird nur angegeben, wenn er konstant ist.</DefinitionAlias>
+        <DefinitionAlias lang="en" />
+      </DefinitionAliases>
+    </QtoDef>
+    <QtoDef>
+      <Name>Perimeter</Name>
+      <Definition>Perimeter measured along the outer boundaries of the plate. Only given, if the plate is prismatic (constant thickness).</Definition>
+      <QtoType>Q_LENGTH</QtoType>
+      <NameAliases>
+        <NameAlias lang="de-DE">Umfang</NameAlias>
+        <NameAlias lang="en">Perimeter</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="de-DE">Umfang der Platte, der Wert wird nur angegeben, wenn die Platte eine kostante Dicke hat.</DefinitionAlias>
+        <DefinitionAlias lang="en" />
+      </DefinitionAliases>
+    </QtoDef>
+    <QtoDef>
+      <Name>GrossArea</Name>
+      <Definition>Total area of the extruded area of the plate. Openings, recesses and projections are not taken into account. Only given, if the plate is prismatic.</Definition>
+      <QtoType>Q_AREA</QtoType>
+      <NameAliases>
+        <NameAlias lang="de-DE">Bruttofläche</NameAlias>
+        <NameAlias lang="en">Gross Area</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="de-DE">Fläche der Platte (Ansichtsfläche, nicht projizierte oder Mantelfläche). Alle Öffnungen werden übermessen. Der Wert wird nur angegeben, wenn die Platte eine kostante Dicke hat.</DefinitionAlias>
+        <DefinitionAlias lang="en" />
+      </DefinitionAliases>
+    </QtoDef>
+    <QtoDef>
+      <Name>NetArea</Name>
+      <Definition>Total area of the extruded area of the plate. Openings and recesses are taken into account by subtraction, projections by addition. Only given, if the plate is prismatic.</Definition>
+      <QtoType>Q_AREA</QtoType>
+      <NameAliases>
+        <NameAlias lang="de-DE">Nettofläche</NameAlias>
+        <NameAlias lang="en">Net Area</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="de-DE">Fläche der Platte (Ansichtsfläche, nicht projizierte oder Mantelfläche). Alle Öffnungen werden abgezogen. Der Wert wird nur angegeben, wenn die Platte eine kostante Dicke hat.</DefinitionAlias>
+        <DefinitionAlias lang="en" />
+      </DefinitionAliases>
+    </QtoDef>
+    <QtoDef>
+      <Name>GrossVolume</Name>
+      <Definition>Total gross volume of the plate. Openings, recesses, and projections are not taken into account. </Definition>
+      <QtoType>Q_VOLUME</QtoType>
+      <NameAliases>
+        <NameAlias lang="de-DE">Bruttovolumen</NameAlias>
+        <NameAlias lang="en">Gross Volume</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="de-DE">Bruttovolumen der Platte. Alle Öffnungen und Aussparungen werden übermessen.</DefinitionAlias>
+        <DefinitionAlias lang="en" />
+      </DefinitionAliases>
+    </QtoDef>
+    <QtoDef>
+      <Name>NetVolume</Name>
+      <Definition>Total net volume of the plate. Openings and recesses are taken into account by subtraction, projections by addition. </Definition>
+      <QtoType>Q_VOLUME</QtoType>
+      <NameAliases>
+        <NameAlias lang="de-DE">Nettovolumen</NameAlias>
+        <NameAlias lang="en">Net Volume</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="de-DE">Nettovolumen der Platte. Alle Öffnungen und Aussparungen werden abgezogen.</DefinitionAlias>
+        <DefinitionAlias lang="en" />
+      </DefinitionAliases>
+    </QtoDef>
+    <QtoDef>
+      <Name>GrossWeight</Name>
+      <Definition>Total gross weight of the plate without add-on parts, not taking into account possible processing features (cut-out's, etc.) or openings and recesses.</Definition>
+      <QtoType>Q_WEIGHT</QtoType>
+      <NameAliases>
+        <NameAlias lang="de-DE">Bruttogewicht</NameAlias>
+        <NameAlias lang="en">Gross Weight</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="de-DE">Gewicht der Platte. Alle Öffnungen und Aussparungen werden übermessen.</DefinitionAlias>
+        <DefinitionAlias lang="en" />
+      </DefinitionAliases>
+    </QtoDef>
+    <QtoDef>
+      <Name>NetWeight</Name>
+      <Definition>Total net weight of the plate without add-on parts, taking into account possible processing features (cut-out's, etc.) or openings and recesses.</Definition>
+      <QtoType>Q_WEIGHT</QtoType>
+      <NameAliases>
+        <NameAlias lang="de-DE">Nettogewicht</NameAlias>
+        <NameAlias lang="en">Net Weight</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="de-DE">Gewicht der Platte. Alle Öffnungen und Aussparungen werden abgezogen.</DefinitionAlias>
+        <DefinitionAlias lang="en" />
+      </DefinitionAliases>
+    </QtoDef>
+  </QtoDefs>
+  <QtoDefinitionAliases>
+    <QtoDefinitionAlias lang="de-DE">Basismengen für alle Bauelemente vom Typ Platte.</QtoDefinitionAlias>
+    <QtoDefinitionAlias lang="en" />
+  </QtoDefinitionAliases>
+</QtoSetDef>

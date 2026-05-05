@@ -1,0 +1,93 @@
+<?xml version="1.0"?>
+<PropertySetDef xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ifdguid="87d44b80d1d211e1800000215ad4efdf" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4" />
+  <Name>Pset_DiscreteAccessoryEdgeFixingPlate</Name>
+  <Definition>Properties specific to edge fixing plates.</Definition>
+  <Applicability />
+  <ApplicableClasses>
+    <ClassName>IfcDiscreteAccessory/Edge fixing plate</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcDiscreteAccessory/Edge fixing plate</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef ifdguid="8d319600d1d211e1800000215ad4efdf">
+      <Name>EdgeFixingPlateLength</Name>
+      <Definition>The length of the L-shaped edge plate.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Edge Fixing Plate Length</NameAlias>
+        <NameAlias lang="ja-JP">長さ</NameAlias>
+        <NameAlias lang="ko-KR">길이</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="ja-JP">L型端部プレートの長さ。</DefinitionAlias>
+        <DefinitionAlias lang="ko-KR">L 형 단부 플레이트의 길이</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="928ee080d1d211e1800000215ad4efdf">
+      <Name>EdgeFixingPlateThickness</Name>
+      <Definition>The thickness of the L-shaped edge plate.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Edge Fixing Plate Thickness</NameAlias>
+        <NameAlias lang="ja-JP">板厚</NameAlias>
+        <NameAlias lang="ko-KR">두께</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="ja-JP">L型端部プレートの板厚。</DefinitionAlias>
+        <DefinitionAlias lang="ko-KR">L 형 단부 플레이트의 두께</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="97ec2b00d1d211e1800000215ad4efdf">
+      <Name>EdgeFixingPlateFlangeWidthInPlaneZ</Name>
+      <Definition>The flange width of the L-shaped edge plate in plane Z.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Edge Fixing Plate Flange Width In Plane Z</NameAlias>
+        <NameAlias lang="ja-JP">フランジ幅Z</NameAlias>
+        <NameAlias lang="ko-KR">플랜지 폭 Z</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="ja-JP">L型端部プレートのZ面フランジ幅。</DefinitionAlias>
+        <DefinitionAlias lang="ko-KR">L 형 단부 플레이트 Z면 플랜지 폭</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="9d497580d1d211e1800000215ad4efdf">
+      <Name>EdgeFixingPlateFlangeWidthInPlaneX</Name>
+      <Definition>The flange width of the L-shaped edge plate in plane X.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Edge Fixing Plate Flange Width In Plane X</NameAlias>
+        <NameAlias lang="ja-JP">フランジ幅X</NameAlias>
+        <NameAlias lang="ko-KR">플랜지 폭 X</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="ja-JP">L型端部プレートのX面フランジ幅。</DefinitionAlias>
+        <DefinitionAlias lang="ko-KR">L 형 단부 플레이트 X면 플랜지 폭</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+  </PropertyDefs>
+  <PsetDefinitionAliases>
+    <PsetDefinitionAlias lang="en" />
+    <PsetDefinitionAlias lang="ja-JP">端部固定プレートの固有。</PsetDefinitionAlias>
+  </PsetDefinitionAliases>
+</PropertySetDef>

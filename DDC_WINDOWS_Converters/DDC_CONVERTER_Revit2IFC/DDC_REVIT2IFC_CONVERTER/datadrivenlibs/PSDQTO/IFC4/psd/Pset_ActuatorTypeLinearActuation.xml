@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<PropertySetDef xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ifdguid="82203b00d1bd11e1800000215ad4efdf" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4" />
+  <Name>Pset_ActuatorTypeLinearActuation</Name>
+  <Definition>Characteristics of linear actuation of an actuator
+History: Replaces Pset_LinearActuator</Definition>
+  <Applicability />
+  <ApplicableClasses>
+    <ClassName>IfcActuator</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcActuator</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef ifdguid="877d8580d1bd11e1800000215ad4efdf">
+      <Name>Force</Name>
+      <Definition>Indicates the maximum close-off force for the actuator.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcForceMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Force</NameAlias>
+        <NameAlias lang="ja-JP">最大推力</NameAlias>
+        <NameAlias lang="ko-KR">최대추력</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="ja-JP">アクチュエータの最大締め切り力を示す。</DefinitionAlias>
+        <DefinitionAlias lang="ko-KR">액츄에이터의 최대 마감 힘을 보여준다.</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="8cdad000d1bd11e1800000215ad4efdf">
+      <Name>Stroke</Name>
+      <Definition>Indicates the maximum distance the actuator must traverse.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcLengthMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Stroke</NameAlias>
+        <NameAlias lang="ja-JP">ストローク</NameAlias>
+        <NameAlias lang="ko-KR">입력</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="ja-JP">アクチュエータが動く最大距離を示す。</DefinitionAlias>
+        <DefinitionAlias lang="ko-KR">액츄에이터가 움직이는 최대 거리를 보여준다.</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+  </PropertyDefs>
+  <PsetDefinitionAliases>
+    <PsetDefinitionAlias lang="en" />
+    <PsetDefinitionAlias lang="ja-JP">アクチュエータの直線動作の特性。</PsetDefinitionAlias>
+  </PsetDefinitionAliases>
+</PropertySetDef>

@@ -1,0 +1,310 @@
+<?xml version="1.0"?>
+<PropertySetDef xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ifdguid="7abb5a80d1da11e1800000215ad4efdf" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4" />
+  <Name>Pset_DistributionSystemTypeElectrical</Name>
+  <Definition>Properties of electrical circuits.</Definition>
+  <Applicability />
+  <ApplicableClasses>
+    <ClassName>IfcDistributionSystem/ELECTRICAL</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcDistributionSystem/ELECTRICAL</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef ifdguid="8018a500d1da11e1800000215ad4efdf">
+      <Name>ElectricalSystemType</Name>
+      <Definition>For certain purposes of electrical regulations, IEC 60364 defines types of system using type identifiers. Assignment of identifiers depends upon the relationship of the source, and of exposed conductive parts of the installation, to Ground (Earth).   Identifiers that may be assigned through IEC 60364 are: 
+
+•TN type system, a system having one or more points of the source of energy directly earthed, the exposed conductive parts of the installation being connected to that point by protective conductors, 
+•TN C type system, a TN type system in which neutral and protective functions are combined in a single conductor throughout the system, 
+•TN S type system, a TN type system having separate neutral and protective conductors throughout the system, 
+•TN C S type system, a TN type system in which neutral and protective functions are combined in a single conductor in part of the system, 
+•TT type system, a system having one point of the source of energy directly earthed, the exposed conductive parts of the installation being connected to earth electrodes electrically independent of the earth electrodes of the source, 
+•IT type system, a system having no direct connection between live parts and Earth, the exposed conductive parts of the electrical installation being earthed.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_DistributionSystemElectricalType">
+            <EnumItem>TN</EnumItem>
+            <EnumItem>TN_C</EnumItem>
+            <EnumItem>TN_S</EnumItem>
+            <EnumItem>TN_C_S</EnumItem>
+            <EnumItem>TT</EnumItem>
+            <EnumItem>IT</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+          <ConstantList>
+            <ConstantDef>
+              <Name>TN</Name>
+              <NameAliases>
+                <NameAlias lang="en">TN</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>TN_C</Name>
+              <NameAliases>
+                <NameAlias lang="en">TN C</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>TN_S</Name>
+              <NameAliases>
+                <NameAlias lang="en">TN S</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>TN_C_S</Name>
+              <NameAliases>
+                <NameAlias lang="en">TN C S</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>TT</Name>
+              <NameAliases>
+                <NameAlias lang="en">TT</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>IT</Name>
+              <NameAliases>
+                <NameAlias lang="en">IT</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>OTHER</Name>
+              <NameAliases>
+                <NameAlias lang="en">(other)</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Value is not listed.</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>NOTKNOWN</Name>
+              <NameAliases>
+                <NameAlias lang="en">(unknown)</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Value is unknown.</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>UNSET</Name>
+              <NameAliases>
+                <NameAlias lang="en">(unset)</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Value has not been specified.</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+          </ConstantList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Electrical System Type</NameAlias>
+        <NameAlias lang="ja-JP">電気システム方式</NameAlias>
+        <NameAlias lang="ko-KR">전기 시스템 방식</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="ja-JP">IEC60364電気基準に定義した電気接地の方式。電気設備の種類、接地電極と設備の導電性部分の種類で決められる。具体的なには、IEC60364に下記のような方法がある：
+
+
+- TNシステム：電気設備は一点或いは多点の接地点を持ち、直接接地されるシステム。設備と接地極の導電性部分は保護されていること。
+- TN　Cシステム：系統の全てにわたって、中性線と保護導体が一つの導体のTNシステム。
+- TN　Sシステム：系統の全てにわたって、独立の中性線と保護導体を有するTNシステム。
+- TN　C　Sシステム：系統の一部では、中性線と保護導体が一つの導体のTNシステム。
+- TTシステム：一点を大地に直接接続し、電力系統の接地とは無関係に、設備の露出導電性部分を大地に直接接地すること。
+- ITシステム：電力システムを大地(接地)から絶縁する、設備の露出導電性部分を大地に直接接地すること。</DefinitionAlias>
+        <DefinitionAlias lang="ko-KR">IEC60364 전기 기준으로 정의한 전기 접지 방식. 전기 설비의 종류, 접지 전극 시설의 도전성 부분 유형에 결정된다. 구체적인에는 IEC60364에 다음과 같은 방법이있다. · TN 시스템 : 전기 설비는한데 또는 다점 접지 점을 가지고 직접 접지되는 시스템. 시설과 접지극의 도전성 부분을 보호하는 것. · TN C 시스템 : 계통의 모든 걸쳐 중성선과 보호 도체가 하나의 도체 TN 시스템. · TN S 시스템 : 계통의 모든 걸쳐 독립 중성선과 보호 도체가있는 TN 시스템. · TN C S 시스템 : 계통의 일부가, 중성선과 보호 도체가 하나의 도체 TN 시스템. · TT 시스템 : 한 점을 대지에 직접 연결하여 전력 계통의 접지와는 상관없이 설비의 노출 도전성 부분을 대지에 직접 접지한다. · IT 시스템 : 전력 시스템을 대지 (접지)로부터 절연하는 설비의 노출 도전성 부분을 대지에 직접 접지한다.</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="90c91b00d1da11e1800000215ad4efdf">
+      <Name>ElectricalSystemCategory</Name>
+      <Definition>Designates the voltage range of the circuit, according to IEC.  HIGHVOLTAGE indicates &gt;1000V AC or &gt;1500V DV; LOWVOLTAGE indicates 50-1000V AC or 120-1500V DC; EXTRALOWVOLTAGE indicates &lt;50V AC or &lt;120V DC.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_DistributionSystemElectricalCategory">
+            <EnumItem>HIGHVOLTAGE</EnumItem>
+            <EnumItem>LOWVOLTAGE</EnumItem>
+            <EnumItem>EXTRALOWVOLTAGE</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+          <ConstantList>
+            <ConstantDef>
+              <Name>HIGHVOLTAGE</Name>
+              <NameAliases>
+                <NameAlias lang="en">High Voltage</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>LOWVOLTAGE</Name>
+              <NameAliases>
+                <NameAlias lang="en">Low Voltage</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>EXTRALOWVOLTAGE</Name>
+              <NameAliases>
+                <NameAlias lang="en">Extra Low Voltage</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>OTHER</Name>
+              <NameAliases>
+                <NameAlias lang="en">(other)</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Value is not listed.</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>NOTKNOWN</Name>
+              <NameAliases>
+                <NameAlias lang="en">(unknown)</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Value is unknown.</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>UNSET</Name>
+              <NameAliases>
+                <NameAlias lang="en">(unset)</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Value has not been specified.</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+          </ConstantList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Electrical System Category</NameAlias>
+        <NameAlias lang="ja-JP">電気システムのカテゴリー</NameAlias>
+        <NameAlias lang="ko-KR">전기 시스템 카테고리</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="ja-JP">IECに準拠した回路の電圧レンジを示す。次の列挙型の値を取る。(HIGHVOLTAGE indicates &gt;1000V AC or &gt;1500V DV; LOWVOLTAGE indicates 50-1000V AC or 120-1500V DC; EXTRALOWVOLTAGE indicates &lt;50V AC or &lt;120V DC.)</DefinitionAlias>
+        <DefinitionAlias lang="ko-KR">IEC에 따른 회로의 전압 범위를 나타낸다. 다음 열거 형의 값을 받는다. (HIGHVOLTAGE indicates&gt; 1000V AC or&gt; 1500V DV; LOWVOLTAGE indicates 50-1000V AC or 120-1500V DC; EXTRALOWVOLTAGE indicates &lt;50V AC or &lt;120V DC)</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="9f173700d1da11e1800000215ad4efdf">
+      <Name>Diversity</Name>
+      <Definition>The ratio, expressed as a numerical
+value or as a percentage, of the
+simultaneous maximum demand of
+a group of electrical appliances or
+consumers within a specified period,
+to the sum of their individual maximum
+demands within the same
+period. The group of electrical appliances is in this case connected to this circuit. Defenition from IEC 60050, IEV 691-10-04 
+NOTE1: It is often not desirable to size each conductor in a distribution system to support the total connected load at that point in the network. Diversity is applied on the basis of the anticipated loadings that are likely to result from all loads not being connected at the same time.
+NOTE2: Diversity is applied to final circuits only, not to sub-main circuits supplying other DBs.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveRatioMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Diversity</NameAlias>
+        <NameAlias lang="ja-JP">負荷率</NameAlias>
+        <NameAlias lang="ko-KR">부하율</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="ja-JP">ある期間中同じ回路にある複数電気設備の同時最大負荷と各設備の合計負荷の比率。</DefinitionAlias>
+        <DefinitionAlias lang="ko-KR">일정 기간 동안 동일 회로에 여러 전기 설비의 동시 최대 부하와 각 설비의 총 부하의 비율.</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="048b430047674386b8ba5b688c837bda">
+      <Name>NumberOfLiveConductors</Name>
+      <Definition>Number of live conductors within this circuit. Either this property or the ConductorFunction property (if only one) may be asserted.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcInteger" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Number Of Live Conductors</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="a9393580d1da11e1800000215ad4efdf">
+      <Name>MaximumAllowedVoltageDrop</Name>
+      <Definition>The maximum voltage drop across the circuit that must not be exceeded. 
+There are two  voltage drop limit settings that may be applied; one for sub-main circuits, and one in each Distribution Board or Consumer Unit for final circuits connected to that board. The settings should limit the overall voltage drop to the required level. Default settings of 1.5% for sub-main circuits and 2.5% for final circuits, giving an overall limit of 4% may be applied.
+NOTE: This value may also be specified as a constraint within an IFC model if required but is included within the property set at this stage pending implementation of the required capabilities within software applications.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcElectricVoltageMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Maximum Allowed Voltage Drop</NameAlias>
+        <NameAlias lang="ja-JP">最大許容電圧降下</NameAlias>
+        <NameAlias lang="ko-KR">최대허용전압강하</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="ja-JP">電気回路での電圧降下は最大電圧降下を超えないように。二種類の電圧降下限度があり、一つは分岐－主回路、もう一つは各分電盤或いは末端回路の電気需要装置と接続電気盤である。総電圧下降を使用範囲以内に制限する。デフォルト値は分岐－主回路1.5％、末端回路2.5％、合計総電圧4％である。
+注：この値はIFCモデルでの制約値と指定されているが、現段階ではプロプティセットに設定する。将来的には必要な性能として各ソフトアプリケションに利用する。</DefinitionAlias>
+        <DefinitionAlias lang="ko-KR">전기 회로에서 전압 강하는 최대 전압 강하를 초과하지 않도록. 두 종류의 전압 강하 한도가 있는데 하나는 분기 - 주회로, 다른 하나는 각 분전반 혹은 말단 회로의 전기 수요 장치와 연결 전기 판이다. 총 전압 하강을 사용 범위 이내로 제한한다. 기본값은 분기 - 주회로 1.5 %, 말단 회로 2.5 %, 합계 총 전압 4 %이다. 참고 :이 값은 IFC 모델에 따라 제한 값이 지정되어 있지만, 현 단계에서는 프로 쁘띠 세트로 설정한다. 미래에 필요한 성능으로 각 소프트웨어 어플 리케이션에 이용한다.</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="adfde980d1da11e1800000215ad4efdf">
+      <Name>NetImpedance</Name>
+      <Definition>The maximum earth loop impedance upstream of a circuit (typically stated as the variable Zs). This value is for 55o C (130oF) Celsius usage.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcElectricResistanceMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Net Impedance</NameAlias>
+        <NameAlias lang="ja-JP">ネットインピーダンス</NameAlias>
+        <NameAlias lang="ko-KR">인터넷 임피던스</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="ja-JP">電気回路での最大接地インピーダンス（一般はZsで表示）。55℃ (130°F)での数値。</DefinitionAlias>
+        <DefinitionAlias lang="ko-KR">전기 회로에서 최대 접지 임피던스 (일반은 Zs로 표시). 55 ℃ (130 ° F)의 숫자.</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+  </PropertyDefs>
+  <PsetDefinitionAliases>
+    <PsetDefinitionAlias lang="en" />
+    <PsetDefinitionAlias lang="ja-JP">電気回路の関連属性。</PsetDefinitionAlias>
+  </PsetDefinitionAliases>
+</PropertySetDef>

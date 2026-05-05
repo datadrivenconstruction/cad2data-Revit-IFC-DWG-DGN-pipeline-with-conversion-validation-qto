@@ -1,0 +1,85 @@
+<?xml version="1.0"?>
+<PropertySetDef xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ifdguid="5782b200d1be11e1800000215ad4efdf" templatetype="PSET_PERFORMANCEDRIVEN" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4" />
+  <Name>Pset_AirTerminalBoxPHistory</Name>
+  <Definition>Air terminal box performance history attributes.</Definition>
+  <Applicability />
+  <ApplicableClasses>
+    <ClassName>IfcAirTerminalBox</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcAirTerminalBox</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef ifdguid="5d789300d1be11e1800000215ad4efdf">
+      <Name>DamperPosition</Name>
+      <Definition>Control damper position, ranging from 0 to 1.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcTimeSeries" />
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Damper Position</NameAlias>
+        <NameAlias lang="fr-FR">Position du registre</NameAlias>
+        <NameAlias lang="ja-JP">ダンパ開度</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="fr-FR">Position de contrôle du registre, compris entre 0 et 1.</DefinitionAlias>
+        <DefinitionAlias lang="ja-JP">制御ダンパの開度（０～１）</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="61a4b080d1be11e1800000215ad4efdf">
+      <Name>AtmosphericPressure</Name>
+      <Definition>Ambient atmospheric pressure.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcTimeSeries" />
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Atmospheric Pressure</NameAlias>
+        <NameAlias lang="fr-FR">Pression atmosphérique</NameAlias>
+        <NameAlias lang="ja-JP">大気圧</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="fr-FR">Pression atmosphérique ambiante</DefinitionAlias>
+        <DefinitionAlias lang="ja-JP">周囲大気圧</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="65383780d1be11e1800000215ad4efdf">
+      <Name>Sound</Name>
+      <Definition>Sound performance.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcTimeSeries" />
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Sound</NameAlias>
+        <NameAlias lang="fr-FR">Acoustique</NameAlias>
+        <NameAlias lang="ja-JP">騒音</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="fr-FR">Performance acoustique</DefinitionAlias>
+        <DefinitionAlias lang="ja-JP">騒音性能</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="68cbbe80d1be11e1800000215ad4efdf">
+      <Name>AirflowCurve</Name>
+      <Definition>Air flowrate versus damper position relationship;airflow = f ( valve position).</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcTimeSeries" />
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Airflow Curve</NameAlias>
+        <NameAlias lang="fr-FR">Courbe de débit d'air</NameAlias>
+        <NameAlias lang="ja-JP">流量曲線</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="fr-FR">Relation entre débit d'air par rapport à la position du registre; Débit d'air = f (position du clapet)</DefinitionAlias>
+        <DefinitionAlias lang="ja-JP">ダンパ開度と風量の関係　　風量＝f(開度)</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+  </PropertyDefs>
+  <PsetDefinitionAliases>
+    <PsetDefinitionAlias lang="en" />
+    <PsetDefinitionAlias lang="ja-JP">ターミナルボックス性能履歴の属性。</PsetDefinitionAlias>
+  </PsetDefinitionAliases>
+</PropertySetDef>

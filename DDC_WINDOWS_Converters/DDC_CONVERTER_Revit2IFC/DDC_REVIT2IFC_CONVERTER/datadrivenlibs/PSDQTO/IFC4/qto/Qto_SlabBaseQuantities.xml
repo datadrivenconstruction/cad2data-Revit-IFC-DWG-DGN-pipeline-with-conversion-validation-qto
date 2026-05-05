@@ -1,0 +1,165 @@
+<?xml version="1.0"?>
+<QtoSetDef xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.buildingsmart-tech.org/xml/qto/QTO_IFC4.xsd">
+  <IfcVersion version="IFC4" />
+  <Name>Qto_SlabBaseQuantities</Name>
+  <Definition>Base quantities that are common to the definition of all occurrences of slabs.</Definition>
+  <Applicability />
+  <ApplicableClasses>
+    <ClassName>IfcSlab</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcSlab</ApplicableTypeValue>
+  <QtoDefs>
+    <QtoDef>
+      <Name>Width</Name>
+      <Definition>Nominal width (or thickness) of the slab. Only given, if the slab is prismatic (constant thickess). </Definition>
+      <QtoType>Q_LENGTH</QtoType>
+      <NameAliases>
+        <NameAlias lang="de-DE">Dicke</NameAlias>
+        <NameAlias lang="en">Width</NameAlias>
+        <NameAlias lang="ja-JP">幅</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="de-DE">Dicke der Decke, der Wert wird nur angegeben, wenn er konstant ist.</DefinitionAlias>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="ja-JP">スラブの厚さ。厚さが一定の場合。</DefinitionAlias>
+      </DefinitionAliases>
+    </QtoDef>
+    <QtoDef>
+      <Name>Length</Name>
+      <Definition>Length (one direction of the non-projected foot print area) of the slab. It shall only be provided, if the slab is rectangular.</Definition>
+      <QtoType>Q_LENGTH</QtoType>
+      <NameAliases>
+        <NameAlias lang="de-DE">Länge</NameAlias>
+        <NameAlias lang="en">Length</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="de-DE">Länge der Decke (einer der beiden Abmasse in der parallelen Draufsicht auf die Decke). Wird nur bei rechteckigen Decken angegeben.</DefinitionAlias>
+        <DefinitionAlias lang="en" />
+      </DefinitionAliases>
+    </QtoDef>
+    <QtoDef>
+      <Name>Depth</Name>
+      <Definition>Depth (one direction of the non-projected foot print area) of the slab. It shall only be provided, if the slab is rectangular.
+&lt;blockquote class="note"&gt;NOTE&amp;nbsp; Also refered to as width, but not to be confused with the "Width" quantity, that denotes the thickness in the context of the slab.&lt;/blockquote&gt;</Definition>
+      <QtoType>Q_LENGTH</QtoType>
+      <NameAliases>
+        <NameAlias lang="de-DE">Breite</NameAlias>
+        <NameAlias lang="en">Depth</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="de-DE">Breite der Decke (einer der beiden Abmasse in der parallelen Draufsicht auf die Decke). Wird nur bei rechteckigen Decken angegeben.</DefinitionAlias>
+        <DefinitionAlias lang="en" />
+      </DefinitionAliases>
+    </QtoDef>
+    <QtoDef>
+      <Name>Perimeter</Name>
+      <Definition>Perimeter measured along the outer boundaries of the slab. Only given, if the slab is prismatic (constant thickness).</Definition>
+      <QtoType>Q_LENGTH</QtoType>
+      <NameAliases>
+        <NameAlias lang="de-DE">Umfang</NameAlias>
+        <NameAlias lang="en">Perimeter</NameAlias>
+        <NameAlias lang="ja-JP">周囲長</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="de-DE">Umfang der Decke, der Wert wird nur angegeben, wenn die Decke eine kostante Dicke hat.</DefinitionAlias>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="ja-JP">スラブの外側周囲長。スラブが角柱型の場合。</DefinitionAlias>
+      </DefinitionAliases>
+    </QtoDef>
+    <QtoDef>
+      <Name>GrossArea</Name>
+      <Definition>Total area of the extruded area of the slab. Openings, recesses and projections are not taken into account. Only given, if the slab is prismatic.</Definition>
+      <QtoType>Q_AREA</QtoType>
+      <NameAliases>
+        <NameAlias lang="de-DE">Bruttofläche</NameAlias>
+        <NameAlias lang="en">Gross Area</NameAlias>
+        <NameAlias lang="ja-JP">面積</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="de-DE">Fläche der Decke (Ansichtsfläche, nicht projizierte oder Mantelfläche). Alle Öffnungen werden übermessen. Der Wert wird nur angegeben, wenn die Decke eine kostante Dicke hat.</DefinitionAlias>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="ja-JP">スラブの面積。開口、へこみなどを考慮しない。</DefinitionAlias>
+      </DefinitionAliases>
+    </QtoDef>
+    <QtoDef>
+      <Name>NetArea</Name>
+      <Definition>Total area of the extruded area of the slab. Openings and recesses are taken into account by subtraction, projections by addition. Only given, if the slab is prismatic.</Definition>
+      <QtoType>Q_AREA</QtoType>
+      <NameAliases>
+        <NameAlias lang="de-DE">Nettofläche</NameAlias>
+        <NameAlias lang="en">Net Area</NameAlias>
+        <NameAlias lang="ja-JP">正味面積</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="de-DE">Fläche der Decke (Ansichtsfläche, nicht projizierte oder Mantelfläche). Alle Öffnungen werden abgezogen. Der Wert wird nur angegeben, wenn die Decke eine kostante Dicke hat.</DefinitionAlias>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="ja-JP">スラブの面積。開口、へこみなどを考慮する。</DefinitionAlias>
+      </DefinitionAliases>
+    </QtoDef>
+    <QtoDef>
+      <Name>GrossVolume</Name>
+      <Definition>Total gross volume of the slab. Openings, recesses, and projections are not taken into account. </Definition>
+      <QtoType>Q_VOLUME</QtoType>
+      <NameAliases>
+        <NameAlias lang="de-DE">Bruttovolumen</NameAlias>
+        <NameAlias lang="en">Gross Volume</NameAlias>
+        <NameAlias lang="ja-JP">体積</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="de-DE">Bruttovolumen der Decke. Alle Öffnungen werden übermessen.</DefinitionAlias>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="ja-JP">スラブの体積。開口、へこみなどを考慮しない。</DefinitionAlias>
+      </DefinitionAliases>
+    </QtoDef>
+    <QtoDef>
+      <Name>NetVolume</Name>
+      <Definition>Total net volume of the slab. Openings and recesses are taken into account by subtraction, projections by addition. </Definition>
+      <QtoType>Q_VOLUME</QtoType>
+      <NameAliases>
+        <NameAlias lang="de-DE">Nettovolumen</NameAlias>
+        <NameAlias lang="en">Net Volume</NameAlias>
+        <NameAlias lang="ja-JP">正味体積</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="de-DE">Nettovolumen der Decke. Alle Öffnungen werden abgezogen.</DefinitionAlias>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="ja-JP">スラブの体積。開口、へこみなどを考慮する。</DefinitionAlias>
+      </DefinitionAliases>
+    </QtoDef>
+    <QtoDef>
+      <Name>GrossWeight</Name>
+      <Definition>Total gross weight of the slab without add-on parts, not taking into account possible processing features (cut-out's, etc.) or openings and recesses.</Definition>
+      <QtoType>Q_WEIGHT</QtoType>
+      <NameAliases>
+        <NameAlias lang="de-DE">Bruttogewicht</NameAlias>
+        <NameAlias lang="en">Gross Weight</NameAlias>
+        <NameAlias lang="ja-JP">重量</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="de-DE">Gewicht der Decke. Alle Öffnungen und Aussparungen werden übermessen.</DefinitionAlias>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="ja-JP">スラブの重量。付加されたパーツを除く。また、切断などの処理または開口やへこみなどを考慮しない。</DefinitionAlias>
+      </DefinitionAliases>
+    </QtoDef>
+    <QtoDef>
+      <Name>NetWeight</Name>
+      <Definition>Total net weight of the slab without add-on parts, taking into account possible processing features (cut-out's, etc.) or openings and recesses.</Definition>
+      <QtoType>Q_WEIGHT</QtoType>
+      <NameAliases>
+        <NameAlias lang="de-DE">Nettogewicht</NameAlias>
+        <NameAlias lang="en">Net Weight</NameAlias>
+        <NameAlias lang="ja-JP">正味重量</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="de-DE">Gewicht der Decke. Alle Öffnungen und Aussparungen werden abgezogen.</DefinitionAlias>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="ja-JP">スラブの重量。付加されたパーツを除く。また、切断などの処理または開口やへこみなどを考慮する。</DefinitionAlias>
+      </DefinitionAliases>
+    </QtoDef>
+  </QtoDefs>
+  <QtoDefinitionAliases>
+    <QtoDefinitionAlias lang="de-DE">Basismengen für alle Bauelemente vom Typ Decke.</QtoDefinitionAlias>
+    <QtoDefinitionAlias lang="en" />
+    <QtoDefinitionAlias lang="ja-JP">スラブに関わる共通の基本数量情報の定義。</QtoDefinitionAlias>
+  </QtoDefinitionAliases>
+</QtoSetDef>

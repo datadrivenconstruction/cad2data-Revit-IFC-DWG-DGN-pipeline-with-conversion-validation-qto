@@ -1,0 +1,352 @@
+<?xml version="1.0"?>
+<PropertySetDef xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ifdguid="8b098786504d43c3bc4033c8ceccee6d" templatetype="PSET_OCCURRENCEDRIVEN" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4" />
+  <Name>Pset_CableSegmentOccurrence</Name>
+  <Definition>Properties for the occurrence of an electrical cable, core or conductor that conforms to a type as specified by an appropriate type definition within IFC. NOTE: Maximum allowed voltage drop should be derived from the property within Pset_ElectricalCircuit.</Definition>
+  <Applicability />
+  <ApplicableClasses>
+    <ClassName>IfcCableSegment</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcCableSegment</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef ifdguid="55fbb56361a24104a0e4b53d8e4cffd5">
+      <Name>DesignAmbientTemperature</Name>
+      <Definition>The highest and lowest local ambient temperature likely to be encountered.</Definition>
+      <PropertyType>
+        <TypePropertyBoundedValue>
+          <DataType type="IfcThermodynamicTemperatureMeasure" />
+        </TypePropertyBoundedValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Design Ambient Temperature</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="d9a5be4540394d228b6c573471e71f22">
+      <Name>UserCorrectionFactor</Name>
+      <Definition>An arbitrary correction factor that may be applied by the user.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcReal" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">User Correction Factor</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="4a80a2ecf3504fc6ba3f2235e2f25f04">
+      <Name>NumberOfParallelCircuits</Name>
+      <Definition>Number of parallel circuits.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcInteger" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Number Of Parallel Circuits</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="7c0ce24f9d034d9b83da2ac5e4a0634c">
+      <Name>InstallationMethod</Name>
+      <Definition>Method of installation of cable/conductor. Installation methods are typically defined by reference in standards such as IEC 60364-5-52, table 52A-1 or BS7671 Appendix 4 Table 4A1 etc. Selection of the value to be used should be determined from such a standard according to local usage.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcLabel" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Installation Method</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="be5fd0db9e234a84b4e07762a0e065e1">
+      <Name>InstallationMethodFlagEnum</Name>
+      <Definition>Special installation conditions relating to particular types of installation based on IEC60364-5-52:2001 reference installation methods C and D.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_InstallationMethodFlagEnum">
+            <EnumItem>INDUCT</EnumItem>
+            <EnumItem>INSOIL</EnumItem>
+            <EnumItem>ONWALL</EnumItem>
+            <EnumItem>BELOWCEILING</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+          <ConstantList>
+            <ConstantDef>
+              <Name>INDUCT</Name>
+              <NameAliases>
+                <NameAlias lang="en">In Duct</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>INSOIL</Name>
+              <NameAliases>
+                <NameAlias lang="en">In Soil</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>ONWALL</Name>
+              <NameAliases>
+                <NameAlias lang="en">On Wall</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>BELOWCEILING</Name>
+              <NameAliases>
+                <NameAlias lang="en">Below Ceiling</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>OTHER</Name>
+              <NameAliases>
+                <NameAlias lang="en">(other)</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Value is not listed.</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>NOTKNOWN</Name>
+              <NameAliases>
+                <NameAlias lang="en">(unknown)</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Value is unknown.</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>UNSET</Name>
+              <NameAliases>
+                <NameAlias lang="en">(unset)</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Value has not been specified.</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+          </ConstantList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Installation Method Flag Enum</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="977d1cc9f8f548dcaa23820a3e9d0774">
+      <Name>DistanceBetweenParallelCircuits</Name>
+      <Definition>Distance measured between parallel circuits.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcLengthMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Distance Between Parallel Circuits</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="366428fd19e54457a10ad655640758e7">
+      <Name>SoilConductivity</Name>
+      <Definition>Thermal conductivity of soil. Generally, within standards such as IEC 60364-5-52, table 52A-16, the resistivity of soil is required (measured in [SI] units of degK.m /W). This is the reciprocal of the conductivity value and needs to be calculated accordingly.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcThermalConductivityMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Soil Conductivity</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="7a917ce35e224ad58d1e87bc3656c1b8">
+      <Name>CarrierStackNumber</Name>
+      <Definition>Number of carrier segments (tray, ladder etc.) that are vertically stacked (vertical is measured as the z-axis of the local coordinate system of the carrier segment).</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcInteger" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Carrier Stack Number</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="12584689253640919491fb29d755ac82">
+      <Name>MountingMethod</Name>
+      <Definition>The method of mounting cable segment occurrences on a cable carrier occurrence from which the method required can be selected. This is for the purpose of carrying out 'worst case' cable sizing calculations and may be a conceptual requirement rather than a statement of the physical occurrences of cable and carrier segments.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_MountingMethodEnum">
+            <EnumItem>PERFORATEDTRAY</EnumItem>
+            <EnumItem>LADDER</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+          <ConstantList>
+            <ConstantDef>
+              <Name>PERFORATEDTRAY</Name>
+              <NameAliases>
+                <NameAlias lang="en">Perforated Tray</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>LADDER</Name>
+              <NameAliases>
+                <NameAlias lang="en">Ladder</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>OTHER</Name>
+              <NameAliases>
+                <NameAlias lang="en">(other)</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Value is not listed.</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>NOTKNOWN</Name>
+              <NameAliases>
+                <NameAlias lang="en">(unknown)</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Value is unknown.</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>UNSET</Name>
+              <NameAliases>
+                <NameAlias lang="en">(unset)</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Value has not been specified.</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+          </ConstantList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Mounting Method</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="d4ec271863334e1ea8cdd1a1d63c7708">
+      <Name>IsHorizontalCable</Name>
+      <Definition>Indication of whether the cable occurrences are mounted horizontally (= TRUE) or vertically (= FALSE).</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcBoolean" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Is Horizontal Cable</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="2632b74803d346c0aafd3f7cff1f8d99">
+      <Name>IsMountedFlatCable</Name>
+      <Definition>Indication of whether the cable occurrences are mounted flat (= TRUE) or in a trefoil pattern (= FALSE).</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcBoolean" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Is Mounted Flat Cable</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="a56d336272784003b1418d8169f8652f">
+      <Name>CurrentCarryingCapasity</Name>
+      <Definition>Maximum value of electric current which can be carried continuously by a conductor, a device or an apparatus, under specified conditions without its steady-state temperature exceeding a  specified value. Based on IEC60826-11-13. NOTE: The temperature specified value is maximum Design Ambient Temperature.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcElectricCurrentMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Current Carrying Capasity</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="a008e02d7f54483383e4f8069dde0f37">
+      <Name>MaximumCableLength</Name>
+      <Definition>Maximum cable length based on voltagedrop. NOTE: This value may also be specified as a constraint within an IFC model if required but is included within the property set at this stage pending implementation of the required capabilities within software applications.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcLengthMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Maximum Cable Length</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="47d6edba8d714af2b05f07d968909ff6">
+      <Name>PowerLoss</Name>
+      <Definition>Total loss of power across this cable.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcElectricCurrentMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Power Loss</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+      </DefinitionAliases>
+    </PropertyDef>
+  </PropertyDefs>
+  <PsetDefinitionAliases>
+    <PsetDefinitionAlias lang="en" />
+  </PsetDefinitionAliases>
+</PropertySetDef>

@@ -1,0 +1,513 @@
+<?xml version="1.0"?>
+<PropertySetDef xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ifdguid="181c8b80d1e711e1800000215ad4efdf" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4" />
+  <Name>Pset_FireSuppressionTerminalTypeSprinkler</Name>
+  <Definition>Device for sprinkling water from a pipe under pressure over an area (BS6100 100 3432)</Definition>
+  <Applicability />
+  <ApplicableClasses>
+    <ClassName>IfcFireSuppressionTerminal/SPRINKLER</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcFireSuppressionTerminal/SPRINKLER</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef ifdguid="1d79d600d1e711e1800000215ad4efdf">
+      <Name>SprinklerType</Name>
+      <Definition>Identifies the predefined types of sprinkler  from which the type required may be set.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_SprinklerType">
+            <EnumItem>CEILING</EnumItem>
+            <EnumItem>CONCEALED</EnumItem>
+            <EnumItem>CUT-OFF</EnumItem>
+            <EnumItem>PENDANT</EnumItem>
+            <EnumItem>RECESSEDPENDANT</EnumItem>
+            <EnumItem>SIDEWALL</EnumItem>
+            <EnumItem>UPRIGHT</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+          <ConstantList>
+            <ConstantDef>
+              <Name>CEILING</Name>
+              <NameAliases>
+                <NameAlias lang="en">Ceiling</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>CONCEALED</Name>
+              <NameAliases>
+                <NameAlias lang="en">Concealed</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>CUTOFF</Name>
+              <NameAliases>
+                <NameAlias lang="en">Cut-Off</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>PENDANT</Name>
+              <NameAliases>
+                <NameAlias lang="en">Pendant</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>RECESSEDPENDANT</Name>
+              <NameAliases>
+                <NameAlias lang="en">Recessed Pendant</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>SIDEWALL</Name>
+              <NameAliases>
+                <NameAlias lang="en">Sidewall</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>UPRIGHT</Name>
+              <NameAliases>
+                <NameAlias lang="en">Upright</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>OTHER</Name>
+              <NameAliases>
+                <NameAlias lang="en">(other)</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Value is not listed.</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>NOTKNOWN</Name>
+              <NameAliases>
+                <NameAlias lang="en">(unknown)</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Value is unknown.</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>UNSET</Name>
+              <NameAliases>
+                <NameAlias lang="en">(unset)</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Value has not been specified.</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+          </ConstantList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Sprinkler Type</NameAlias>
+        <NameAlias lang="ja-JP">スプリンクラータイプ</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="ja-JP">あらかじめ定義済みのスプリンクラーの型から必要な型を設定する識別。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="31bdd300d1e711e1800000215ad4efdf">
+      <Name>Activation</Name>
+      <Definition>Identifies the predefined methods of sprinkler activation from which that required may be set.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_SprinklerActivation">
+            <EnumItem>BULB</EnumItem>
+            <EnumItem>FUSIBLESOLDER</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+          <ConstantList>
+            <ConstantDef>
+              <Name>BULB</Name>
+              <NameAliases>
+                <NameAlias lang="en">Bulb</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>FUSIBLESOLDER</Name>
+              <NameAliases>
+                <NameAlias lang="en">Fusible Solder</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>OTHER</Name>
+              <NameAliases>
+                <NameAlias lang="en">(other)</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Value is not listed.</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>NOTKNOWN</Name>
+              <NameAliases>
+                <NameAlias lang="en">(unknown)</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Value is unknown.</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>UNSET</Name>
+              <NameAliases>
+                <NameAlias lang="en">(unset)</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Value has not been specified.</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+          </ConstantList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Activation</NameAlias>
+        <NameAlias lang="ja-JP">作動</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="ja-JP">あらかじめ定義済みのスプリンクラーの作動方式から必要な方式を設定する識別。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="3da99500d1e711e1800000215ad4efdf">
+      <Name>Response</Name>
+      <Definition>Identifies the predefined methods of sprinkler response from which that required may be set.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_SprinklerResponse">
+            <EnumItem>QUICK</EnumItem>
+            <EnumItem>STANDARD</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+          <ConstantList>
+            <ConstantDef>
+              <Name>QUICK</Name>
+              <NameAliases>
+                <NameAlias lang="en">Quick</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>STANDARD</Name>
+              <NameAliases>
+                <NameAlias lang="en">Standard</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>NOTKNOWN</Name>
+              <NameAliases>
+                <NameAlias lang="en">(unknown)</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Value is unknown.</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>UNSET</Name>
+              <NameAliases>
+                <NameAlias lang="en">(unset)</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Value has not been specified.</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+          </ConstantList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Response</NameAlias>
+        <NameAlias lang="ja-JP">応答</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="ja-JP">あらかじめ定義済みのスプリンクラーの応答方式から必要な方式を設定する識別。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="47cb9380d1e711e1800000215ad4efdf">
+      <Name>ActivationTemperature</Name>
+      <Definition>The temperature at which the object is designed to activate.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcThermodynamicTemperatureMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Activation Temperature</NameAlias>
+        <NameAlias lang="ja-JP">作動温度</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="ja-JP">設計作動温度。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="4d28de00d1e711e1800000215ad4efdf">
+      <Name>CoverageArea</Name>
+      <Definition>The area that the sprinkler is designed to protect.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcAreaMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Coverage Area</NameAlias>
+        <NameAlias lang="ja-JP">カバー面積</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="ja-JP">スプリンクラーの設計保護区画面積。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="531ebf00d1e711e1800000215ad4efdf">
+      <Name>HasDeflector</Name>
+      <Definition>Indication of whether the sprinkler has a deflector (baffle) fitted to diffuse the discharge on activation (= TRUE) or not (= FALSE).</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcBoolean" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Has Deflector</NameAlias>
+        <NameAlias lang="ja-JP">ディフレクターの有無</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="ja-JP">スプリンクラー作動時、放水を拡散させる偏向器（バッフル）取り付けているかどうかの表示（= TRUE）そうでないか（= FALSE）を返します。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="59ad3680d1e711e1800000215ad4efdf">
+      <Name>BulbLiquidColor</Name>
+      <Definition>The color of the liquid in the bulb for a bulb activated sprinkler. Note that the liquid color varies according to the activation temperature requirement of the sprinkler head. Note also that this property does not need to be asserted for quick response activated sprinklers.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_SprinklerBulbLiquidColor">
+            <EnumItem>ORANGE</EnumItem>
+            <EnumItem>RED</EnumItem>
+            <EnumItem>YELLOW</EnumItem>
+            <EnumItem>GREEN</EnumItem>
+            <EnumItem>BLUE</EnumItem>
+            <EnumItem>MAUVE</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+          <ConstantList>
+            <ConstantDef>
+              <Name>ORANGE</Name>
+              <NameAliases>
+                <NameAlias lang="en">Orange</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>RED</Name>
+              <NameAliases>
+                <NameAlias lang="en">Red</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>YELLOW</Name>
+              <NameAliases>
+                <NameAlias lang="en">Yellow</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>GREEN</Name>
+              <NameAliases>
+                <NameAlias lang="en">Green</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>BLUE</Name>
+              <NameAliases>
+                <NameAlias lang="en">Blue</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>MAUVE</Name>
+              <NameAliases>
+                <NameAlias lang="en">Mauve</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>OTHER</Name>
+              <NameAliases>
+                <NameAlias lang="en">(other)</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Value is not listed.</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>NOTKNOWN</Name>
+              <NameAliases>
+                <NameAlias lang="en">(unknown)</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Value is unknown.</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>UNSET</Name>
+              <NameAliases>
+                <NameAlias lang="en">(unset)</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Value has not been specified.</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+          </ConstantList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Bulb Liquid Color</NameAlias>
+        <NameAlias lang="ja-JP">バルブ液体色</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="ja-JP">バルブ作動スプリンクラーのバルブ液体色の設定。液体色は、スプリンクラーヘッドの作動温度に応じて変化する。また、この属性は、高速応答スプリンクラーは設定する必要はない。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="6cc00680d1e711e1800000215ad4efdf">
+      <Name>DischargeFlowRate</Name>
+      <Definition>The volumetric rate of fluid discharge.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcVolumetricFlowRateMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Discharge Flow Rate</NameAlias>
+        <NameAlias lang="ja-JP">吐出流量</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="ja-JP">吐出流体の体積流量。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="721d5100d1e711e1800000215ad4efdf">
+      <Name>ResidualFlowingPressure</Name>
+      <Definition>The residual flowing pressure in the pipeline at which the discharge flow rate is determined.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPressureMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Residual Flowing Pressure</NameAlias>
+        <NameAlias lang="ja-JP">残留流動圧力</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="ja-JP">吐出流量が確保される、パイプラインの流れ時残留圧力。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="78133200d1e711e1800000215ad4efdf">
+      <Name>DischargeCoefficient</Name>
+      <Definition>The coefficient of flow at the sprinkler.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcReal" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Discharge Coefficient</NameAlias>
+        <NameAlias lang="ja-JP">流量係数</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="ja-JP">スプリンクラーの流れの係数。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="7d707c80d1e711e1800000215ad4efdf">
+      <Name>MaximumWorkingPressure</Name>
+      <Definition>Maximum pressure that the object is manufactured to withstand.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPressureMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Maximum Working Pressure</NameAlias>
+        <NameAlias lang="ja-JP">最大作動圧力</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="ja-JP">最大圧力、製造耐圧。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="83665d80d1e711e1800000215ad4efdf">
+      <Name>ConnectionSize</Name>
+      <Definition>Size of the inlet connection to the sprinkler.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Connection Size</NameAlias>
+        <NameAlias lang="ja-JP">接続サイズ</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="ja-JP">スプリンクラーへの入口接続のサイズ。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+  </PropertyDefs>
+  <PsetDefinitionAliases>
+    <PsetDefinitionAlias lang="en" />
+    <PsetDefinitionAlias lang="ja-JP">特定エリアに水圧をかけた配管より散水する装置。（BS61001003432）</PsetDefinitionAlias>
+  </PsetDefinitionAliases>
+</PropertySetDef>

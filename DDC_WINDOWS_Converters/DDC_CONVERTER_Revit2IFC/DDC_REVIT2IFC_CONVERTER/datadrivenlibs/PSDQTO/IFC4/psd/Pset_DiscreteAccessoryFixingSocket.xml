@@ -1,0 +1,91 @@
+<?xml version="1.0"?>
+<PropertySetDef xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ifdguid="a3d7ed00d1d211e1800000215ad4efdf" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4" />
+  <Name>Pset_DiscreteAccessoryFixingSocket</Name>
+  <Definition>Properties common to fixing sockets.</Definition>
+  <Applicability />
+  <ApplicableClasses>
+    <ClassName>IfcDiscreteAccessory/Fixing socket</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcDiscreteAccessory/Fixing socket</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef ifdguid="a9353780d1d211e1800000215ad4efdf">
+      <Name>FixingSocketTypeReference</Name>
+      <Definition>Type reference for the fixing socket according to local standards.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcExternalReference" />
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Fixing Socket Type Reference</NameAlias>
+        <NameAlias lang="ja-JP">参照基準</NameAlias>
+        <NameAlias lang="ko-KR">참조 기준</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="ja-JP">固定ソケットが参照するローカル標準。</DefinitionAlias>
+        <DefinitionAlias lang="ko-KR">고정 소켓이 참조하는 로컬 표준</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="ab979180d1d211e1800000215ad4efdf">
+      <Name>FixingSocketHeight</Name>
+      <Definition>The overall height of the fixing socket.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Fixing Socket Height</NameAlias>
+        <NameAlias lang="ja-JP">全体長さ</NameAlias>
+        <NameAlias lang="ko-KR">전체 길이</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="ja-JP">固定ソケットの全体長さ。</DefinitionAlias>
+        <DefinitionAlias lang="ko-KR">고정 소켓의 전체 길이</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="b0f4dc00d1d211e1800000215ad4efdf">
+      <Name>FixingSocketThreadDiameter</Name>
+      <Definition>The nominal diameter of the thread.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Fixing Socket Thread Diameter</NameAlias>
+        <NameAlias lang="ja-JP">公称径</NameAlias>
+        <NameAlias lang="ko-KR">공칭 지름</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="ja-JP">線の公称直径。</DefinitionAlias>
+        <DefinitionAlias lang="ko-KR">고정 소켓의 전체 길이</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="b6522680d1d211e1800000215ad4efdf">
+      <Name>FixingSocketThreadLength</Name>
+      <Definition>The length of the threaded part of the fixing socket.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Fixing Socket Thread Length</NameAlias>
+        <NameAlias lang="ja-JP">ねじ部長さ</NameAlias>
+        <NameAlias lang="ko-KR">나사부 길이</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="ja-JP">固定ソケットの全体長さねじ部の長さ。</DefinitionAlias>
+        <DefinitionAlias lang="ko-KR">고정 소켓의 전체 길이 나사부의 길이</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+  </PropertyDefs>
+  <PsetDefinitionAliases>
+    <PsetDefinitionAlias lang="en" />
+    <PsetDefinitionAlias lang="ja-JP">固定ソケットの共通特性。</PsetDefinitionAlias>
+  </PsetDefinitionAliases>
+</PropertySetDef>

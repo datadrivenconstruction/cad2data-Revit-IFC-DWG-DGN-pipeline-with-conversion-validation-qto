@@ -1,0 +1,182 @@
+<?xml version="1.0"?>
+<PropertySetDef xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ifdguid="222c9300d1c311e1800000215ad4efdf" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4" />
+  <Name>Pset_AudioVisualApplianceTypeProjector</Name>
+  <Definition>An audio-visual projector is a device that projects video to a surface.  HISTORY: Added in IFC4.</Definition>
+  <Applicability />
+  <ApplicableClasses>
+    <ClassName>IfcAudioVisualAppliance/PROJECTOR</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcAudioVisualAppliance/PROJECTOR</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef ifdguid="28bb0a80d1c311e1800000215ad4efdf">
+      <Name>ProjectorType</Name>
+      <Definition>Indicates the type of projector.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_AudioVisualProjectorType">
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET.</EnumItem>
+          </EnumList>
+          <ConstantList>
+            <ConstantDef>
+              <Name>OTHER</Name>
+              <NameAliases>
+                <NameAlias lang="en">(other)</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Value is not listed.</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>NOTKNOWN</Name>
+              <NameAliases>
+                <NameAlias lang="en">(unknown)</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Value is unknown.</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>UNSET.</Name>
+              <NameAliases>
+                <NameAlias lang="en">Unset.</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+          </ConstantList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Projector Type</NameAlias>
+        <NameAlias lang="ja-JP">プロジェクター形式</NameAlias>
+        <NameAlias lang="ko-KR">프로젝터 형식</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="ja-JP">プロジェクタの形式を示す。</DefinitionAlias>
+        <DefinitionAlias lang="ko-KR">프로젝터의 형식을 보여준다.</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="34a6cc80d1c311e1800000215ad4efdf">
+      <Name>VideoResolutionWidth</Name>
+      <Definition>Indicates the number of horizontal pixels (the largest native video resolution width).</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcInteger" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Video Resolution Width</NameAlias>
+        <NameAlias lang="ja-JP">水平解像度</NameAlias>
+        <NameAlias lang="ko-KR">수평 해상도</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="ja-JP">水平方向のピクセル数を示す。</DefinitionAlias>
+        <DefinitionAlias lang="ko-KR">가로 픽셀 수를 나타낸다.</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="3a9cad80d1c311e1800000215ad4efdf">
+      <Name>VideoResolutionHeight</Name>
+      <Definition>Indicates the number of vertical pixels (the largest native video resolution height).</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcInteger" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Video Resolution Height</NameAlias>
+        <NameAlias lang="ja-JP">垂直解像度</NameAlias>
+        <NameAlias lang="ko-KR">수직 해상도</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="ja-JP">垂直方向のピクセル数を示す。</DefinitionAlias>
+        <DefinitionAlias lang="ko-KR">세로 픽셀 수를 나타낸다.</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="412b2500d1c311e1800000215ad4efdf">
+      <Name>VideoResolutionMode</Name>
+      <Definition>Indicates video resolution modes.</Definition>
+      <PropertyType>
+        <TypePropertyTableValue>
+          <Expression />
+          <DefiningValue>
+            <DataType type="IfcIdentifier" />
+          </DefiningValue>
+          <DefinedValue>
+            <DataType type="IfcLabel" />
+          </DefinedValue>
+        </TypePropertyTableValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Video Resolution Mode</NameAlias>
+        <NameAlias lang="ja-JP">解像度モード</NameAlias>
+        <NameAlias lang="ko-KR">디스플레이 모드</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="ja-JP">解像度モードを示す。</DefinitionAlias>
+        <DefinitionAlias lang="ko-KR">모드해상도를 보여준다</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="4b4d2380d1c311e1800000215ad4efdf">
+      <Name>VideoScaleMode</Name>
+      <Definition>Indicates video scaling modes.</Definition>
+      <PropertyType>
+        <TypePropertyTableValue>
+          <Expression />
+          <DefiningValue>
+            <DataType type="IfcIdentifier" />
+          </DefiningValue>
+          <DefinedValue>
+            <DataType type="IfcLabel" />
+          </DefinedValue>
+        </TypePropertyTableValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Video Scale Mode</NameAlias>
+        <NameAlias lang="ja-JP">ビデオスケールモード</NameAlias>
+        <NameAlias lang="ko-KR">비디오 스케일</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="ja-JP">ビデオスケーリングモードを示す。</DefinitionAlias>
+        <DefinitionAlias lang="ko-KR">비디오 크기 조정모드를 나타낸다.</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="54d68b80d1c311e1800000215ad4efdf">
+      <Name>VideoCaptionMode</Name>
+      <Definition>Indicates closed captioning modes.</Definition>
+      <PropertyType>
+        <TypePropertyTableValue>
+          <Expression />
+          <DefiningValue>
+            <DataType type="IfcIdentifier" />
+          </DefiningValue>
+          <DefinedValue>
+            <DataType type="IfcLabel" />
+          </DefinedValue>
+        </TypePropertyTableValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Video Caption Mode</NameAlias>
+        <NameAlias lang="ja-JP">ビデオキャプションモード</NameAlias>
+        <NameAlias lang="ko-KR">비디오 캡쳐모드</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="ja-JP">クローズドキャプションモードを示す。(字幕機能）</DefinitionAlias>
+        <DefinitionAlias lang="ko-KR">자막 모드를 나타낸다.(자막 기능)</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+  </PropertyDefs>
+  <PsetDefinitionAliases>
+    <PsetDefinitionAlias lang="en" />
+    <PsetDefinitionAlias lang="ja-JP">画面にビデオ映像を投影する装置。</PsetDefinitionAlias>
+  </PsetDefinitionAliases>
+</PropertySetDef>

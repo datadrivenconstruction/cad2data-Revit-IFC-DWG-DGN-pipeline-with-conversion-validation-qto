@@ -1,0 +1,71 @@
+<?xml version="1.0"?>
+<PropertySetDef xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ifdguid="dcc98f00d1dd11e1800000215ad4efdf" templatetype="PSET_OCCURRENCEDRIVEN" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4" />
+  <Name>Pset_DuctFittingOccurrence</Name>
+  <Definition>Duct fitting occurrence attributes.</Definition>
+  <Applicability />
+  <ApplicableClasses>
+    <ClassName>IfcDuctFitting</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcDuctFitting</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef ifdguid="e0f5ac80d1dd11e1800000215ad4efdf">
+      <Name>InteriorRoughnessCoefficient</Name>
+      <Definition>The interior roughness of the duct fitting material.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Interior Roughness Coefficient</NameAlias>
+        <NameAlias lang="ja-JP">内面粗さ係数</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="ja-JP">ダクト継手材料の内面粗さ</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="e652f700d1dd11e1800000215ad4efdf">
+      <Name>HasLiner</Name>
+      <Definition>TRUE if the fitting has interior duct insulating lining, FALSE if it does not.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcBoolean" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Has Liner</NameAlias>
+        <NameAlias lang="ja-JP">内張り有無</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="ja-JP">内貼り保温ダクト内面にあるときにTRUE。無い時にFALSE</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="eb17ab00d1dd11e1800000215ad4efdf">
+      <Name>Color</Name>
+      <Definition>The color of the duct segment.
+
+Note: This is typically used for any duct segments with a painted surface which is not otherwise specified as a covering.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcLabel" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Color</NameAlias>
+        <NameAlias lang="ja-JP">色</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="ja-JP">ダクト継手の色
+メモ：塗装されているときに使用される。他の場合は仕上げとして定義</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+  </PropertyDefs>
+  <PsetDefinitionAliases>
+    <PsetDefinitionAlias lang="en" />
+    <PsetDefinitionAlias lang="ja-JP">ダクト継手の属性。</PsetDefinitionAlias>
+  </PsetDefinitionAliases>
+</PropertySetDef>

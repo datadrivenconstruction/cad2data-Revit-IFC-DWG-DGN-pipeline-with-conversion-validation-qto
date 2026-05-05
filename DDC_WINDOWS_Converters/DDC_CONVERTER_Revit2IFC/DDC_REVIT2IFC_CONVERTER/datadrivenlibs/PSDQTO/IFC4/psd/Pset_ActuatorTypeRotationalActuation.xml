@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<PropertySetDef xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ifdguid="ac71f880d1bd11e1800000215ad4efdf" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4" />
+  <Name>Pset_ActuatorTypeRotationalActuation</Name>
+  <Definition>Characteristics of rotational actuation of an actuator
+History: Replaces Pset_RotationalActuator</Definition>
+  <Applicability />
+  <ApplicableClasses>
+    <ClassName>IfcActuator</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcActuator</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef ifdguid="b1cf4300d1bd11e1800000215ad4efdf">
+      <Name>Torque</Name>
+      <Definition>Indicates the maximum close-off torque for the actuator.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcTorqueMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Torque</NameAlias>
+        <NameAlias lang="ja-JP">最大トルク</NameAlias>
+        <NameAlias lang="ko-KR">최대 토크</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="ja-JP">アクチュエータの最大締め切りトルクを示す。</DefinitionAlias>
+        <DefinitionAlias lang="ko-KR">액츄에이터의 최대 마감 토크를 나타낸다.</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="b8f65100d1bd11e1800000215ad4efdf">
+      <Name>RangeAngle</Name>
+      <Definition>Indicates the maximum rotation the actuator must traverse.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPlaneAngleMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Range Angle</NameAlias>
+        <NameAlias lang="ja-JP">最大回転角</NameAlias>
+        <NameAlias lang="ko-KR">최대 회전각</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="ja-JP">アクチュエータが動く最大回転角を示す。</DefinitionAlias>
+        <DefinitionAlias lang="ko-KR">액츄에이터가 움직이는 최대 회전각을 나타낸다.</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+  </PropertyDefs>
+  <PsetDefinitionAliases>
+    <PsetDefinitionAlias lang="en" />
+    <PsetDefinitionAlias lang="ja-JP">アクチュエータの回転動作の特性。</PsetDefinitionAlias>
+  </PsetDefinitionAliases>
+</PropertySetDef>

@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<QtoSetDef xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.buildingsmart-tech.org/xml/qto/QTO_IFC4.xsd">
+  <IfcVersion version="IFC4" />
+  <Name>Qto_ConstructionEquipmentResourceBaseQuantities</Name>
+  <Definition>Base quantities that are common to the definition of all occurrences of construction equipment resources.</Definition>
+  <Applicability />
+  <ApplicableClasses>
+    <ClassName>IfcConstructionEquipmentResource</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcConstructionEquipmentResource</ApplicableTypeValue>
+  <QtoDefs>
+    <QtoDef>
+      <Name>UsageTime</Name>
+      <Definition>Total time using the equipment including operating time and idle time.</Definition>
+      <QtoType>Q_TIME</QtoType>
+      <NameAliases>
+        <NameAlias lang="en">Usage Time</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+      </DefinitionAliases>
+    </QtoDef>
+    <QtoDef>
+      <Name>OperatingTime</Name>
+      <Definition>Productive time using the equipment including operating time and excluding idle time.</Definition>
+      <QtoType>Q_TIME</QtoType>
+      <NameAliases>
+        <NameAlias lang="en">Operating Time</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+      </DefinitionAliases>
+    </QtoDef>
+  </QtoDefs>
+  <QtoDefinitionAliases>
+    <QtoDefinitionAlias lang="en" />
+  </QtoDefinitionAliases>
+</QtoSetDef>

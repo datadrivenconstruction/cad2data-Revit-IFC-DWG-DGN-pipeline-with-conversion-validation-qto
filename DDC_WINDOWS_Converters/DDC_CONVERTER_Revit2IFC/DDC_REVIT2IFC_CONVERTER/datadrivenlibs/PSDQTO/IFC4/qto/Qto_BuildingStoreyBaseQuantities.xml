@@ -1,0 +1,123 @@
+<?xml version="1.0"?>
+<QtoSetDef xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.buildingsmart-tech.org/xml/qto/QTO_IFC4.xsd">
+  <IfcVersion version="IFC4" />
+  <Name>Qto_BuildingStoreyBaseQuantities</Name>
+  <Definition>Base quantities that are common to the definition of all occurrences of building storey.</Definition>
+  <Applicability />
+  <ApplicableClasses>
+    <ClassName>IfcBuildingStorey</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcBuildingStorey</ApplicableTypeValue>
+  <QtoDefs>
+    <QtoDef>
+      <Name>GrossHeight</Name>
+      <Definition>Standard gross height of this storey, from the top surface of the construction floor, to the top surface of the construction floor or roof above. Only provided is there is a constant height.</Definition>
+      <QtoType>Q_LENGTH</QtoType>
+      <NameAliases>
+        <NameAlias lang="de-DE">Systemhöhe</NameAlias>
+        <NameAlias lang="en">Gross Height</NameAlias>
+        <NameAlias lang="ja-JP">階高</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="de-DE">Systemhöhe des Geschosses, gemessen von der Oberkante Rohfdecke bis zur Oberkante Rohdecke im darüberliegenden Geschoss. Wird nur angegeben, wenn es eine konstante Höhe gibt.</DefinitionAlias>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="ja-JP">建物階の高さ。床の上面から上階の床面の上面までの距離。</DefinitionAlias>
+      </DefinitionAliases>
+    </QtoDef>
+    <QtoDef>
+      <Name>NetHeigtht</Name>
+      <Definition>Standard net height of this storey, from the top surface of the construction floor, to the bottom surface of the construction floor or roof above. Only provided is there is a constant height.</Definition>
+      <QtoType>Q_LENGTH</QtoType>
+      <NameAliases>
+        <NameAlias lang="de-DE">Lichte Höhe</NameAlias>
+        <NameAlias lang="en">Net Heigtht</NameAlias>
+        <NameAlias lang="ja-JP">正味階高</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="de-DE">Lichte des Geschosses, gemessen von der Oberkante Rohdecke bis zur Unterkante der Rohdecke im darüberliegenden Geschoss. Wird nur angegeben, wenn es eine konstante Höhe gibt.</DefinitionAlias>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="ja-JP">建物階の高さ。床の上面から上階の床面の下面までの距離。</DefinitionAlias>
+      </DefinitionAliases>
+    </QtoDef>
+    <QtoDef>
+      <Name>GrossPerimeter</Name>
+      <Definition>Perimeter of the outer contour of the building story without taking interior slab openings into account.</Definition>
+      <QtoType>Q_LENGTH</QtoType>
+      <NameAliases>
+        <NameAlias lang="de-DE">Umfang</NameAlias>
+        <NameAlias lang="en">Gross Perimeter</NameAlias>
+        <NameAlias lang="ja-JP">周辺長</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="de-DE">Äußerer Umfang des Geschosses entlang der äußeren Umfassungsbauteilen, die die Fassade bilden. Innere Öffnungen, z.B. von inneren Deckenöffnungen, werden nicht mit einbezogen.</DefinitionAlias>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="ja-JP">建物階の外側の周辺長。内部スラブの開口は考慮しない。</DefinitionAlias>
+      </DefinitionAliases>
+    </QtoDef>
+    <QtoDef>
+      <Name>GrossFloorArea</Name>
+      <Definition>Sum of all gross areas of spaces within the building storey. It includes the area of construction elements within the building storey. May be provided in addition to the quantities of the spaces and the construction elements assigend to the storey. In case of inconsistencies, the individual quantities of spaces and construction elements take precedence.</Definition>
+      <QtoType>Q_AREA</QtoType>
+      <NameAliases>
+        <NameAlias lang="de-DE">Bruttogrundfläche</NameAlias>
+        <NameAlias lang="en">Gross Floor Area</NameAlias>
+        <NameAlias lang="ja-JP">床面積</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="de-DE">Summe aller Bruttogrundflächen der Räume und der Konstruktionsfläuchen aufgehender Bauelemente im Geschoss. Kann zusätzlich zu den einzelnen Mengen der Räume und aufgehenden Bauelementen angegeben werden. Bei Inkonsistenz zählen die einzelnen Mengen der Räume und aufgehenen Bauelementen.</DefinitionAlias>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="ja-JP">建物階の部屋の全面積を集計したもの。建物を構成する建築部材の面積も含む。</DefinitionAlias>
+      </DefinitionAliases>
+    </QtoDef>
+    <QtoDef>
+      <Name>NetFloorArea</Name>
+      <Definition>Sum of all net areas of spaces within the building storey. It excludes the area of construction elements within the building storey. May be provided in addition to the quantities of the spaces assigend to the storey. In case of inconsistencies, the individual quantities of spaces take precedence.</Definition>
+      <QtoType>Q_AREA</QtoType>
+      <NameAliases>
+        <NameAlias lang="de-DE">Nettogrundfläche</NameAlias>
+        <NameAlias lang="en">Net Floor Area</NameAlias>
+        <NameAlias lang="ja-JP">正味床面積</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="de-DE">Summe aller Nettogrundflächen der Räume im Geschoss. Kann zusätzlich zu den einzelnen Mengen der Räume angegeben werden. Bei Inkonsistenz zählen die einzelnen Mengen der Räume.</DefinitionAlias>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="ja-JP">建物階の部屋の全面積を集計したもの。建物を構成する建築部材の面積も除外したもの。</DefinitionAlias>
+      </DefinitionAliases>
+    </QtoDef>
+    <QtoDef>
+      <Name>GrossVolume</Name>
+      <Definition>Sum of all gross volumes of spaces enclosed by the building storey. It includes the volumes of construction elements within the building storey. May be provided in addition to the quantities of the spaces and the construction elements assigend to the storey. In case of inconsistencies, the individual quantities of spaces and construction elements take precedence.</Definition>
+      <QtoType>Q_VOLUME</QtoType>
+      <NameAliases>
+        <NameAlias lang="de-DE">Bruttorauminhalt</NameAlias>
+        <NameAlias lang="en">Gross Volume</NameAlias>
+        <NameAlias lang="ja-JP">建物階体積</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="de-DE">Summe aller Bruttorauminhalte der Räume eines Geschosses, inklusive der Volumen der Baulemente (Gesamtrauminhalt, der von den äußeren Begrenzungsflächen umschlossen wird). Kann zusätzlich zu den einzelnen Mengen der Räume und Bauelemente angegeben werden. Bei Inkonsistenz zählen die einzelnen Mengen der Räume und Bauelemente.</DefinitionAlias>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="ja-JP">建物階により囲まれた空間の全体積を集計したもの。建物を構成する建築部材の体積も含む。</DefinitionAlias>
+      </DefinitionAliases>
+    </QtoDef>
+    <QtoDef>
+      <Name>NetVolume</Name>
+      <Definition>Sum of all net volumes of spaces enclosed by the building storey. It iexcludes the volumes of construction elements within the building storey. May be provided in addition to the quantities of the spaces assigend to the storey. In case of inconsistencies, the individual quantities of spaces take precedence.</Definition>
+      <QtoType>Q_VOLUME</QtoType>
+      <NameAliases>
+        <NameAlias lang="de-DE">Nettorauminhalt</NameAlias>
+        <NameAlias lang="en">Net Volume</NameAlias>
+        <NameAlias lang="ja-JP">正味建物階体積</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="de-DE">Summe aller Nettorauminhalte der Räume eines Geschosses. Kann zusätzlich zu den einzelnen Mengen der Räumeangegeben werden. Bei Inkonsistenz zählen die einzelnen Mengen der Räume.</DefinitionAlias>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="ja-JP">建物階により囲まれた空間の全体積を集計したもの。建物を構成する建築部材の体積を除外したもの。</DefinitionAlias>
+      </DefinitionAliases>
+    </QtoDef>
+  </QtoDefs>
+  <QtoDefinitionAliases>
+    <QtoDefinitionAlias lang="de-DE">Basismengen für Stockwerke</QtoDefinitionAlias>
+    <QtoDefinitionAlias lang="en" />
+    <QtoDefinitionAlias lang="ja-JP">建物階に関わる共通の基本数量情報の定義。</QtoDefinitionAlias>
+  </QtoDefinitionAliases>
+</QtoSetDef>

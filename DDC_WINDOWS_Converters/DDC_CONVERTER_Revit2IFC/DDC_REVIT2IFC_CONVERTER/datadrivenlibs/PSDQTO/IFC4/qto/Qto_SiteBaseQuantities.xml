@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<QtoSetDef xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.buildingsmart-tech.org/xml/qto/QTO_IFC4.xsd">
+  <IfcVersion version="IFC4" />
+  <Name>Qto_SiteBaseQuantities</Name>
+  <Definition>Base quantities that are common to the definition of all occurrences of site.</Definition>
+  <Applicability />
+  <ApplicableClasses>
+    <ClassName>IfcSite</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcSite</ApplicableTypeValue>
+  <QtoDefs>
+    <QtoDef>
+      <Name>GrossPerimeter</Name>
+      <Definition>Perimeter of the site boundary, measured in horizontal projection.</Definition>
+      <QtoType>Q_LENGTH</QtoType>
+      <NameAliases>
+        <NameAlias lang="de-DE">Umfang</NameAlias>
+        <NameAlias lang="en">Gross Perimeter</NameAlias>
+        <NameAlias lang="ja-JP">周辺長</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="de-DE">Umfang der Grundstücksgrenze, gemessen in horizontaler Projektion.</DefinitionAlias>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="ja-JP">敷地境界の周辺長。水平に投影された形状を計測。</DefinitionAlias>
+      </DefinitionAliases>
+    </QtoDef>
+    <QtoDef>
+      <Name>GrossArea</Name>
+      <Definition>Gross area for this site, measured in horizontal projections.</Definition>
+      <QtoType>Q_AREA</QtoType>
+      <NameAliases>
+        <NameAlias lang="de-DE">Grundfläche</NameAlias>
+        <NameAlias lang="en">Gross Area</NameAlias>
+        <NameAlias lang="ja-JP">敷地面積</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="de-DE">Gesamt Grundstücksfläche, gemessen in horizontaler Projektion.</DefinitionAlias>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="ja-JP">敷地の面積。水平に投影された形状を計測。</DefinitionAlias>
+      </DefinitionAliases>
+    </QtoDef>
+  </QtoDefs>
+  <QtoDefinitionAliases>
+    <QtoDefinitionAlias lang="de-DE">Basismengen für das Grundstück</QtoDefinitionAlias>
+    <QtoDefinitionAlias lang="en" />
+    <QtoDefinitionAlias lang="ja-JP">敷地に関わる共通の基本数量情報の定義。</QtoDefinitionAlias>
+  </QtoDefinitionAliases>
+</QtoSetDef>

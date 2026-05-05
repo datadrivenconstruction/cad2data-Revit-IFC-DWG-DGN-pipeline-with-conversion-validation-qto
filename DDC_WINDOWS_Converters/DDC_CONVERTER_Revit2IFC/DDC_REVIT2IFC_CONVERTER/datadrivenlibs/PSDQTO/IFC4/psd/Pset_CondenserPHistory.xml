@@ -1,0 +1,159 @@
+<?xml version="1.0"?>
+<PropertySetDef xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ifdguid="58badb80d1cc11e1800000215ad4efdf" templatetype="PSET_PERFORMANCEDRIVEN" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4" />
+  <Name>Pset_CondenserPHistory</Name>
+  <Definition>Condenser performance history attributes.</Definition>
+  <Applicability />
+  <ApplicableClasses>
+    <ClassName>IfcCondenser</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcCondenser</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef ifdguid="5fe1e980d1cc11e1800000215ad4efdf">
+      <Name>HeatRejectionRate</Name>
+      <Definition>Sum of the refrigeration effect and the heat equivalent of the power input to the compressor.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcTimeSeries" />
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Heat Rejection Rate</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="640e0700d1cc11e1800000215ad4efdf">
+      <Name>ExteriorHeatTransferCoefficient</Name>
+      <Definition>Exterior heat transfer coefficient associated with exterior surface area.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcTimeSeries" />
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Exterior Heat Transfer Coefficient</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="67a18e00d1cc11e1800000215ad4efdf">
+      <Name>InteriorHeatTransferCoefficient</Name>
+      <Definition>Interior heat transfer coefficient associated with interior surface area.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcTimeSeries" />
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Interior Heat Transfer Coefficient</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="6bcdab80d1cc11e1800000215ad4efdf">
+      <Name>RefrigerantFoulingResistance</Name>
+      <Definition>Fouling resistance on the refrigerant side.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcTimeSeries" />
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Refrigerant Fouling Resistance</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="6ec89c00d1cc11e1800000215ad4efdf">
+      <Name>CondensingTemperature</Name>
+      <Definition>Refrigerant condensing temperature.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcTimeSeries" />
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Condensing Temperature</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="72f4b980d1cc11e1800000215ad4efdf">
+      <Name>LogarithmicMeanTemperatureDifference</Name>
+      <Definition>Logarithmic mean temperature difference between refrigerant and water or air.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcTimeSeries" />
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Logarithmic Mean Temperature Difference</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="76884080d1cc11e1800000215ad4efdf">
+      <Name>UAcurves</Name>
+      <Definition>UV = f (VExterior, VInterior), UV as a function of interior and exterior fluid flow velocity at the entrance.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcTimeSeries" />
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">UAcurves</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="7a1bc780d1cc11e1800000215ad4efdf">
+      <Name>CompressorCondenserHeatGain</Name>
+      <Definition>Heat gain between condenser inlet to compressor outlet.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcTimeSeries" />
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Compressor Condenser Heat Gain</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="7daf4e80d1cc11e1800000215ad4efdf">
+      <Name>CompressorCondenserPressureDrop</Name>
+      <Definition>Pressure drop between condenser inlet and compressor outlet.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcTimeSeries" />
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Compressor Condenser Pressure Drop</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="8142d580d1cc11e1800000215ad4efdf">
+      <Name>CondenserMeanVoidFraction</Name>
+      <Definition>Mean void fraction in condenser.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcTimeSeries" />
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Condenser Mean Void Fraction</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="84d65c80d1cc11e1800000215ad4efdf">
+      <Name>WaterFoulingResistance</Name>
+      <Definition>Fouling resistance on water/air side.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcTimeSeries" />
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Water Fouling Resistance</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+      </DefinitionAliases>
+    </PropertyDef>
+  </PropertyDefs>
+  <PsetDefinitionAliases>
+    <PsetDefinitionAlias lang="en" />
+  </PsetDefinitionAliases>
+</PropertySetDef>

@@ -1,0 +1,155 @@
+<?xml version="1.0"?>
+<PropertySetDef xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ifdguid="388f1a80d1d411e1800000215ad4efdf" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4" />
+  <Name>Pset_DistributionChamberElementTypeMeterChamber</Name>
+  <Definition>Chamber that houses a meter(s) (definition modified from BS6100 250 6224).</Definition>
+  <Applicability />
+  <ApplicableClasses>
+    <ClassName>IfcDistributionChamberElement/METERCHAMBER</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcDistributionChamberElement/METERCHAMBER</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef ifdguid="3d53ce80d1d411e1800000215ad4efdf">
+      <Name>ChamberLengthOrRadius</Name>
+      <Definition>Length or, in the event of the shape being circular in plan, the radius of the chamber.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Chamber Length Or Radius</NameAlias>
+        <NameAlias lang="ja-JP">チャンバーの長さあるいは半径</NameAlias>
+        <NameAlias lang="ko-KR">챔버의 길이 또는 반경</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="ja-JP">チャンバーの長さあるいは円形チャンバーの半径。</DefinitionAlias>
+        <DefinitionAlias lang="ko-KR">챔버의 길이 또는 원형 챔버의 반경</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="42b11900d1d411e1800000215ad4efdf">
+      <Name>ChamberWidth</Name>
+      <Definition>Width, in the event of the shape being non circular in plan.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Chamber Width</NameAlias>
+        <NameAlias lang="ja-JP">チャンバーの幅</NameAlias>
+        <NameAlias lang="ko-KR">챔버의 폭</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="ja-JP">非円形チャンバーの幅。</DefinitionAlias>
+        <DefinitionAlias lang="ko-KR">비원 챔버의 폭</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="48a6fa00d1d411e1800000215ad4efdf">
+      <Name>WallMaterial</Name>
+      <Definition>The material from which the wall of the chamber is constructed.
+NOTE: It is assumed that chamber walls will be constructed of a single material.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcMaterialDefinition" />
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Wall Material</NameAlias>
+        <NameAlias lang="ja-JP">壁の材質</NameAlias>
+        <NameAlias lang="ko-KR">벽의 재질</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="ja-JP">ダクトスペース壁の材質。
+注：ダクトスペースの壁は単層と仮定する</DefinitionAlias>
+        <DefinitionAlias lang="ko-KR">덕트 공간 벽의 재질 참고 : 덕트 공간의 벽은 단층 가정</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="4c3a8100d1d411e1800000215ad4efdf">
+      <Name>WallThickness</Name>
+      <Definition>The thickness of the chamber wall construction
+.
+NOTE: It is assumed that chamber walls will be constructed at a single thickness.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Wall Thickness</NameAlias>
+        <NameAlias lang="ja-JP">壁厚さ</NameAlias>
+        <NameAlias lang="ko-KR">벽 두께</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="ja-JP">ダクトスペース壁の厚さ。
+注：ダクトスペースの壁は単層と仮定する</DefinitionAlias>
+        <DefinitionAlias lang="ko-KR">덕트 공간 벽 두께 참고 : 덕트 공간의 벽은 단층 가정</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="52306200d1d411e1800000215ad4efdf">
+      <Name>BaseMaterial</Name>
+      <Definition>The material from which the base of the chamber is constructed.
+NOTE: It is assumed that chamber base will be constructed of a single material.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcMaterialDefinition" />
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Base Material</NameAlias>
+        <NameAlias lang="ja-JP">床の材質</NameAlias>
+        <NameAlias lang="ko-KR">바닥의 ​​재질</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="ja-JP">ダクトスペース床面の材質。
+注：ダクトスペースの床は単層と仮定する</DefinitionAlias>
+        <DefinitionAlias lang="ko-KR">덕트 공간 바닥의 재질 참고 : 덕트 공간의 바닥은 단층 가정</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="55c3e900d1d411e1800000215ad4efdf">
+      <Name>BaseThickness</Name>
+      <Definition>The thickness of the chamber base construction.
+NOTE: It is assumed that chamber base will be constructed at a single thickness.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Base Thickness</NameAlias>
+        <NameAlias lang="ja-JP">床の厚さ</NameAlias>
+        <NameAlias lang="ko-KR">바닥의 두께</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="ja-JP">ダクトスペース床面の厚さ。
+注：ダクトスペースの床は単層と仮定する</DefinitionAlias>
+        <DefinitionAlias lang="ko-KR">덕트 공간 바닥의 두께 참고 : 덕트 공간의 바닥은 단층 가정</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="5b213380d1d411e1800000215ad4efdf">
+      <Name>AccessCoverMaterial</Name>
+      <Definition>The material from which the access cover to the chamber is constructed.
+NOTE: It is assumed that chamber walls will be constructed of a single material.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcMaterialDefinition" />
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Access Cover Material</NameAlias>
+        <NameAlias lang="ja-JP">アクセス（点検）カバーの材質</NameAlias>
+        <NameAlias lang="ko-KR">사용 (체크) 커버의 재질</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="ja-JP">アクセス（点検）カバーの材質。
+注：バイブスペースの壁は単層と仮定する</DefinitionAlias>
+        <DefinitionAlias lang="ko-KR">액세스 (체크) 커버의 재질 주 : 바이브 공간의 벽은 단층 가정</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+  </PropertyDefs>
+  <PsetDefinitionAliases>
+    <PsetDefinitionAlias lang="en" />
+    <PsetDefinitionAlias lang="ja-JP">メーター室に関する属性情報。</PsetDefinitionAlias>
+  </PsetDefinitionAliases>
+</PropertySetDef>

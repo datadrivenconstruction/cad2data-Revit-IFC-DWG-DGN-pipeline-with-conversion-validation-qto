@@ -1,0 +1,208 @@
+<?xml version="1.0"?>
+<PropertySetDef xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ifdguid="59e60b80d1c011e1800000215ad4efdf" templatetype="PSET_PERFORMANCEDRIVEN" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4" />
+  <Name>Pset_AirToAirHeatRecoveryPHistory</Name>
+  <Definition>Air to Air Heat Recovery performance history common attributes.</Definition>
+  <Applicability />
+  <ApplicableClasses>
+    <ClassName>IfcAirToAirHeatRecovery</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcAirToAirHeatRecovery</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef ifdguid="60748300d1c011e1800000215ad4efdf">
+      <Name>SensibleEffectiveness</Name>
+      <Definition>Sensible heat transfer effectiveness, where effectiveness is defined as the ratio of heat transfer to maximum possible heat transfer.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcTimeSeries" />
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Sensible Effectiveness</NameAlias>
+        <NameAlias lang="fr-FR">EfficacitéSensible</NameAlias>
+        <NameAlias lang="ja-JP">顕熱効率</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="fr-FR">Efficacité d'échange de chaleur sensible, où l'efficacité est définie par le rapport entre l'échange de chaleur effectif et l'échange maximum possible.</DefinitionAlias>
+        <DefinitionAlias lang="ja-JP">顕熱効率
+効率は、最大可能熱交換に対する熱交換の比率で定義される</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="64080a00d1c011e1800000215ad4efdf">
+      <Name>TotalEffectiveness</Name>
+      <Definition>Total heat transfer effectiveness: The ratio of heat transfer to the maximum possible heat transfer.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcTimeSeries" />
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Total Effectiveness</NameAlias>
+        <NameAlias lang="fr-FR">Rendement thermique</NameAlias>
+        <NameAlias lang="ja-JP">全熱効率</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="fr-FR">Rendement thermique: rapport entre la chaleur effective échangée et l'échange maximum possible.</DefinitionAlias>
+        <DefinitionAlias lang="ja-JP">全熱効率
+最大可能熱交換に対する熱交換の比率</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="679b9100d1c011e1800000215ad4efdf">
+      <Name>TemperatureEffectiveness</Name>
+      <Definition>Temperature heat transfer effectiveness: The ratio of primary airflow temperature changes to maximum possible temperature changes.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcTimeSeries" />
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Temperature Effectiveness</NameAlias>
+        <NameAlias lang="fr-FR">EfficacitéTempérature</NameAlias>
+        <NameAlias lang="ja-JP">温度効率</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="fr-FR">Efficacité thermique sensible: rapport entre la différence de températures pour le flux primaire sur la différence maximale d'échange possible.</DefinitionAlias>
+        <DefinitionAlias lang="ja-JP">温度熱交換効率：
+最大可能温度変化に対する一次側温度変化の比</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="6c604500d1c011e1800000215ad4efdf">
+      <Name>DefrostTemperatureEffectiveness</Name>
+      <Definition>Temperature heat transfer effectiveness when defrosting is active.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcTimeSeries" />
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Defrost Temperature Effectiveness</NameAlias>
+        <NameAlias lang="fr-FR">EfficacitéTemperatureDégel</NameAlias>
+        <NameAlias lang="ja-JP">デフロスト温度効率</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="fr-FR">Efficacité thermique sensible lorsque le mode dégel est actif</DefinitionAlias>
+        <DefinitionAlias lang="ja-JP">デフロスト作動時の温度熱交換効率</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="6f5b3580d1c011e1800000215ad4efdf">
+      <Name>HumidityEffectiveness</Name>
+      <Definition>Humidity heat transfer effectiveness: The ratio of primary airflow absolute humidity changes to maximum possible absolute humidity changes.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcTimeSeries" />
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Humidity Effectiveness</NameAlias>
+        <NameAlias lang="fr-FR">EfficacitéLatente</NameAlias>
+        <NameAlias lang="ja-JP">湿度効率</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="fr-FR">Efficacité sur transfert de chaleur latente: rapport entre difference de températures</DefinitionAlias>
+        <DefinitionAlias lang="ja-JP">湿度熱交換効率：
+最大可能絶対湿度変化に対する一次側絶対湿度変化の比</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="73875300d1c011e1800000215ad4efdf">
+      <Name>SensibleHeatTransferRate</Name>
+      <Definition>Sensible heat transfer rate.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcTimeSeries" />
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Sensible Heat Transfer Rate</NameAlias>
+        <NameAlias lang="fr-FR">PuissanceThermiqueSensible</NameAlias>
+        <NameAlias lang="ja-JP">顕熱交換量</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="fr-FR">Puissance thermique sensible</DefinitionAlias>
+        <DefinitionAlias lang="ja-JP">顕熱交換量</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="77b37080d1c011e1800000215ad4efdf">
+      <Name>LatentHeatTransferRate</Name>
+      <Definition>Latent heat transfer rate.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcTimeSeries" />
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Latent Heat Transfer Rate</NameAlias>
+        <NameAlias lang="fr-FR">PuissanceThermiqueLatente</NameAlias>
+        <NameAlias lang="ja-JP">潜熱交換量</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="fr-FR">Puissance thermique latente</DefinitionAlias>
+        <DefinitionAlias lang="ja-JP">潜熱交換量</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="7b46f780d1c011e1800000215ad4efdf">
+      <Name>TotalHeatTransferRate</Name>
+      <Definition>Total heat transfer rate.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcTimeSeries" />
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Total Heat Transfer Rate</NameAlias>
+        <NameAlias lang="fr-FR">PuissanceThermiqueTotale</NameAlias>
+        <NameAlias lang="ja-JP">全熱交換量</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="fr-FR">Puissance thermique totale</DefinitionAlias>
+        <DefinitionAlias lang="ja-JP">全熱交換量</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="7eda7e80d1c011e1800000215ad4efdf">
+      <Name>SensibleEffectivenessTable</Name>
+      <Definition>Sensible heat transfer effectiveness curve as a function of the primary and secondary air flow rate.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcTimeSeries" />
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Sensible Effectiveness Table</NameAlias>
+        <NameAlias lang="fr-FR">DiagrammeEfficacitéSensible</NameAlias>
+        <NameAlias lang="ja-JP">顕熱効率テーブル</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="fr-FR">Courbe d'efficacité d'échange thermique sensible, en tant que fonction du débit d'air au primaire et débit d'air au secondaire</DefinitionAlias>
+        <DefinitionAlias lang="ja-JP">一次と二次空気量の関数としての顕熱交換効率曲線</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="826e0580d1c011e1800000215ad4efdf">
+      <Name>TotalEffectivenessTable</Name>
+      <Definition>Total heat transfer effectiveness curve as a function of the primary and secondary air flow rate.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcTimeSeries" />
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Total Effectiveness Table</NameAlias>
+        <NameAlias lang="fr-FR">DiagrammeEfficacitéTotale</NameAlias>
+        <NameAlias lang="ja-JP">全熱効率テーブル</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="fr-FR">Courbe d'efficacité d'échange thermique total en tant que fonction du débit d'air au primaire et débit d'air au secondaire</DefinitionAlias>
+        <DefinitionAlias lang="ja-JP">一次と二次空気量の関数としての全熱交換効率曲線</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="86018c80d1c011e1800000215ad4efdf">
+      <Name>AirPressureDropCurves</Name>
+      <Definition>Air pressure drop as function of air flow rate.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcTimeSeries" />
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Air Pressure Drop Curves</NameAlias>
+        <NameAlias lang="fr-FR">CourbesPerteChargeAir</NameAlias>
+        <NameAlias lang="ja-JP">空気圧力降下曲線</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="fr-FR">Perte de charge aéraulique fonction du débit d'air</DefinitionAlias>
+        <DefinitionAlias lang="ja-JP">風量の関数としての空気圧力降下</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+  </PropertyDefs>
+  <PsetDefinitionAliases>
+    <PsetDefinitionAlias lang="en" />
+    <PsetDefinitionAlias lang="ja-JP">空気熱回収装置性能履歴共通属性。</PsetDefinitionAlias>
+  </PsetDefinitionAliases>
+</PropertySetDef>

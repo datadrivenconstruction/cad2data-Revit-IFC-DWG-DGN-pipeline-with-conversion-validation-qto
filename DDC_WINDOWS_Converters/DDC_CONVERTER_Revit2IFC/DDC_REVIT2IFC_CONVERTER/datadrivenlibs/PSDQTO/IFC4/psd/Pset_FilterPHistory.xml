@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<PropertySetDef xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ifdguid="2f5a7980d1e511e1800000215ad4efdf" templatetype="PSET_PERFORMANCEDRIVEN" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4" />
+  <Name>Pset_FilterPHistory</Name>
+  <Definition>Filter performance history attributes.</Definition>
+  <Applicability />
+  <ApplicableClasses>
+    <ClassName>IfcFilter</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcFilter</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef ifdguid="35505a80d1e511e1800000215ad4efdf">
+      <Name>CountedEfficiency</Name>
+      <Definition>Filter efficiency based the particle counts concentration before and after filter against particles with certain size distribution.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcTimeSeries" />
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Counted Efficiency</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="397c7800d1e511e1800000215ad4efdf">
+      <Name>WeightedEfficiency</Name>
+      <Definition>Filter efficiency based the particle weight concentration before and after filter against particles with certain size distribution.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcTimeSeries" />
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Weighted Efficiency</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="3c776880d1e511e1800000215ad4efdf">
+      <Name>ParticleMassHolding</Name>
+      <Definition>Mass of particle holding in the filter.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcTimeSeries" />
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Particle Mass Holding</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+      </DefinitionAliases>
+    </PropertyDef>
+  </PropertyDefs>
+  <PsetDefinitionAliases>
+    <PsetDefinitionAlias lang="en" />
+  </PsetDefinitionAliases>
+</PropertySetDef>

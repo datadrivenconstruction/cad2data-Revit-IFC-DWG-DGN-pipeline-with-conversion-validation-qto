@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+<PropertySetDef xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ifdguid="72592480d1c611e1800000215ad4efdf" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4" />
+  <Name>Pset_CableCarrierSegmentTypeCableLadderSegment</Name>
+  <Definition>An open carrier segment on which cables are carried on a ladder structure.
+HISTORY: IFC4 - NominalLength deleted. To be handled as a quantity measure.</Definition>
+  <Applicability />
+  <ApplicableClasses>
+    <ClassName>IfcCableCarrierSegment/CABLELADDERSEGMENT</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcCableCarrierSegment/CABLELADDERSEGMENT</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef ifdguid="78e79c00d1c611e1800000215ad4efdf">
+      <Name>NominalWidth</Name>
+      <Definition>The nominal width of the segment.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Nominal Width</NameAlias>
+        <NameAlias lang="ja-JP">公称幅</NameAlias>
+        <NameAlias lang="ko-KR">공칭 폭</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="ja-JP">呼び幅寸法。</DefinitionAlias>
+        <DefinitionAlias lang="ko-KR">폭 치수.</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="7e44e680d1c611e1800000215ad4efdf">
+      <Name>NominalHeight</Name>
+      <Definition>The nominal height of the segment.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Nominal Height</NameAlias>
+        <NameAlias lang="ja-JP">公称高</NameAlias>
+        <NameAlias lang="ko-KR">공칭 높이</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="ja-JP">呼び高寸法。</DefinitionAlias>
+        <DefinitionAlias lang="ko-KR">고치수</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="83099a80d1c611e1800000215ad4efdf">
+      <Name>LadderConfiguration</Name>
+      <Definition>Description of the configuration of the ladder structure used.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcText" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Ladder Configuration</NameAlias>
+        <NameAlias lang="ja-JP">梯子設定</NameAlias>
+        <NameAlias lang="ko-KR">사다리 설정</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="ja-JP">使用されるはしご構造の概要説明。</DefinitionAlias>
+        <DefinitionAlias lang="ko-KR">사용되는 사다리 구조의 개요 설명.</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+  </PropertyDefs>
+  <PsetDefinitionAliases>
+    <PsetDefinitionAlias lang="en" />
+    <PsetDefinitionAlias lang="ja-JP">はしご構造の上にケーブルを乗せる開放型ケーブルキャリアに関するプロパティセット定義。</PsetDefinitionAlias>
+  </PsetDefinitionAliases>
+</PropertySetDef>

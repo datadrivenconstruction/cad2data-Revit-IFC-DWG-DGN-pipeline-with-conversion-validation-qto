@@ -1,0 +1,456 @@
+<?xml version="1.0"?>
+<PropertySetDef xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ifdguid="81d66e80d1c211e1800000215ad4efdf" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4" />
+  <Name>Pset_AudioVisualApplianceTypeDisplay</Name>
+  <Definition>An audio-visual display is a device that renders video from a screen.  HISTORY: Added in IFC4.</Definition>
+  <Applicability />
+  <ApplicableClasses>
+    <ClassName>IfcAudioVisualAppliance/DISPLAY</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcAudioVisualAppliance/DISPLAY</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef ifdguid="8864e600d1c211e1800000215ad4efdf">
+      <Name>DisplayType</Name>
+      <Definition>Indicates the type of display.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_AudioVisualDisplayType">
+            <EnumItem>CRT</EnumItem>
+            <EnumItem>DLP</EnumItem>
+            <EnumItem>LCD</EnumItem>
+            <EnumItem>LED</EnumItem>
+            <EnumItem>PLASMA</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET.</EnumItem>
+          </EnumList>
+          <ConstantList>
+            <ConstantDef>
+              <Name>CRT</Name>
+              <Definition>Cathode Ray Tube</Definition>
+              <NameAliases>
+                <NameAlias lang="en">CRT</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>DLP</Name>
+              <NameAliases>
+                <NameAlias lang="en">DLP</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Digital light projection</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>LCD</Name>
+              <Definition>Liquid Crystal Diode</Definition>
+              <NameAliases>
+                <NameAlias lang="en">LCD</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>LED</Name>
+              <Definition>LIght Emitting Diode</Definition>
+              <NameAliases>
+                <NameAlias lang="en">LED</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>PLASMA</Name>
+              <NameAliases>
+                <NameAlias lang="en">Plasma</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>OTHER</Name>
+              <NameAliases>
+                <NameAlias lang="en">(other)</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Value is not listed.</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>NOTKNOWN</Name>
+              <NameAliases>
+                <NameAlias lang="en">(unknown)</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Value is unknown.</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>UNSET.</Name>
+              <NameAliases>
+                <NameAlias lang="en">Unset.</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+          </ConstantList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Display Type</NameAlias>
+        <NameAlias lang="ja-JP">画面種類</NameAlias>
+        <NameAlias lang="ko-KR">화면 유형</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="ja-JP">画面の種類を示す。</DefinitionAlias>
+        <DefinitionAlias lang="ko-KR">화면 종류를 나타낸다</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="99adf280d1c211e1800000215ad4efdf">
+      <Name>NominalSize</Name>
+      <Definition>Indicates the diagonal screen size.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Nominal Size</NameAlias>
+        <NameAlias lang="ja-JP">画面公称サイズ</NameAlias>
+        <NameAlias lang="ko-KR">화면 공칭 크기</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="ja-JP">画面の対角線サイズを示す。</DefinitionAlias>
+        <DefinitionAlias lang="ko-KR">화면의 대각선 크기를 나타낸다.</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="a03c6a00d1c211e1800000215ad4efdf">
+      <Name>DisplayWidth</Name>
+      <Definition>Indicates the physical width of the screen (only the display surface).</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Display Width</NameAlias>
+        <NameAlias lang="ja-JP">画面幅</NameAlias>
+        <NameAlias lang="ko-KR">화면 폭</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="ja-JP">画面の幅を示す。</DefinitionAlias>
+        <DefinitionAlias lang="ko-KR">화면 너비를 보여준다</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="a6cae180d1c211e1800000215ad4efdf">
+      <Name>DisplayHeight</Name>
+      <Definition>Indicates the physical height of the screen (only the display surface).</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Display Height</NameAlias>
+        <NameAlias lang="ja-JP">画面高さ</NameAlias>
+        <NameAlias lang="ko-KR">화면 높이</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="ja-JP">画面の高さを示す。</DefinitionAlias>
+        <DefinitionAlias lang="ko-KR">화면의 높이를 나타낸다</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="ab8f9580d1c211e1800000215ad4efdf">
+      <Name>Brightness</Name>
+      <Definition>Indicates the display brightness.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcIlluminanceMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Brightness</NameAlias>
+        <NameAlias lang="ja-JP">明るさ</NameAlias>
+        <NameAlias lang="ko-KR">밝기</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="ja-JP">明るさ示す。</DefinitionAlias>
+        <DefinitionAlias lang="ko-KR">밝기 보여준다</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="b0ece000d1c211e1800000215ad4efdf">
+      <Name>ContrastRatio</Name>
+      <Definition>Indicates the display contrast ratio.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveRatioMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Contrast Ratio</NameAlias>
+        <NameAlias lang="ja-JP">コントラスト比</NameAlias>
+        <NameAlias lang="ko-KR">명암비</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="ja-JP">コントラスト比を示す。</DefinitionAlias>
+        <DefinitionAlias lang="ko-KR">명암비를 보여준다</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="b77b5780d1c211e1800000215ad4efdf">
+      <Name>RefreshRate</Name>
+      <Definition>Indicates the display refresh frequency.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcFrequencyMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Refresh Rate</NameAlias>
+        <NameAlias lang="ja-JP">リフレッシュレート</NameAlias>
+        <NameAlias lang="ko-KR">재생</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="ja-JP">リフレッシュレート周波数範囲を示す。</DefinitionAlias>
+        <DefinitionAlias lang="ko-KR">빈도 재생 빈도 주파수 범위를 나타낸다.</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="bc400b80d1c211e1800000215ad4efdf">
+      <Name>TouchScreen</Name>
+      <Definition>Indicates touchscreen support.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_AudioVisualDisplayTouchScreen">
+            <EnumItem>SINGLETOUCH</EnumItem>
+            <EnumItem>MULTITOUCH</EnumItem>
+            <EnumItem>NONE</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+          <ConstantList>
+            <ConstantDef>
+              <Name>SINGLETOUCH</Name>
+              <NameAliases>
+                <NameAlias lang="en">Single Touch</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>MULTITOUCH</Name>
+              <NameAliases>
+                <NameAlias lang="en">Multi Touch</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>NONE</Name>
+              <NameAliases>
+                <NameAlias lang="en">None</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>OTHER</Name>
+              <NameAliases>
+                <NameAlias lang="en">(other)</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Value is not listed.</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>NOTKNOWN</Name>
+              <NameAliases>
+                <NameAlias lang="en">(unknown)</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Value is unknown.</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>UNSET</Name>
+              <NameAliases>
+                <NameAlias lang="en">(unset)</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Value has not been specified.</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+          </ConstantList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Touch Screen</NameAlias>
+        <NameAlias lang="ja-JP">タッチスクリーン</NameAlias>
+        <NameAlias lang="ko-KR">터치 스크린</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="ja-JP">タッチスクリーンのサポートを示す。</DefinitionAlias>
+        <DefinitionAlias lang="ko-KR">터치 스크린 지원을 보여준다</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="cbbf5480d1c211e1800000215ad4efdf">
+      <Name>VideoResolutionWidth</Name>
+      <Definition>Indicates the number of horizontal pixels, e.g. 1920.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcInteger" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Video Resolution Width</NameAlias>
+        <NameAlias lang="ja-JP">水平解像度</NameAlias>
+        <NameAlias lang="ko-KR">수평 해상도</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="ja-JP">水平方向のピクセル数を示す。</DefinitionAlias>
+        <DefinitionAlias lang="ko-KR">가로 픽셀 수를 나타낸다.</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="d2e66280d1c211e1800000215ad4efdf">
+      <Name>VideoResolutionHeight</Name>
+      <Definition>Indicates the number of vertical pixels, e.g. 1080.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcInteger" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Video Resolution Height</NameAlias>
+        <NameAlias lang="ja-JP">垂直解像度</NameAlias>
+        <NameAlias lang="ko-KR">수직 해상도</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="ja-JP">垂直方向のピクセル数を示す。</DefinitionAlias>
+        <DefinitionAlias lang="ko-KR">수직 픽셀 수를 나타낸다.</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="da0d7080d1c211e1800000215ad4efdf">
+      <Name>VideoResolutionMode</Name>
+      <Definition>Indicates video resolution modes.</Definition>
+      <PropertyType>
+        <TypePropertyTableValue>
+          <Expression />
+          <DefiningValue>
+            <DataType type="IfcIdentifier" />
+          </DefiningValue>
+          <DefinedValue>
+            <DataType type="IfcLabel" />
+          </DefinedValue>
+        </TypePropertyTableValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Video Resolution Mode</NameAlias>
+        <NameAlias lang="ja-JP">解像度モード</NameAlias>
+        <NameAlias lang="ko-KR">디스플레이 모드</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="ja-JP">解像度モードを示す。</DefinitionAlias>
+        <DefinitionAlias lang="ko-KR">해상도를 보여준다</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="e42f6f00d1c211e1800000215ad4efdf">
+      <Name>VideoScaleMode</Name>
+      <Definition>Indicates video scaling modes.</Definition>
+      <PropertyType>
+        <TypePropertyTableValue>
+          <Expression />
+          <DefiningValue>
+            <DataType type="IfcIdentifier" />
+          </DefiningValue>
+          <DefinedValue>
+            <DataType type="IfcLabel" />
+          </DefinedValue>
+        </TypePropertyTableValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Video Scale Mode</NameAlias>
+        <NameAlias lang="ja-JP">ビデオスケールモード</NameAlias>
+        <NameAlias lang="ko-KR">비디오 스케일 모드</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="ja-JP">ビデオスケーリングモードを示す。</DefinitionAlias>
+        <DefinitionAlias lang="ko-KR">비디오 크기 조정 모드를 나타낸다.</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="edb8d700d1c211e1800000215ad4efdf">
+      <Name>VideoCaptionMode</Name>
+      <Definition>Indicates video closed captioning modes.</Definition>
+      <PropertyType>
+        <TypePropertyTableValue>
+          <Expression />
+          <DefiningValue>
+            <DataType type="IfcIdentifier" />
+          </DefiningValue>
+          <DefinedValue>
+            <DataType type="IfcLabel" />
+          </DefinedValue>
+        </TypePropertyTableValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Video Caption Mode</NameAlias>
+        <NameAlias lang="ja-JP">ビデオキャプションモード</NameAlias>
+        <NameAlias lang="ko-KR">비디오 캡션 모드</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="ja-JP">クローズドキャプションモードを示す。(字幕機能）</DefinitionAlias>
+        <DefinitionAlias lang="ko-KR">자막 모드를 나타낸다. (자막 기능)</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="f6111200d1c211e1800000215ad4efdf">
+      <Name>AudioMode</Name>
+      <Definition>Indicates audio sound modes and corresponding labels, if applicable.</Definition>
+      <PropertyType>
+        <TypePropertyTableValue>
+          <Expression />
+          <DefiningValue>
+            <DataType type="IfcIdentifier" />
+          </DefiningValue>
+          <DefinedValue>
+            <DataType type="IfcLabel" />
+          </DefinedValue>
+        </TypePropertyTableValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Audio Mode</NameAlias>
+        <NameAlias lang="ja-JP">オーディオモード</NameAlias>
+        <NameAlias lang="ko-KR">오디오 모드</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="ja-JP">オーディオサウンドモードの設定。</DefinitionAlias>
+        <DefinitionAlias lang="ko-KR">오디오 사운드 모드 설정.</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+  </PropertyDefs>
+  <PsetDefinitionAliases>
+    <PsetDefinitionAlias lang="en" />
+    <PsetDefinitionAlias lang="ja-JP">画面からビデオ映像を送出する機器。</PsetDefinitionAlias>
+  </PsetDefinitionAliases>
+</PropertySetDef>

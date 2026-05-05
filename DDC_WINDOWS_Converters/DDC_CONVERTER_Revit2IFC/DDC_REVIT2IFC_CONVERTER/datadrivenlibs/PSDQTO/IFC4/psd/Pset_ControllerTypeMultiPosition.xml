@@ -1,0 +1,149 @@
+<?xml version="1.0"?>
+<PropertySetDef xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ifdguid="78063880d1cd11e1800000215ad4efdf" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4" />
+  <Name>Pset_ControllerTypeMultiPosition</Name>
+  <Definition>Properties for discrete inputs, outputs, and values within a programmable logic controller. HISTORY: New in IFC4, replaces Pset_MultiStateInput and Pset_MultiStateOutput.</Definition>
+  <Applicability />
+  <ApplicableClasses>
+    <ClassName>IfcController/MULTIPOSITION</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcController/MULTIPOSITION</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef ifdguid="7e94b000d1cd11e1800000215ad4efdf">
+      <Name>ControlType</Name>
+      <Definition>The type of signal modification effected and applicable ports:
+
+INPUT: Controller element is a dedicated input.
+OUTPUT: Controller element is a dedicated output.
+VARIABLE: Controller element is an in-memory variable.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_ControllerMultiPositionType">
+            <EnumItem>INPUT</EnumItem>
+            <EnumItem>OUTPUT</EnumItem>
+            <EnumItem>VARIABLE</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+          <ConstantList>
+            <ConstantDef>
+              <Name>INPUT</Name>
+              <NameAliases>
+                <NameAlias lang="en">Input</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Controller element is a dedicated input</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>OUTPUT</Name>
+              <NameAliases>
+                <NameAlias lang="en">Output</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Controller element is a dedicated output</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>VARIABLE</Name>
+              <NameAliases>
+                <NameAlias lang="en">Variable</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Controller element is an in-memory variable</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>OTHER</Name>
+              <NameAliases>
+                <NameAlias lang="en">(other)</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Value is not listed.</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>NOTKNOWN</Name>
+              <NameAliases>
+                <NameAlias lang="en">(unknown)</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Value is unknown.</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>UNSET</Name>
+              <NameAliases>
+                <NameAlias lang="en">(unset)</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Value has not been specified.</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+          </ConstantList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Control Type</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="89e7db80d1cd11e1800000215ad4efdf">
+      <Name>Labels</Name>
+      <Definition>Table mapping values to labels, where each entry corresponds to an integer within the ValueRange.</Definition>
+      <PropertyType>
+        <TypePropertyTableValue>
+          <Expression />
+          <DefiningValue>
+            <DataType type="IfcInteger" />
+          </DefiningValue>
+          <DefinedValue>
+            <DataType type="IfcLabel" />
+          </DefinedValue>
+        </TypePropertyTableValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Labels</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="910ee980d1cd11e1800000215ad4efdf">
+      <Name>Range</Name>
+      <Definition>The physical range of values supported by the device.</Definition>
+      <PropertyType>
+        <TypePropertyBoundedValue>
+          <DataType type="IfcInteger" />
+        </TypePropertyBoundedValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Range</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="95d39d80d1cd11e1800000215ad4efdf">
+      <Name>Value</Name>
+      <Definition>The expected range and default value.  The LowerLimitValue and UpperLimitValue must fall within the physical Range.</Definition>
+      <PropertyType>
+        <TypePropertyBoundedValue>
+          <DataType type="IfcInteger" />
+        </TypePropertyBoundedValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Value</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+      </DefinitionAliases>
+    </PropertyDef>
+  </PropertyDefs>
+  <PsetDefinitionAliases>
+    <PsetDefinitionAlias lang="en" />
+  </PsetDefinitionAliases>
+</PropertySetDef>

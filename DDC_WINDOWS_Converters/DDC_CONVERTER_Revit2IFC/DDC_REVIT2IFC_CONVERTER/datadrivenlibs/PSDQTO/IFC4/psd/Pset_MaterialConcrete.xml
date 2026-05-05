@@ -1,0 +1,106 @@
+<?xml version="1.0"?>
+<PropertySetDef xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ifdguid="e3abce00d1ec11e1800000215ad4efdf" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4" />
+  <Name>Pset_MaterialConcrete</Name>
+  <Definition>A set of extended mechanical properties related to concrete materials.</Definition>
+  <Applicability />
+  <ApplicableClasses>
+    <ClassName>IfcMaterial/Concrete</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcMaterial/Concrete</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef ifdguid="ea3a4580d1ec11e1800000215ad4efdf">
+      <Name>CompressiveStrength</Name>
+      <Definition>The compressive strength of the concrete.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPressureMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Compressive Strength</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="f0302680d1ec11e1800000215ad4efdf">
+      <Name>MaxAggregateSize</Name>
+      <Definition>The maximum aggregate size of the concrete.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Max Aggregate Size</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="f7573480d1ec11e1800000215ad4efdf">
+      <Name>AdmixturesDescription</Name>
+      <Definition>Description of the admixtures added to the concrete mix.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcText" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Admixtures Description</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="fcb47f00d1ec11e1800000215ad4efdf">
+      <Name>Workability</Name>
+      <Definition>Description of the workability of the fresh concrete defined according to local standards.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcText" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Workability</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="01793300d1ed11e1800000215ad4efdf">
+      <Name>WaterImpermeability</Name>
+      <Definition>Description of the water impermeability denoting the water repelling properties.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcText" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Water Impermeability</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="076f1400d1ed11e1800000215ad4efdf">
+      <Name>ProtectivePoreRatio</Name>
+      <Definition>The protective pore ratio indicating the frost-resistance of the concrete.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcNormalisedRatioMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Protective Pore Ratio</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+      </DefinitionAliases>
+    </PropertyDef>
+  </PropertyDefs>
+  <PsetDefinitionAliases>
+    <PsetDefinitionAlias lang="en" />
+  </PsetDefinitionAliases>
+</PropertySetDef>

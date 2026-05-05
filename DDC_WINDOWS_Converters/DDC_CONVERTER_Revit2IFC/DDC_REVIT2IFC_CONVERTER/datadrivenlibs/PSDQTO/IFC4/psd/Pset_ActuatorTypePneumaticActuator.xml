@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<PropertySetDef xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ifdguid="95330b00d1bd11e1800000215ad4efdf" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4" />
+  <Name>Pset_ActuatorTypePneumaticActuator</Name>
+  <Definition>A device that pneumatically actuates a control element</Definition>
+  <Applicability />
+  <ApplicableClasses>
+    <ClassName>IfcActuator/PNEUMATICACTUATOR</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcActuator/PNEUMATICACTUATOR</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef ifdguid="9c5a1900d1bd11e1800000215ad4efdf">
+      <Name>InputPressure</Name>
+      <Definition>Maximum input control air pressure requirement.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPressureMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Input Pressure</NameAlias>
+        <NameAlias lang="ja-JP">入力圧力</NameAlias>
+        <NameAlias lang="ko-KR">입력 압력</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="ja-JP">最大制御空気圧。</DefinitionAlias>
+        <DefinitionAlias lang="ko-KR">최대 제어 공압</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="a24ffa00d1bd11e1800000215ad4efdf">
+      <Name>InputFlowrate</Name>
+      <Definition>Maximum input control air flowrate requirement.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcVolumetricFlowRateMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Input Flowrate</NameAlias>
+        <NameAlias lang="ja-JP">入力流量</NameAlias>
+        <NameAlias lang="ko-KR">입력 유량</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="ja-JP">最大制御空気流量。</DefinitionAlias>
+        <DefinitionAlias lang="ko-KR">최대 제어 공기 유량</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+  </PropertyDefs>
+  <PsetDefinitionAliases>
+    <PsetDefinitionAlias lang="en" />
+    <PsetDefinitionAlias lang="ja-JP">制御要素を空気圧で作動させるデバイス。</PsetDefinitionAlias>
+  </PsetDefinitionAliases>
+</PropertySetDef>

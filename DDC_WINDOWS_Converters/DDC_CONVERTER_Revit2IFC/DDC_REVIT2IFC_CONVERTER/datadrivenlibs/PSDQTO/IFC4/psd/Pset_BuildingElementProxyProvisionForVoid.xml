@@ -1,0 +1,156 @@
+<?xml version="1.0"?>
+<PropertySetDef xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ifdguid="57d27b80d1c511e1800000215ad4efdf" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4" />
+  <Name>Pset_BuildingElementProxyProvisionForVoid</Name>
+  <Definition>Properties common to the definition of a provision for void as a special type of an instance of IfcBuildingElementProxy. A provision for void is a spatial provision that might be resolved into a void in a building element. The properties carry requested values.</Definition>
+  <Applicability />
+  <ApplicableClasses>
+    <ClassName>IfcBuildingElementProxy/PROVISIONFORVOID</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcBuildingElementProxy/PROVISIONFORVOID</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef ifdguid="5c972f80d1c511e1800000215ad4efdf">
+      <Name>Shape</Name>
+      <Definition>The shape form of the provision for void, the minimum set of agreed values includes 'Rectangle', 'Round', and 'Undefined'.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcLabel" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="de-DE">Form</NameAlias>
+        <NameAlias lang="en">Shape</NameAlias>
+        <NameAlias lang="fr-FR">Forme</NameAlias>
+        <NameAlias lang="ja-JP">形状</NameAlias>
+        <NameAlias lang="zh-CN">形状</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="de-DE">Anforderung an die Form des Durchbruchs, vordefinierte Werte sind "Rechteck", "Rund", und "Nicht definiert".</DefinitionAlias>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="fr-FR">La forme de la réservation. L'ensemble des valeurs autorisées contient au moins "Rectangle", "Round" et "Undefined".</DefinitionAlias>
+        <DefinitionAlias lang="ja-JP">空間の形状を定義します。少なくとも「四角形」、「円」、「未定義」の値を含みます。</DefinitionAlias>
+        <DefinitionAlias lang="zh-CN">空构件的形状，当前得到认可的值至少包括“矩形”、“圆形”及“未定义”。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="615be380d1c511e1800000215ad4efdf">
+      <Name>Width</Name>
+      <Definition>The requested width (horizontal extension in elevation) of the provision for void, only provided if the Shape property is set to "rectangle".</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="de-DE">Breite</NameAlias>
+        <NameAlias lang="en">Width</NameAlias>
+        <NameAlias lang="fr-FR">Largeur</NameAlias>
+        <NameAlias lang="ja-JP">幅</NameAlias>
+        <NameAlias lang="zh-CN">宽度</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="de-DE">Geforderte Breite des Durchbruchs, wird nur dann angegeben, wenn der Wert des Attributes "Form" gleich "Rechteck" ist.</DefinitionAlias>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="fr-FR">La largeur requise de la réservation (extension horizontale en élévation). Fournie seulement si la propriété Forme a pour valeur "Rectangle".</DefinitionAlias>
+        <DefinitionAlias lang="ja-JP">空間の幅（高さにおける水平方向の拡張）を求める定義です。「四角形」の形状プロパティのみ提示されます。</DefinitionAlias>
+        <DefinitionAlias lang="zh-CN">空构件的宽度（在立面图中水平方向的长度），仅当“形状”属性为“矩形”时适用。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="65880100d1c511e1800000215ad4efdf">
+      <Name>Height</Name>
+      <Definition>The requested height (vertical extension in elevation) of the provision for void", only provided if the Shape property is set to "rectangle".</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="de-DE">Höhe</NameAlias>
+        <NameAlias lang="en">Height</NameAlias>
+        <NameAlias lang="fr-FR">Hauteur</NameAlias>
+        <NameAlias lang="ja-JP">高さ</NameAlias>
+        <NameAlias lang="zh-CN">高度</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="de-DE">Geforderte Höhe des Durchbruchs, wird nur dann angegeben, wenn der Wert des Attributes "Form" gleich "Rechteck" ist.</DefinitionAlias>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="fr-FR">La hauteur requise de la réservation (extension verticale en élévation). Fournie seulement si la propriété Forme a pour valeur "Rectangle".</DefinitionAlias>
+        <DefinitionAlias lang="ja-JP">空間の高さ（高さにおける垂直方向の拡張）を求める定義です。「四角形」の形状プロパティのみ提示されます。</DefinitionAlias>
+        <DefinitionAlias lang="zh-CN">空构件的高度（在立面图中竖直方向的长度），仅当“形状”属性为“矩形”时适用。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="69b41e80d1c511e1800000215ad4efdf">
+      <Name>Diameter</Name>
+      <Definition>The requested diameter (in elevation) of the provision for void, only provided if the Shape property is set to "round".</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="de-DE">Durchmesser</NameAlias>
+        <NameAlias lang="en">Diameter</NameAlias>
+        <NameAlias lang="fr-FR">Diamètre</NameAlias>
+        <NameAlias lang="ja-JP">直径</NameAlias>
+        <NameAlias lang="zh-CN">直径</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="de-DE">Geforderte Durchmesser des Durchbruchs, wird nur dann angegeben, wenn der Wert des Attributes "Form" gleich "Rund" ist.</DefinitionAlias>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="fr-FR">Le diamètre requis de la réservation (en élévation). Fournie seulement si la propriété Forme a pour valeur "Round".</DefinitionAlias>
+        <DefinitionAlias lang="ja-JP">空間における直径（高さにおける）を求める定義です。「円」形状プロパティのみに提示されます。</DefinitionAlias>
+        <DefinitionAlias lang="zh-CN">空构件的直径（在立面图中），仅当“形状”属性为“圆形”时适用。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="6de03c00d1c511e1800000215ad4efdf">
+      <Name>Depth</Name>
+      <Definition>The requested depth or thickness of the provision for void.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="de-DE">Tiefe</NameAlias>
+        <NameAlias lang="en">Depth</NameAlias>
+        <NameAlias lang="fr-FR">Profondeur</NameAlias>
+        <NameAlias lang="ja-JP">深さ</NameAlias>
+        <NameAlias lang="zh-CN">深度</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="de-DE">Geforderte Tiefe des Durchbruchs für eine Nische oder Aussparung. Wenn nicht angegeben, dann ist der geforderte Durchbruch eine Durchbruchsöffnung.</DefinitionAlias>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="fr-FR">La profondeur requise ou épaisseur de la réservation.</DefinitionAlias>
+        <DefinitionAlias lang="ja-JP">空間の厚さに対しての深さが提示されます。</DefinitionAlias>
+        <DefinitionAlias lang="zh-CN">空构件的深度或厚度。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="720c5980d1c511e1800000215ad4efdf">
+      <Name>System</Name>
+      <Definition>he building service system that requires the provision for voids, e.g. 'Air Conditioning', 'Plumbing', 'Electro', etc.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcLabel" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="de-DE">Anlage</NameAlias>
+        <NameAlias lang="en">System</NameAlias>
+        <NameAlias lang="fr-FR">Système</NameAlias>
+        <NameAlias lang="ja-JP">システム</NameAlias>
+        <NameAlias lang="zh-CN">系统</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="de-DE">Angabe zu welcher Anlage (oder Anlagen) der Durchbruch benötigt wird.</DefinitionAlias>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="fr-FR">Le système qui requiert la réservation (exemples : "Conditionnement d'air", "Plomberie", "Electricité")</DefinitionAlias>
+        <DefinitionAlias lang="ja-JP">空間に提示される建物サービスシステムです。例えば「空調」「配管」「電気」です。</DefinitionAlias>
+        <DefinitionAlias lang="zh-CN">需要空构件的建筑服务系统，例如，“空调”、“给排水”、“电气”等。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+  </PropertyDefs>
+  <PsetDefinitionAliases>
+    <PsetDefinitionAlias lang="en" />
+    <PsetDefinitionAlias lang="ja-JP">IfcBuildingElementProxyオブジェクトを使用して空間の取り合いにおける穴の位置を提案する際に必要な共通プロパティ情報を定義。</PsetDefinitionAlias>
+    <PsetDefinitionAlias lang="zh-CN">所有作为IfcBuildingElementProxy特例的空构件的定义中通用的属性。空构件是一种特殊的构件，可用以挖空其他建筑构件。其属性仅含特定的值。</PsetDefinitionAlias>
+  </PsetDefinitionAliases>
+</PropertySetDef>

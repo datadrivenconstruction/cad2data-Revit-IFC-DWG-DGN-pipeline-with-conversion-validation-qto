@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<PropertySetDef xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ifdguid="d1219c80d1cc11e1800000215ad4efdf" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4" />
+  <Name>Pset_Condition</Name>
+  <Definition>Determines the state or condition of an element at a particular point in time.</Definition>
+  <Applicability />
+  <ApplicableClasses>
+    <ClassName>IfcElement</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcElement</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef ifdguid="d7177d80d1cc11e1800000215ad4efdf">
+      <Name>AssessmentDate</Name>
+      <Definition>Date on which the overall condition is assessed</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcDate" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Assessment Date</NameAlias>
+        <NameAlias lang="ja-JP">評価日</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="ja-JP">全体状況を評価した日。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="dbdc3180d1cc11e1800000215ad4efdf">
+      <Name>AssessmentCondition</Name>
+      <Definition>The overall condition of a product based on an assessment of the contributions to the overall condition made by the various criteria considered. The meanings given to the values of assessed condition should be agreed and documented by local agreements. For instance, is overall condition measured on a scale of 1 - 10 or by assigning names such as Good, OK, Poor.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcLabel" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Assessment Condition</NameAlias>
+        <NameAlias lang="ja-JP">評価状態</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="ja-JP">様々な基準を用いた評価による製品に関する全体的な状態。評価された状態値の意味は、ローカル協定によって同意され、文書化されなければならない。例えば、状態を1から10の値で計測したり、Good, Ok, Poor等で表す。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="e1397c00d1cc11e1800000215ad4efdf">
+      <Name>AssessmentDescription</Name>
+      <Definition>Qualitative description of the condition.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcText" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Assessment Description</NameAlias>
+        <NameAlias lang="ja-JP">評価記述</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="ja-JP">状態に関する定性的な記述。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+  </PropertyDefs>
+  <PsetDefinitionAliases>
+    <PsetDefinitionAlias lang="en" />
+    <PsetDefinitionAlias lang="ja-JP">ある時点における、FM要素の状態・状況を規定する属性情報。</PsetDefinitionAlias>
+  </PsetDefinitionAliases>
+</PropertySetDef>

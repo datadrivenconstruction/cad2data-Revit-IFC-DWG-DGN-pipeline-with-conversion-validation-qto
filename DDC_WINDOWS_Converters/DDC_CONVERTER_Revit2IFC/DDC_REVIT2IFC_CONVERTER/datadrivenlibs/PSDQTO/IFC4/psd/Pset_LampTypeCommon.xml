@@ -1,0 +1,428 @@
+<?xml version="1.0"?>
+<PropertySetDef xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ifdguid="ef969080d1ea11e1800000215ad4efdf" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4" />
+  <Name>Pset_LampTypeCommon</Name>
+  <Definition>A lamp is a component within a light fixture that is designed to emit light. 
+
+History: Name changed from Pset_LampEmitterTypeCommon in IFC 2x3.</Definition>
+  <Applicability />
+  <ApplicableClasses>
+    <ClassName>IfcLamp</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcLamp</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef ifdguid="f58c7180d1ea11e1800000215ad4efdf">
+      <Name>Reference</Name>
+      <Definition>Reference ID for this specified type in this project (e.g. type 'A-1'), provided, if there is no classification reference to a recognized classification system used.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcIdentifier" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Reference</NameAlias>
+        <NameAlias lang="ja-JP">参照</NameAlias>
+        <NameAlias lang="ko-KR">참조</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="ja-JP">当該プロジェクトで定義する形式の参照ID（例：A-1)、承認された分類に存在しないときに使用される。</DefinitionAlias>
+        <DefinitionAlias lang="ko-KR">해당 프로젝트에 정의된 형식의 참조 ID (예 : A-1) 승인된 분류에 존재하지 않을 때 사용된다.</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="fde4ac80d1ea11e1800000215ad4efdf">
+      <Name>Status</Name>
+      <Definition>Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as "New" - element designed as new addition, "Existing" - element exists and remains, "Demolish" - element existed but is to be demolished,  "Temporary" - element will exists only temporary (like a temporary support structure).</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_ElementStatus">
+            <EnumItem>NEW</EnumItem>
+            <EnumItem>EXISTING</EnumItem>
+            <EnumItem>DEMOLISH</EnumItem>
+            <EnumItem>TEMPORARY</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+          <ConstantList>
+            <ConstantDef>
+              <Name>NEW</Name>
+              <Definition>element designed as new addition</Definition>
+              <NameAliases>
+                <NameAlias lang="en">New</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>EXISTING</Name>
+              <Definition>element exists and is to remain</Definition>
+              <NameAliases>
+                <NameAlias lang="en">Existing</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>DEMOLISH</Name>
+              <Definition>element exists but is to be demolished</Definition>
+              <NameAliases>
+                <NameAlias lang="en">Demolish</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>TEMPORARY</Name>
+              <Definition>element will exist only temporarily (such as a temporary support structure)</Definition>
+              <NameAliases>
+                <NameAlias lang="en">Temporary</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>OTHER</Name>
+              <NameAliases>
+                <NameAlias lang="en">(other)</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Value is not listed.</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>NOTKNOWN</Name>
+              <NameAliases>
+                <NameAlias lang="en">(unknown)</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Value is unknown.</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>UNSET</Name>
+              <NameAliases>
+                <NameAlias lang="en">(unset)</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Value has not been specified.</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+          </ConstantList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Status</NameAlias>
+        <NameAlias lang="ja-JP">状態</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="ja-JP">要素（主にリノベーションまたは改修プロジェクトにおいて）の状態。 状態は、「新規(New)」－新しく追加される要素。「既存」－要素は存在し、かつ残りもの。「破壊」－要素は存在したが、廃棄されるもの。「一時的」－一時的に存在する要素（一時的にサポートしている構造のようなもの）。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="0fc64f80d1eb11e1800000215ad4efdf">
+      <Name>ContributedLuminousFlux</Name>
+      <Definition>Luminous flux is a photometric measure of radiant flux, i.e. the volume of light emitted from a light source. Luminous flux is measured either for the interior as a whole or for a part of the interior (partial luminous flux for a solid angle). All other photometric parameters are derivatives of luminous flux. Luminous flux is measured in lumens (lm). The luminous flux is given as a nominal value for each lamp.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcLuminousFluxMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Contributed Luminous Flux</NameAlias>
+        <NameAlias lang="ja-JP">光束</NameAlias>
+        <NameAlias lang="ko-KR">광속</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="ja-JP">光束は放射束を光度測定したもので、たとえば、光源からの発光の量である。光束は全室内、または室内の一部（立体角の部分的な光束）で計測する。
+全ての光度測定の項目は高速の派生である。光束は単位ルーメンで計られる。光束は各ランプからの値で与えられる。</DefinitionAlias>
+        <DefinitionAlias lang="ko-KR">광속은 방사들을 광도 측정 것으로, 예를 들어, 광원에서 방출 양이다. 광속은 모든 실내, 실내 일부 (입체 각의 부분적인 광속)로 측정한다.모든 광도 측정 항목은 빠른 파생이다. 광속 단위 루멘으로 정해진다. 광속은 각 램프의 값으로 주어진다.</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="15bc3080d1eb11e1800000215ad4efdf">
+      <Name>LightEmitterNominalPower</Name>
+      <Definition>Light emitter nominal power.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPowerMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Light Emitter Nominal Power</NameAlias>
+        <NameAlias lang="ja-JP">照明器具ワット数</NameAlias>
+        <NameAlias lang="ko-KR">조명기구 와트</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="ja-JP">発光するための定格ワット数</DefinitionAlias>
+        <DefinitionAlias lang="ko-KR">발광하는 정격 와트</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="1c4aa800d1eb11e1800000215ad4efdf">
+      <Name>LampMaintenanceFactor</Name>
+      <Definition>Non recoverable losses of luminous flux of a lamp due to lamp depreciation; i.e. the decreasing of light output of a luminaire due to aging and dirt.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcReal" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Lamp Maintenance Factor</NameAlias>
+        <NameAlias lang="ja-JP">保守率</NameAlias>
+        <NameAlias lang="ko-KR">보수  비율</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="ja-JP">回復不可能な光量減少が原因の光源自体の光束の低下、たとえば照明器具の老朽化や汚れによる光量の減少。</DefinitionAlias>
+        <DefinitionAlias lang="ko-KR">복구할 수없는 광량 감소가 원인 광원 자체의 광속 저하, 예를 들어 조명기구의 노후화 및 오염에 의한 광량 감소.</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="22d91f80d1eb11e1800000215ad4efdf">
+      <Name>LampBallastType</Name>
+      <Definition>The type of ballast used to stabilise gas discharge by limiting the current during operation and to deliver the necessary striking voltage for starting. Ballasts are needed to operate Discharge Lamps such as Fluorescent, Compact Fluorescent, High-pressure Mercury, Metal Halide and High-pressure Sodium Lamps. 
+Magnetic ballasts are chokes which limit the current passing through a lamp connected in series on the principle of self-induction. The resultant current and power are decisive for the efficient operation of the lamp. A specially designed ballast is required for every type of lamp to comply with lamp rating in terms of Luminous Flux, Color Appearance and service life. The two types of magnetic ballasts for fluorescent lamps are KVG Conventional   (EC-A series) and VVG Low-loss ballasts (EC-B series). Low-loss ballasts have a higher efficiency, which means reduced ballast losses and a lower thermal load. Electronic ballasts are used to run fluorescent lamps at high frequencies (approx. 35 - 40 kHz).</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList />
+          <ConstantList>
+            <ConstantDef>
+              <Name>CONVENTIONAL</Name>
+              <NameAliases>
+                <NameAlias lang="en">Conventional</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>ELECTRONIC</Name>
+              <NameAliases>
+                <NameAlias lang="en">Electronic</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>LOWLOSS</Name>
+              <NameAliases>
+                <NameAlias lang="en">Low Loss</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>OTHER</Name>
+              <NameAliases>
+                <NameAlias lang="en">(other)</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Value is not listed.</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>RESISTOR</Name>
+              <Definition>Fixed or variable resistors. Fixed resistors are used with low-powered loads such as neon or LED. Variable are used in incandescent lamps.</Definition>
+              <NameAliases />
+              <DefinitionAliases />
+            </ConstantDef>
+            <ConstantDef>
+              <Name>NOTKNOWN</Name>
+              <NameAliases>
+                <NameAlias lang="en">(unknown)</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Value is unknown.</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>UNSET</Name>
+              <NameAliases>
+                <NameAlias lang="en">(unset)</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Value has not been specified.</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+          </ConstantList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Lamp Ballast Type</NameAlias>
+        <NameAlias lang="ja-JP">安定期のタイプ</NameAlias>
+        <NameAlias lang="ko-KR">안정기의 종류</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="ja-JP">安定器は使用中の過電流を抑え、蛍光ランプの起動に必要な高い電圧を供給し、ガス放電を安定させる。安定器は蛍光灯、水銀灯、メタルハライドランプ、高圧ナトリウムランプ等の放電灯使用する時に必要となる。
+磁気式安定器はランプに流れる電流の制限のために、直列に接続された自己誘導の手法を用いている電流と出力から照明の効率運用の結果がわかる。
+特別な設計の安定器は全ての照明の光束、色の見え方、寿命の要求に答える。
+蛍光灯用の磁気式安定器にはKVG従来型とVVG省電力型の2種類がある。
+省電力型安定器は光効率で、安定器での損失の低減及び低熱負荷になっている。電子式安定器は蛍光灯を高周波で安定的に点灯させる。</DefinitionAlias>
+        <DefinitionAlias lang="ko-KR">안정기는 사용중인 서지를 억제하고, 형광 램프 시작하는 데 필요한 높은 전압을 공급하여 가스 방전을 안정시킨다. 안정기는 형광등, 수은등, 메탈 할라이드 램프, 고압 나트륨 램프 등의 방전등 사용 때 필요하다. 마그네틱 안정기는 램프에 흐르는 전류의 제한을 위해 직렬로 연결된 자기 유도 방법을 사용하는 전류 출력에서 조명 효율 운영 결과 알 수있다. 특별한 디자인의 안정기는 모든 조명의 광속, 색상의 외관 수명의 요구에 반응한다. 형광 등용 자기 식 안정기에 KVG 기존과 VVG 절전 형의 2 종류가있다. 에너지 절약형 안정기는 조명 효율에서 안정기의 손실 감소 및 낮은 열 부하되어있다. 전자식 안정기는 형광등 고주파에서 안정적으로 점등한다.</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="32f0ff00d1eb11e1800000215ad4efdf">
+      <Name>LampCompensationType</Name>
+      <Definition>Identifies the form of compensation used for power factor correction and radio suppression.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList />
+          <ConstantList>
+            <ConstantDef>
+              <Name>CAPACITIVE</Name>
+              <NameAliases>
+                <NameAlias lang="en">Capacitive</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>INDUCTIVE</Name>
+              <NameAliases>
+                <NameAlias lang="en">Inductive</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>OTHER</Name>
+              <NameAliases>
+                <NameAlias lang="en">(other)</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Value is not listed.</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>NOTKNOWN</Name>
+              <NameAliases>
+                <NameAlias lang="en">(unknown)</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Value is unknown.</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>UNSET</Name>
+              <NameAliases>
+                <NameAlias lang="en">(unset)</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Value has not been specified.</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+          </ConstantList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Lamp Compensation Type</NameAlias>
+        <NameAlias lang="ja-JP">ランプ補正</NameAlias>
+        <NameAlias lang="ko-KR">램프보정</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="ja-JP">力率の改善と高調波の抑制のために使用される補正</DefinitionAlias>
+        <DefinitionAlias lang="ko-KR" />
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="41d7b180d1eb11e1800000215ad4efdf">
+      <Name>ColorAppearance</Name>
+      <Definition>In both the DIN and CIE standards, artificial light sources are classified in terms of their color appearance. To the human eye they all appear to be white; the difference can only be detected by direct comparison. Visual performance is not directly affected by differences in color appearance.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcLabel" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Color Appearance</NameAlias>
+        <NameAlias lang="ja-JP">色の見え方</NameAlias>
+        <NameAlias lang="ko-KR">색상의 외관</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="ja-JP">DIN（ドイツ規格協会）とCIE（国際照明委員会）の両方の規格で、人工照明は色の見え方で分類される。
+人の目には全て白く見えてくる、その差異は直接比較することにより判別することが可能である。視機能は色の見え方の差異に直接影響はしない。</DefinitionAlias>
+        <DefinitionAlias lang="ko-KR" />
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="4b611980d1eb11e1800000215ad4efdf">
+      <Name>Spectrum</Name>
+      <Definition>The spectrum of radiation describes its composition with regard to wavelength. Light, for example, as the portion of electromagnetic radiation that is visible to the human eye, is radiation with wavelengths in the range of approx. 380 to 780 nm (1 nm = 10 m). The corresponding range of colours varies from violet to indigo, blue, green, yellow, orange, and red. These colours form a continuous spectrum, in which the various spectral sectors merge into each other.</Definition>
+      <PropertyType>
+        <TypePropertyTableValue>
+          <Expression />
+          <DefiningValue>
+            <DataType type="IfcNumericMeasure" />
+          </DefiningValue>
+          <DefinedValue>
+            <DataType type="IfcNumericMeasure" />
+          </DefinedValue>
+        </TypePropertyTableValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Spectrum</NameAlias>
+        <NameAlias lang="ja-JP">波長域</NameAlias>
+        <NameAlias lang="ko-KR">파장</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="ja-JP">波長を考慮して合成することを放射スペクトルで表現する。
+光は可視の電磁波の一種で、訳380～780nmの範囲の波長の放射である。
+色の変化は紫から藍色、青、緑、黄色、オレンジ、赤の範囲に相当する。これらの色は連続する波長で、お互いに合成した波長領域である。</DefinitionAlias>
+        <DefinitionAlias lang="ko-KR" />
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="59af3580d1eb11e1800000215ad4efdf">
+      <Name>ColorTemperature</Name>
+      <Definition>The color temperature of any source of radiation is defined as the temperature (in Kelvin) of a black-body or Planckian radiator whose radiation has the same chromaticity as the source of radiation. Often the values are only approximate color temperatures as the black-body radiator cannot emit radiation of every chromaticity value. The color temperatures of the commonest artificial light sources range from less than 3000K (warm white) to 4000K (intermediate) and over 5000K (daylight).</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcThermodynamicTemperatureMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Color Temperature</NameAlias>
+        <NameAlias lang="ja-JP">色温度</NameAlias>
+        <NameAlias lang="ko-KR">색온도</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="ja-JP">放射源の色温度は黒体、または完全放射体の色温度にて定義され、与えられた放射の色度と等しい黒体の温度のこと。与えられた放射の色度が黒体放射軌跡上にない場合に、相対分光分布を黒体放射に近似する。最も一般的な人工光源の色温度の範囲は、3000K以下（暖白）から4000K（中間）で、5000k以上は昼光。</DefinitionAlias>
+        <DefinitionAlias lang="ko-KR">방사 원의 색온도는 흑체 또는 흑체의 색온도에서 정의된 주어진 방사의 색도와 동일 흑체의 온도 것. 주어진 방사의 색도가 흑체 복사 궤적에없는 경우 상대 분광 분포를 흑체 복사에 근사한다. 가장 일반적인 인공 광원의 색온도 범위는 3000K 이하 (따뜻한 흰색)에서 4000K (중간)에서 5000k 이상은 일광.</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="5fa51680d1eb11e1800000215ad4efdf">
+      <Name>ColorRenderingIndex</Name>
+      <Definition>The CRI indicates how well a light source renders eight standard colors compared to perfect reference lamp with the same color temperature. The CRI scale ranges from 1 to 100, with 100 representing perfect rendering properties.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcInteger" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Color Rendering Index</NameAlias>
+        <NameAlias lang="ja-JP">演色評価数</NameAlias>
+        <NameAlias lang="ko-KR">연색 평가수</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="ja-JP">同じ色温度の基準光源で、規定された8色の試験色票での光源による色彩の再表現を比較する。CRIの評価スケールは1～100で、基準光源の場合を100とする。</DefinitionAlias>
+        <DefinitionAlias lang="ko-KR">같은 색온도의 기준 광원으로 규정된 8 가지 시험 색 표의 광원에 의한 색채를 다시 표현을 비교한다. CRI의 평가 척도는 1에서 100에서 기준 광원의 경우 100로한다.</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+  </PropertyDefs>
+  <PsetDefinitionAliases>
+    <PsetDefinitionAlias lang="en" />
+    <PsetDefinitionAlias lang="ja-JP">ランプは光を発するように設計された照明器具の部品。
+IFC 2x3のPset_LampEmitterTypeCommonから名前が変更。</PsetDefinitionAlias>
+  </PsetDefinitionAliases>
+</PropertySetDef>

@@ -1,0 +1,93 @@
+<?xml version="1.0"?>
+<QtoSetDef xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.buildingsmart-tech.org/xml/qto/QTO_IFC4.xsd">
+  <IfcVersion version="IFC4" />
+  <Name>Qto_CurtainWallQuantities</Name>
+  <Definition>Base quantities that are common to the definition of all occurrences of curtain walls.</Definition>
+  <Applicability />
+  <ApplicableClasses>
+    <ClassName>IfcCurtainWall</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcCurtainWall</ApplicableTypeValue>
+  <QtoDefs>
+    <QtoDef>
+      <Name>Length</Name>
+      <Definition>Total length of the curtain wall along the cutain wall center line (even if different to the curtain wall path).</Definition>
+      <QtoType>Q_LENGTH</QtoType>
+      <NameAliases>
+        <NameAlias lang="de-DE">Länge</NameAlias>
+        <NameAlias lang="en">Length</NameAlias>
+        <NameAlias lang="ja-JP">長さ</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="de-DE">Gesamtlänge der Vorhangfassade gemessen entlang der Mittellinie der Vorhangfassade.</DefinitionAlias>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="ja-JP">カーテンウォールの中心線に沿った長さ。</DefinitionAlias>
+      </DefinitionAliases>
+    </QtoDef>
+    <QtoDef>
+      <Name>Height</Name>
+      <Definition>Total height of the curtain wall. It should only be provided, if it is constant along the curtain wall path. </Definition>
+      <QtoType>Q_LENGTH</QtoType>
+      <NameAliases>
+        <NameAlias lang="de-DE">Höhe</NameAlias>
+        <NameAlias lang="en">Height</NameAlias>
+        <NameAlias lang="ja-JP">高さ</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="de-DE">Höhe der Vorhangfassade. Der Wert wird nur dann angegeben, wenn diese konstant entlang der Mittellinie des Pfades ist.</DefinitionAlias>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="ja-JP">カーテンウォールの高さ。高さが一定の場合。</DefinitionAlias>
+      </DefinitionAliases>
+    </QtoDef>
+    <QtoDef>
+      <Name>Width</Name>
+      <Definition>Thickness of the curtain wall. It should only be provided, if it is constant along the curtain wall path. </Definition>
+      <QtoType>Q_LENGTH</QtoType>
+      <NameAliases>
+        <NameAlias lang="de-DE">Dicke</NameAlias>
+        <NameAlias lang="en">Width</NameAlias>
+        <NameAlias lang="ja-JP">幅</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="de-DE">Dicke der Vorhangfassade. Der Wert wird nur dann angegeben, wenn diese konstant entlang der Mittellinie des Pfades ist.</DefinitionAlias>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="ja-JP">カーテンウォールの厚さ。厚さが一定の場合。</DefinitionAlias>
+      </DefinitionAliases>
+    </QtoDef>
+    <QtoDef>
+      <Name>GrossSideArea</Name>
+      <Definition>Area of the curtain wall as viewed by an elevation view of the middle plane of the curtain wall.  It does not take into account any curtain wall modifications. </Definition>
+      <QtoType>Q_AREA</QtoType>
+      <NameAliases>
+        <NameAlias lang="de-DE">Bruttofläche</NameAlias>
+        <NameAlias lang="en">Gross Side Area</NameAlias>
+        <NameAlias lang="ja-JP">側面面積</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="de-DE">Gesamte Bruttofläche der Vorhangfassade, alle Öffnungen (die nicht Teil der Vorhangfassade sind) werden übermessen.</DefinitionAlias>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="ja-JP">立面ビューによるカーテンウォールの面積。カーテンウォールに対する変形を考慮しない。</DefinitionAlias>
+      </DefinitionAliases>
+    </QtoDef>
+    <QtoDef>
+      <Name>NetSideArea</Name>
+      <Definition>Area of the curtain wall as viewed by an elevation view of the middle plane of the curtain wall. It does take into account all curtain wall modifications. </Definition>
+      <QtoType>Q_AREA</QtoType>
+      <NameAliases>
+        <NameAlias lang="de-DE">Nettofläche</NameAlias>
+        <NameAlias lang="en">Net Side Area</NameAlias>
+        <NameAlias lang="ja-JP">正味側面面積</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="de-DE">Gesamte Nettofläche der Vorhangfassade, alle Öffnungen (die nicht Teil der Vorhangfassade sind) werden abgezogen.</DefinitionAlias>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="ja-JP">立面ビューによるカーテンウォールの面積。カーテンウォールに対する変形を考慮する。</DefinitionAlias>
+      </DefinitionAliases>
+    </QtoDef>
+  </QtoDefs>
+  <QtoDefinitionAliases>
+    <QtoDefinitionAlias lang="de-DE">Basismengen für alle Bauelemente vom Typ Vorhangfassade</QtoDefinitionAlias>
+    <QtoDefinitionAlias lang="en" />
+    <QtoDefinitionAlias lang="ja-JP">カーテンウォールに関わる共通の基本数量情報の定義。</QtoDefinitionAlias>
+  </QtoDefinitionAliases>
+</QtoSetDef>

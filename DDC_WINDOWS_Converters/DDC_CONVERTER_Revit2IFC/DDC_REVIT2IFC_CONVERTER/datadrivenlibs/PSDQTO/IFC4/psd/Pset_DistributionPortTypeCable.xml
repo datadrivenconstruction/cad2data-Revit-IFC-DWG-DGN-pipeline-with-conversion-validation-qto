@@ -1,0 +1,526 @@
+<?xml version="1.0"?>
+<PropertySetDef xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ifdguid="140cbd9ce0224580a4d273f60230c20e" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4" />
+  <Name>Pset_DistributionPortTypeCable</Name>
+  <Definition>Cable port occurrence attributes attached to an instance of IfcDistributionPort.</Definition>
+  <Applicability />
+  <ApplicableClasses>
+    <ClassName>IfcDistributionPort/CABLE</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcDistributionPort/CABLE</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef ifdguid="1b51a5433f934fa7a5031c877bb4b429">
+      <Name>ConnectionType</Name>
+      <Definition>The physical port connection:
+
+ACPLUG: AC plug
+DCPLUG: DC plug
+CRIMP: bare wire</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_DistributionPortElectricalType">
+            <EnumItem>ACPLUG</EnumItem>
+            <EnumItem>DCPLUG</EnumItem>
+            <EnumItem>CRIMPCOAXIAL</EnumItem>
+            <EnumItem>RJ</EnumItem>
+            <EnumItem>RADIO</EnumItem>
+            <EnumItem>DIN</EnumItem>
+            <EnumItem>DSUB</EnumItem>
+            <EnumItem>DVI</EnumItem>
+            <EnumItem>EIAJ</EnumItem>
+            <EnumItem>HDMI</EnumItem>
+            <EnumItem>RCA</EnumItem>
+            <EnumItem>TRS</EnumItem>
+            <EnumItem>XLR</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+          <ConstantList>
+            <ConstantDef>
+              <Name>ACPLUG</Name>
+              <Definition>Plug for power using alternating current (AC)</Definition>
+              <NameAliases>
+                <NameAlias lang="en">AC Plug</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">AC plug</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>DCPLUG</Name>
+              <Definition>Plug for power using direct current (DC)</Definition>
+              <NameAliases>
+                <NameAlias lang="en">DC Plug</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">DC plug</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>COAXIAL</Name>
+              <Definition>Coaxial cable for high-speed communication</Definition>
+              <NameAliases>
+                <NameAlias lang="en">Coaxial</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>CRIMP</Name>
+              <Definition>Crimped wire</Definition>
+              <NameAliases>
+                <NameAlias lang="en">Crimp</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>RJ</Name>
+              <Definition>Registered jack</Definition>
+              <NameAliases>
+                <NameAlias lang="en">Rj</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>RADIO</Name>
+              <Definition>Radio wave transmission</Definition>
+              <NameAliases>
+                <NameAlias lang="en">Radio</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>DIN</Name>
+              <NameAliases>
+                <NameAlias lang="en">DIN</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>DSUB</Name>
+              <Definition />
+              <NameAliases>
+                <NameAlias lang="en">D-Sub</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>DVI</Name>
+              <Definition>Digital video interchange</Definition>
+              <NameAliases>
+                <NameAlias lang="en">DVI</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>EIAJ</Name>
+              <NameAliases>
+                <NameAlias lang="en">EIAJ</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>HDMI</Name>
+              <Definition>High Definition Multimedia Interface</Definition>
+              <NameAliases>
+                <NameAlias lang="en">HDMI</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">High-definition multimedia interface</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>RCA</Name>
+              <Definition />
+              <NameAliases>
+                <NameAlias lang="en">RCA</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>SOCKET</Name>
+              <Definition>Socket for a light bulb, where the ConnectionSubtype identifies the base (though not necessarily the bulb shape or size).</Definition>
+              <NameAliases />
+              <DefinitionAliases />
+            </ConstantDef>
+            <ConstantDef>
+              <Name>TRS</Name>
+              <NameAliases>
+                <NameAlias lang="en">TRS</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>USB</Name>
+              <Definition>Universal serial bus</Definition>
+              <NameAliases>
+                <NameAlias lang="en">USB</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>XLR</Name>
+              <NameAliases>
+                <NameAlias lang="en">XLR</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>OTHER</Name>
+              <NameAliases>
+                <NameAlias lang="en">(other)</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Value is not listed.</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>NOTKNOWN</Name>
+              <NameAliases>
+                <NameAlias lang="en">(unknown)</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Value is unknown.</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>UNSET</Name>
+              <NameAliases>
+                <NameAlias lang="en">(unset)</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Value has not been specified.</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+          </ConstantList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Connection Type</NameAlias>
+        <NameAlias lang="ja-JP">接続タイプ</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="ja-JP">物理ポート接続：
+
+- ACPLUG: AC プラグ
+- DCPLUG: DC プラグ
+- CRIMP: 裸線</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="4a16661be73843fb99eb498a99015880">
+      <Name>ConnectionSubtype</Name>
+      <Definition>&lt;p&gt;The physical port connection subtype that further qualifies the ConnectionType.  The following values are recommended:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;ACPLUG: A, B, C, D, E, F, EF, G, H, I, J, K, L, M&lt;/li&gt; 
+&lt;li&gt;DIN: Mini3P, Mini4P, Mini5P, Mini6P, Mini7P, Mini8P, Mini9P&lt;/li&gt;
+&lt;li&gt;DSub: DA15, DB25, DC37, DD50, DE9, DE15&lt;/li&gt;
+&lt;li&gt;EIAJ: RC5720&lt;/li&gt;
+
+&lt;li&gt;HDMI: A, B, C&lt;/li&gt;
+&lt;li&gt;RADIO: IEEE802.11g, IEEE802.11n
+&lt;/li&gt;
+&lt;li&gt;RJ: 4P4C, 6P2C, 8P8C&lt;/li&gt;
+&lt;li&gt;SOCKET: E-11, E-12, E-14, E-17, E-26, E-27, E-39, E-40&lt;/li&gt;
+&lt;li&gt;TRS: TS_Mini, TS_SubMini, TRS_Mini, TRS_SubMini&lt;/li&gt;
+&lt;/ul&gt;</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcLabel" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Connection Subtype</NameAlias>
+        <NameAlias lang="ja-JP">接続サブタイプ</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="ja-JP">物理ポート接続のサブタイプ。接続タイプ以外の情報を設定する場合に使用。下記の値を設定：
+
+- ACプラグ: A, B, C, D, E, F, EF, G, H, I, J, K, L, M</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="5a9b13be92d1458583634e056c138f30">
+      <Name>ConnectionGender</Name>
+      <Definition>The physical connection gender.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList />
+          <ConstantList>
+            <ConstantDef>
+              <Name>MALE</Name>
+              <NameAliases>
+                <NameAlias lang="en">Male</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>FEMALE</Name>
+              <NameAliases>
+                <NameAlias lang="en">Female</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>OTHER</Name>
+              <NameAliases>
+                <NameAlias lang="en">(other)</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Value is not listed.</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>NOTKNOWN</Name>
+              <NameAliases>
+                <NameAlias lang="en">(unknown)</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Value is unknown.</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>UNSET</Name>
+              <NameAliases>
+                <NameAlias lang="en">(unset)</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Value has not been specified.</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+          </ConstantList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Connection Gender</NameAlias>
+        <NameAlias lang="ja-JP">接続ジェンダー</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="ja-JP">形状的な接続ジェンダー（オス、メス、その他、未知、未設定）。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="03d981504bcf4f748b31dee8065d5959">
+      <Name>ConductorFunction</Name>
+      <Definition>For ports distributing power, indicates function of the conductors to which the load is connected.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList />
+          <ConstantList>
+            <ConstantDef>
+              <Name>PHASE_L1</Name>
+              <NameAliases>
+                <NameAlias lang="en">Phase L1</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>PHASE_L2</Name>
+              <NameAliases>
+                <NameAlias lang="en">Phase L2</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>PHASE_L3</Name>
+              <NameAliases>
+                <NameAlias lang="en">Phase L3</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>NEUTRAL</Name>
+              <NameAliases>
+                <NameAlias lang="en">Neutral</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>PROTECTIVEEARTH</Name>
+              <NameAliases>
+                <NameAlias lang="en">Protective Earth</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>PROTECTIVEEARTHNEUTRAL</Name>
+              <NameAliases>
+                <NameAlias lang="en">Protective Earth Neutral</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>OTHER</Name>
+              <NameAliases>
+                <NameAlias lang="en">(other)</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Value is not listed.</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>NOTKNOWN</Name>
+              <NameAliases>
+                <NameAlias lang="en">(unknown)</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Value is unknown.</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>UNSET</Name>
+              <NameAliases>
+                <NameAlias lang="en">(unset)</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Value has not been specified.</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+          </ConstantList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Conductor Function</NameAlias>
+        <NameAlias lang="ja-JP">電線種類</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="ja-JP">電気負荷と連結する電線種類。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="eaf80f92e6df4c29a18086e89bea20e9">
+      <Name>CurrentContent3rdHarmonic</Name>
+      <Definition>The ratio between the third harmonic current and the phase current.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveRatioMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Current Content3rd Harmonic</NameAlias>
+        <NameAlias lang="ja-JP">第３高調波電流と相電流の比</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="ja-JP">第３高調波電流と相電流の比率。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="5207092197274e99917bfdcae2efea80">
+      <Name>Current</Name>
+      <Definition>The actual current and operable range.</Definition>
+      <PropertyType>
+        <TypePropertyBoundedValue>
+          <DataType type="IfcElectricCurrentMeasure" />
+        </TypePropertyBoundedValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Current</NameAlias>
+        <NameAlias lang="ja-JP">電流</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="ja-JP">実電流と動作可能範囲。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="87b7f6b294b5447ab7edaa0e2b690e7d">
+      <Name>Voltage</Name>
+      <Definition>The actual voltage and operable range.</Definition>
+      <PropertyType>
+        <TypePropertyBoundedValue>
+          <DataType type="IfcElectricVoltageMeasure" />
+        </TypePropertyBoundedValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Voltage</NameAlias>
+        <NameAlias lang="ja-JP">電圧</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="ja-JP">実電圧と動作可能範囲。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="437e2945ded040998d45ae3d9d9770db">
+      <Name>Power</Name>
+      <Definition>The actual power and operable range.</Definition>
+      <PropertyType>
+        <TypePropertyBoundedValue>
+          <DataType type="IfcPowerMeasure" />
+        </TypePropertyBoundedValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Power</NameAlias>
+        <NameAlias lang="ja-JP">電力</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="ja-JP">実電力と動作可能範囲。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="1592daba2e144952a71949248bab50cc">
+      <Name>Protocols</Name>
+      <Definition>For data ports, identifies the protocols used as defined by the Open System Interconnection (OSI) Basic Reference Model (ISO 7498).  Layers include: 1. Physical; 2. DataLink; 3. Network; 4. Transport; 5. Session; 6. Presentation; 7. Application.  Example: 3:IP, 4:TCP, 5:HTTP</Definition>
+      <PropertyType>
+        <TypePropertyListValue>
+          <ListValue>
+            <DataType type="IfcIdentifier" />
+          </ListValue>
+        </TypePropertyListValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Protocols</NameAlias>
+        <NameAlias lang="ja">プロトコル</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="ja">OSIのオープンシステム相互接続用基本プロトコル(ISO 7498)：
+1. 物理層; 2.データリンク層; 3. ネットワーク層; 4. トランスポート層; 5. セッション層; 6.プレゼンテーション層 ; 7. アプリケーション層. 
+例: 3:IP, 4:TCP, 5:HTTP</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+  </PropertyDefs>
+  <PsetDefinitionAliases>
+    <PsetDefinitionAlias lang="en" />
+    <PsetDefinitionAlias lang="ja-JP">IfcDistributionPortオブジェクトに設定される電力ポートに関する属性情報。</PsetDefinitionAlias>
+  </PsetDefinitionAliases>
+</PropertySetDef>

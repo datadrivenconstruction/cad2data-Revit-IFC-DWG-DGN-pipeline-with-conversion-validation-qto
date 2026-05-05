@@ -1,0 +1,130 @@
+<?xml version="1.0"?>
+<PropertySetDef xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ifdguid="c6bcce00d1df11e1800000215ad4efdf" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4" />
+  <Name>Pset_ElectricApplianceTypeElectricCooker</Name>
+  <Definition>Common properties for electric cooker appliances.  HISTORY: Added in IFC4.</Definition>
+  <Applicability />
+  <ApplicableClasses>
+    <ClassName>IfcElectricAppliance/ELECTRICCOOKER</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcElectricAppliance/ELECTRICCOOKER</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef ifdguid="cb818200d1df11e1800000215ad4efdf">
+      <Name>ElectricCookerType</Name>
+      <Definition>Type of electric cooker.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_ElectricApplianceElectricCookerType">
+            <EnumItem>STEAMCOOKER</EnumItem>
+            <EnumItem>DEEPFRYER</EnumItem>
+            <EnumItem>STOVE</EnumItem>
+            <EnumItem>OVEN</EnumItem>
+            <EnumItem>TILTINGFRYINGPAN</EnumItem>
+            <EnumItem>COOKINGKETTLE</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>UNKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+          <ConstantList>
+            <ConstantDef>
+              <Name>STEAMCOOKER</Name>
+              <NameAliases>
+                <NameAlias lang="en">Steam Cooker</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>DEEPFRYER</Name>
+              <NameAliases>
+                <NameAlias lang="en">Deep Fryer</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>STOVE</Name>
+              <NameAliases>
+                <NameAlias lang="en">Stove</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>OVEN</Name>
+              <NameAliases>
+                <NameAlias lang="en">Oven</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>TILTINGFRYINGPAN</Name>
+              <NameAliases>
+                <NameAlias lang="en">Tilting Frying Pan</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>COOKINGKETTLE</Name>
+              <NameAliases>
+                <NameAlias lang="en">Cooking Kettle</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>OTHER</Name>
+              <NameAliases>
+                <NameAlias lang="en">(other)</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Value is not listed.</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>UNKNOWN</Name>
+              <NameAliases>
+                <NameAlias lang="en">Unknown</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>UNSET</Name>
+              <NameAliases>
+                <NameAlias lang="en">(unset)</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Value has not been specified.</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+          </ConstantList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Electric Cooker Type</NameAlias>
+        <NameAlias lang="ja-JP">電気調理器のタイプ</NameAlias>
+        <NameAlias lang="ko-KR">전기 밥솥의 종류</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="ja-JP">電気調理器のタイプ。</DefinitionAlias>
+        <DefinitionAlias lang="ko-KR">전자 조리기의 유형.</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+  </PropertyDefs>
+  <PsetDefinitionAliases>
+    <PsetDefinitionAlias lang="en" />
+    <PsetDefinitionAlias lang="ja-JP">電気調理器の共通プロパティ。
+IFC4にて追加。</PsetDefinitionAlias>
+  </PsetDefinitionAliases>
+</PropertySetDef>

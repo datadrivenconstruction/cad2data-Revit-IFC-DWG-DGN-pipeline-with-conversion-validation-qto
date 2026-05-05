@@ -1,0 +1,349 @@
+<?xml version="1.0"?>
+<PropertySetDef xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ifdguid="9cfaab80d1cd11e1800000215ad4efdf" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4" />
+  <Name>Pset_ControllerTypeProgrammable</Name>
+  <Definition>Properties for Discrete Digital Control (DDC) or programmable logic controllers.  HISTORY: Added in IFC4.</Definition>
+  <Applicability />
+  <ApplicableClasses>
+    <ClassName>IfcController/PROGRAMMABLE</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcController/PROGRAMMABLE</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef ifdguid="a126c900d1cd11e1800000215ad4efdf">
+      <Name>ControlType</Name>
+      <Definition>The type of discrete digital controller: 
+
+PRIMARY: Controller has built-in communication interface for PC connection, may manage secondary controllers.
+SECONDARY: Controller communicates with primary controller and its own managed devices.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_ControllerTypeProgrammable">
+            <EnumItem>PRIMARY</EnumItem>
+            <EnumItem>SECONDARY</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+          <ConstantList>
+            <ConstantDef>
+              <Name>PRIMARY</Name>
+              <NameAliases>
+                <NameAlias lang="en">Primary</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Controller has built-in communication interface for PC connection, may manage secondary controllers</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>SECONDARY</Name>
+              <NameAliases>
+                <NameAlias lang="en">Secondary</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Controller communicates with primary controller and its own managed devices</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>OTHER</Name>
+              <NameAliases>
+                <NameAlias lang="en">(other)</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Value is not listed.</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>NOTKNOWN</Name>
+              <NameAliases>
+                <NameAlias lang="en">(unknown)</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Value is unknown.</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>UNSET</Name>
+              <NameAliases>
+                <NameAlias lang="en">(unset)</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Value has not been specified.</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+          </ConstantList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Control Type</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="ab48c780d1cd11e1800000215ad4efdf">
+      <Name>FirmwareVersion</Name>
+      <Definition>Indicates version of device firmware according to device manufacturer.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcLabel" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Firmware Version</NameAlias>
+        <NameAlias lang="ko-KR">펌웨어 버전</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="ko-KR">컨트롤러 펌웨어 버전</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="b0a61200d1cd11e1800000215ad4efdf">
+      <Name>SoftwareVersion</Name>
+      <Definition>Indicates version of application software according to systems integrator.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcLabel" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Software Version</NameAlias>
+        <NameAlias lang="ko-KR">소프트웨어 버전</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="ko-KR">컨트롤러 소프트웨어 버전</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="5a95c146e11d4ab09a7b5dbaa356881c">
+      <Name>Application</Name>
+      <Definition>Indicates application of controller.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_ControllerApplication">
+            <EnumItem>ModemController</EnumItem>
+            <EnumItem>TelephoneDirectory</EnumItem>
+            <EnumItem>FanCoilUnitController</EnumItem>
+            <EnumItem>RoofTopUnitController</EnumItem>
+            <EnumItem>UnitVentilatorController</EnumItem>
+            <EnumItem>SpaceConfortController</EnumItem>
+            <EnumItem>VAV</EnumItem>
+            <EnumItem>PumpController</EnumItem>
+            <EnumItem>BoilerController</EnumItem>
+            <EnumItem>DischargeAirController</EnumItem>
+            <EnumItem>OccupancyController</EnumItem>
+            <EnumItem>ConstantLightController</EnumItem>
+            <EnumItem>SceneController</EnumItem>
+            <EnumItem>PartitionWallController</EnumItem>
+            <EnumItem>RealTimeKeeper</EnumItem>
+            <EnumItem>RealTimeBasedScheduler</EnumItem>
+            <EnumItem>LightingPanelController</EnumItem>
+            <EnumItem>SunblindController</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+          <ConstantList>
+            <ConstantDef>
+              <Name>MODEMCONTROLLER</Name>
+              <NameAliases>
+                <NameAlias lang="en">Modem Controller</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>TELEPHONEDIRECTORY</Name>
+              <NameAliases>
+                <NameAlias lang="en">Telephone Directory</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>FANCOILUNITCONTROLLER</Name>
+              <NameAliases>
+                <NameAlias lang="en">Fan Coil Unit Controller</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>ROOFTOPUNITCONTROLLER</Name>
+              <NameAliases>
+                <NameAlias lang="en">Roof Top Unit Controller</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>UNITVENTILATORCONTROLLER</Name>
+              <NameAliases>
+                <NameAlias lang="en">Unit Ventilator Controller</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>SPACECONFORTCONTROLLER</Name>
+              <NameAliases>
+                <NameAlias lang="en">Space Confort Controller</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>VAV</Name>
+              <NameAliases>
+                <NameAlias lang="en">VAV</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>PUMPCONTROLLER</Name>
+              <NameAliases>
+                <NameAlias lang="en">Pump Controller</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>BOILERCONTROLLER</Name>
+              <NameAliases>
+                <NameAlias lang="en">Boiler Controller</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>DISCHARGEAIRCONTROLLER</Name>
+              <NameAliases>
+                <NameAlias lang="en">Discharge Air Controller</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>OCCUPANCYCONTROLLER</Name>
+              <NameAliases>
+                <NameAlias lang="en">Occupancy Controller</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>CONSTANTLIGHTCONTROLLER</Name>
+              <NameAliases>
+                <NameAlias lang="en">Constant Light Controller</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>SCENECONTROLLER</Name>
+              <NameAliases>
+                <NameAlias lang="en">Scene Controller</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>PARTITIONWALLCONTROLLER</Name>
+              <NameAliases>
+                <NameAlias lang="en">Partition Wall Controller</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>REALTIMEKEEPER</Name>
+              <NameAliases>
+                <NameAlias lang="en">Real Time Keeper</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>REALTIMEBASEDSCHEDULER</Name>
+              <NameAliases>
+                <NameAlias lang="en">Real Time Based Scheduler</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>LIGHTINGPANELCONTROLLER</Name>
+              <NameAliases>
+                <NameAlias lang="en">Lighting Panel Controller</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>SUNBLINDCONTROLLER</Name>
+              <NameAliases>
+                <NameAlias lang="en">Sunblind Controller</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>OTHER</Name>
+              <NameAliases>
+                <NameAlias lang="en">(other)</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Value is not listed.</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>NOTKNOWN</Name>
+              <NameAliases>
+                <NameAlias lang="en">(unknown)</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Value is unknown.</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>UNSET</Name>
+              <NameAliases>
+                <NameAlias lang="en">(unset)</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Value has not been specified.</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+          </ConstantList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Application</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+      </DefinitionAliases>
+    </PropertyDef>
+  </PropertyDefs>
+  <PsetDefinitionAliases>
+    <PsetDefinitionAlias lang="en" />
+  </PsetDefinitionAliases>
+</PropertySetDef>

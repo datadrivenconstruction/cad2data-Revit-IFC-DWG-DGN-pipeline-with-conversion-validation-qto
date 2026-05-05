@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+<PropertySetDef xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ifdguid="a0d6ff80d1c611e1800000215ad4efdf" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4" />
+  <Name>Pset_CableCarrierSegmentTypeCableTrunkingSegment</Name>
+  <Definition>An enclosed carrier segment with one or more compartments into which cables are placed.
+HISTORY: IFC4 - NominalLength deleted. To be handled as a quantity measure</Definition>
+  <Applicability />
+  <ApplicableClasses>
+    <ClassName>IfcCableCarrierSegment/CABLETRUNKINGSEGMENT</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcCableCarrierSegment/CABLETRUNKINGSEGMENT</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef ifdguid="a59bb380d1c611e1800000215ad4efdf">
+      <Name>NominalWidth</Name>
+      <Definition>The nominal width of the segment.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Nominal Width</NameAlias>
+        <NameAlias lang="ja-JP">公称幅</NameAlias>
+        <NameAlias lang="ko-KR">공칭 폭</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="ja-JP">呼び幅寸法。</DefinitionAlias>
+        <DefinitionAlias lang="ko-KR">폭 치수</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="aaf8fe00d1c611e1800000215ad4efdf">
+      <Name>NominalHeight</Name>
+      <Definition>The nominal height of the segment.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Nominal Height</NameAlias>
+        <NameAlias lang="ja-JP">公称高</NameAlias>
+        <NameAlias lang="ko-KR">공칭높이</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="ja-JP">呼び高寸法。</DefinitionAlias>
+        <DefinitionAlias lang="ko-KR">고 치수</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="b0eedf00d1c611e1800000215ad4efdf">
+      <Name>NumberOfCompartments</Name>
+      <Definition>The number of separate internal compartments within the trunking.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcInteger" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Number Of Compartments</NameAlias>
+        <NameAlias lang="ja-JP">区画数</NameAlias>
+        <NameAlias lang="ko-KR">구획 수</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="ja-JP">管の区別される内部区画の個数。</DefinitionAlias>
+        <DefinitionAlias lang="ko-KR">관 구분되는 내부 파티션 개수</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+  </PropertyDefs>
+  <PsetDefinitionAliases>
+    <PsetDefinitionAlias lang="en" />
+    <PsetDefinitionAlias lang="ja-JP">一つ以上の区画にケーブルを収納する密閉型ケーブルキャリアに関するプロパティセット定義。</PsetDefinitionAlias>
+  </PsetDefinitionAliases>
+</PropertySetDef>

@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+<PropertySetDef xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ifdguid="3b4a3980d1ed11e1800000215ad4efdf" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4" />
+  <Name>Pset_MaterialFuel</Name>
+  <Definition>A set of extended material properties of fuel energy typically used within the context of building services and flow distribution systems.</Definition>
+  <Applicability />
+  <ApplicableClasses>
+    <ClassName>IfcMaterial</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcMaterial</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef ifdguid="3eddc080d1ed11e1800000215ad4efdf">
+      <Name>CombustionTemperature</Name>
+      <Definition>Combustion temperature of the material when air is at 298 K and 100 kPa.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcThermodynamicTemperatureMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Combustion Temperature</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="44d3a180d1ed11e1800000215ad4efdf">
+      <Name>CarbonContent</Name>
+      <Definition>The carbon content in the fuel. This is measured in weight of carbon per unit weight of fuel and is therefore unitless.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveRatioMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Carbon Content</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="4a30ec00d1ed11e1800000215ad4efdf">
+      <Name>LowerHeatingValue</Name>
+      <Definition>Lower Heating Value is defined as the amount of energy released (MJ/kg) when a fuel is burned completely, and H2O is in vapor form in the combustion products.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcHeatingValueMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Lower Heating Value</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="4ef5a000d1ed11e1800000215ad4efdf">
+      <Name>HigherHeatingValue</Name>
+      <Definition>Higher Heating Value is defined as the amount of energy released (MJ/kg) when a fuel is burned completely, and H2O is in liquid form in the combustion products.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcHeatingValueMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Higher Heating Value</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+      </DefinitionAliases>
+    </PropertyDef>
+  </PropertyDefs>
+  <PsetDefinitionAliases>
+    <PsetDefinitionAlias lang="en" />
+  </PsetDefinitionAliases>
+</PropertySetDef>

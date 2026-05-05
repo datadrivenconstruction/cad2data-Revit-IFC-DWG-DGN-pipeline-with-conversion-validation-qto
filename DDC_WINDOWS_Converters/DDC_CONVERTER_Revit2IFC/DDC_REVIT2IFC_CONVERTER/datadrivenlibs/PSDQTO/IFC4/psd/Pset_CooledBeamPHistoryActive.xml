@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<PropertySetDef xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ifdguid="65403380d1ce11e1800000215ad4efdf" templatetype="PSET_PERFORMANCEDRIVEN" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4" />
+  <Name>Pset_CooledBeamPHistoryActive</Name>
+  <Definition>Performance history attributes for an active cooled beam.</Definition>
+  <Applicability />
+  <ApplicableClasses>
+    <ClassName>IfcCooledBeam/ACTIVE</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcCooledBeam/ACTIVE</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef ifdguid="6c674180d1ce11e1800000215ad4efdf">
+      <Name>AirFlowRate</Name>
+      <Definition>Air flow rate.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcTimeSeries" />
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Air Flow Rate</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="6ffac880d1ce11e1800000215ad4efdf">
+      <Name>Throw</Name>
+      <Definition>Distance cooled beam throws the air.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcTimeSeries" />
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Throw</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="72f5b900d1ce11e1800000215ad4efdf">
+      <Name>AirPressureDropCurves</Name>
+      <Definition>Air pressure drop as function of air flow rate.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcTimeSeries" />
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Air Pressure Drop Curves</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+      </DefinitionAliases>
+    </PropertyDef>
+  </PropertyDefs>
+  <PsetDefinitionAliases>
+    <PsetDefinitionAlias lang="en" />
+  </PsetDefinitionAliases>
+</PropertySetDef>

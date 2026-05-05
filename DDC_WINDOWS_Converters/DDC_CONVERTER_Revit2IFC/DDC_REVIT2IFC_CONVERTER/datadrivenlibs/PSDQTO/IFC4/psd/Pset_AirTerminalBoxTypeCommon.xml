@@ -1,0 +1,521 @@
+<?xml version="1.0"?>
+<PropertySetDef xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ifdguid="6ec19f80d1be11e1800000215ad4efdf" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4" />
+  <Name>Pset_AirTerminalBoxTypeCommon</Name>
+  <Definition>Air terminal box type common attributes.</Definition>
+  <Applicability />
+  <ApplicableClasses>
+    <ClassName>IfcAirTerminalBox</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcAirTerminalBox</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef ifdguid="76814400d1be11e1800000215ad4efdf">
+      <Name>Reference</Name>
+      <Definition>Reference ID for this specified type in this project (e.g. type 'A-1'), provided, if there is no classification reference to a recognized classification system used.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcIdentifier" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Reference</NameAlias>
+        <NameAlias lang="fr-FR">Référence</NameAlias>
+        <NameAlias lang="ja-JP">参照記号</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="fr-FR">Identification de référence pour ce type spécifique à ce projet, c'est-à-dire type'A-1', fourni à partir du moment où, s'il n'y a pas de référence de classification par rapport à un système de classification reconnu et en usage.</DefinitionAlias>
+        <DefinitionAlias lang="ja-JP">このプロジェクトにおける参照記号(例：A-1)。分類コードではなく内部で使用されるプロジェクトタイプとして使用されるもの。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="7d0fbb80d1be11e1800000215ad4efdf">
+      <Name>Status</Name>
+      <Definition>Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as "New" - element designed as new addition, "Existing" - element exists and remains, "Demolish" - element existed but is to be demolished,  "Temporary" - element will exists only temporary (like a temporary support structure).</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_ElementStatus">
+            <EnumItem>NEW</EnumItem>
+            <EnumItem>EXISTING</EnumItem>
+            <EnumItem>DEMOLISH</EnumItem>
+            <EnumItem>TEMPORARY</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+          <ConstantList>
+            <ConstantDef>
+              <Name>NEW</Name>
+              <Definition>element designed as new addition</Definition>
+              <NameAliases>
+                <NameAlias lang="en">New</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>EXISTING</Name>
+              <Definition>element exists and is to remain</Definition>
+              <NameAliases>
+                <NameAlias lang="en">Existing</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>DEMOLISH</Name>
+              <Definition>element exists but is to be demolished</Definition>
+              <NameAliases>
+                <NameAlias lang="en">Demolish</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>TEMPORARY</Name>
+              <Definition>element will exist only temporarily (such as a temporary support structure)</Definition>
+              <NameAliases>
+                <NameAlias lang="en">Temporary</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>OTHER</Name>
+              <NameAliases>
+                <NameAlias lang="en">(other)</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Value is not listed.</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>NOTKNOWN</Name>
+              <NameAliases>
+                <NameAlias lang="en">(unknown)</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Value is unknown.</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>UNSET</Name>
+              <NameAliases>
+                <NameAlias lang="en">(unset)</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Value has not been specified.</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+          </ConstantList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Status</NameAlias>
+        <NameAlias lang="fr-FR">Etat</NameAlias>
+        <NameAlias lang="ja-JP">状態</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="fr-FR">Etat de l'élément, utilisé avant tout pour les projets de rénovation et réaménagement. L'état assigné peut être "Nouveau" - l'élément prévu pour du neuf, "Existant" - l'élément existait et est maintenu, "Démoli" - l'élément existait mais doit être démoli/supprimé, "Provisoire" - l'élément existera à titre provisoire seulement (comme un support structurel par exemple).</DefinitionAlias>
+        <DefinitionAlias lang="ja-JP">要素（主にリノベーションまたは改修プロジェクトにおいて）の状態。 状態は、「新規(New)」－新しく追加される要素。「既存」－要素は存在し、かつ残りもの。「破壊」－要素は存在したが、廃棄されるもの。「一時的」－一時的に存在する要素（一時的にサポートしている構造のようなもの）。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="8c8f0480d1be11e1800000215ad4efdf">
+      <Name>AirflowRateRange</Name>
+      <Definition>Range of airflow that can be delivered.</Definition>
+      <PropertyType>
+        <TypePropertyBoundedValue>
+          <DataType type="IfcVolumetricFlowRateMeasure" />
+        </TypePropertyBoundedValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Airflow Rate Range</NameAlias>
+        <NameAlias lang="fr-FR">Domaine de débit d'air</NameAlias>
+        <NameAlias lang="ja-JP">風量範囲</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="fr-FR">Plage de débit d'air pouvant être fourni.</DefinitionAlias>
+        <DefinitionAlias lang="ja-JP">送風できる風量の範囲</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="99135d00d1be11e1800000215ad4efdf">
+      <Name>AirPressureRange</Name>
+      <Definition>Allowable air static pressure range at the entrance of the air terminal box.</Definition>
+      <PropertyType>
+        <TypePropertyBoundedValue>
+          <DataType type="IfcPressureMeasure" />
+        </TypePropertyBoundedValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Air Pressure Range</NameAlias>
+        <NameAlias lang="fr-FR">Plage de pression d'air</NameAlias>
+        <NameAlias lang="ja-JP">空気圧範囲</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="fr-FR">Plage admise de la pression statique de l'air à l'entrée du registre terminal de ventilation</DefinitionAlias>
+        <DefinitionAlias lang="ja-JP">ターミナル入り口での許容静圧範囲</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="a16b9800d1be11e1800000215ad4efdf">
+      <Name>NominalAirFlowRate</Name>
+      <Definition>Nominal airflow rate.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcVolumetricFlowRateMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Nominal Air Flow Rate</NameAlias>
+        <NameAlias lang="fr-FR">Débit d'air nominal</NameAlias>
+        <NameAlias lang="ja-JP">設計風量範囲</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="fr-FR">Débit d'air nominal</DefinitionAlias>
+        <DefinitionAlias lang="ja-JP">設計風量範囲</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="a7617900d1be11e1800000215ad4efdf">
+      <Name>ArrangementType</Name>
+      <Definition>Terminal box arrangement.
+SingleDuct: Terminal box receives warm or cold air from a single air supply duct.
+DualDuct: Terminal box receives warm and cold air from separate air supply ducts.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_AirTerminalBoxArrangementType">
+            <EnumItem>SINGLEDUCT</EnumItem>
+            <EnumItem>DUALDUCT</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+          <ConstantList>
+            <ConstantDef>
+              <Name>SINGLEDUCT</Name>
+              <NameAliases>
+                <NameAlias lang="en">Single Duct</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>DUALDUCT</Name>
+              <NameAliases>
+                <NameAlias lang="en">Dual Duct</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>OTHER</Name>
+              <NameAliases>
+                <NameAlias lang="en">(other)</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Value is not listed.</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>NOTKNOWN</Name>
+              <NameAliases>
+                <NameAlias lang="en">(unknown)</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Value is unknown.</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>UNSET</Name>
+              <NameAliases>
+                <NameAlias lang="en">(unset)</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Value has not been specified.</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+          </ConstantList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Arrangement Type</NameAlias>
+        <NameAlias lang="fr-FR">Type de configuration</NameAlias>
+        <NameAlias lang="ja-JP">ターミナル形式</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="fr-FR">Configuration du registre terminal.
+Conduit unique: le registre terminal reçoit de l'air chaud ou froid depuis un conduit unique d'amenée d'air</DefinitionAlias>
+        <DefinitionAlias lang="ja-JP">ターミナルボックスの形式。
+単一ダクト：単一のダクトから、温風または冷風を受け取る
+デュアルダクト：温風、冷風を分離されたダクトから受け取る</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="b5af9500d1be11e1800000215ad4efdf">
+      <Name>ReheatType</Name>
+      <Definition>Terminal box reheat type.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_AirTerminalBoxReheatType">
+            <EnumItem>ELECTRICALREHEAT</EnumItem>
+            <EnumItem>WATERCOILREHEAT</EnumItem>
+            <EnumItem>STEAMCOILREHEAT</EnumItem>
+            <EnumItem>GASREHEAT</EnumItem>
+            <EnumItem>NONE</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+          <ConstantList>
+            <ConstantDef>
+              <Name>ELECTRICALREHEAT</Name>
+              <NameAliases>
+                <NameAlias lang="en">Electrical Reheat</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>WATERCOILREHEAT</Name>
+              <NameAliases>
+                <NameAlias lang="en">Water Coil Reheat</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>STEAMCOILREHEAT</Name>
+              <NameAliases>
+                <NameAlias lang="en">Steam Coil Reheat</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>GASREHEAT</Name>
+              <NameAliases>
+                <NameAlias lang="en">Gas Reheat</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>NONE</Name>
+              <NameAliases>
+                <NameAlias lang="en">None</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>OTHER</Name>
+              <NameAliases>
+                <NameAlias lang="en">(other)</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Value is not listed.</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>NOTKNOWN</Name>
+              <NameAliases>
+                <NameAlias lang="en">(unknown)</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Value is unknown.</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>UNSET</Name>
+              <NameAliases>
+                <NameAlias lang="en">(unset)</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Value has not been specified.</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+          </ConstantList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Reheat Type</NameAlias>
+        <NameAlias lang="fr-FR">Type de réchauffage</NameAlias>
+        <NameAlias lang="ja-JP">再熱形式</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="fr-FR">Type de réchauffage d'un registre terminal de ventilation</DefinitionAlias>
+        <DefinitionAlias lang="ja-JP">ターミナルの再熱方式
+（電気、水コイル、蒸気コイル、ガス加熱．．．）</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="c829ce80d1be11e1800000215ad4efdf">
+      <Name>HasSoundAttenuator</Name>
+      <Definition>Terminal box has a sound attenuator.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcBoolean" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Has Sound Attenuator</NameAlias>
+        <NameAlias lang="fr-FR">Possède correction acoustique</NameAlias>
+        <NameAlias lang="ja-JP">消音有無</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="fr-FR">Le registre terminal possède une correction acoustique</DefinitionAlias>
+        <DefinitionAlias lang="ja-JP">ターミナルに消音があるか否か　（あればTRUE)</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="cd871900d1be11e1800000215ad4efdf">
+      <Name>HasReturnAir</Name>
+      <Definition>Terminal box has return air mixed with supply air from duct work.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcBoolean" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Has Return Air</NameAlias>
+        <NameAlias lang="fr-FR">Possède air  repris</NameAlias>
+        <NameAlias lang="ja-JP">還気有無</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="fr-FR">Le registre terminal a son air de reprise mélangé avec une amenée d'air issu du réseau de ventilation</DefinitionAlias>
+        <DefinitionAlias lang="ja-JP">ターミナルで還気を混合しているか否か（していればTRUE)</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="d37cfa00d1be11e1800000215ad4efdf">
+      <Name>HasFan</Name>
+      <Definition>Terminal box has a fan inside (fan powered box).</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcBoolean" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Has Fan</NameAlias>
+        <NameAlias lang="fr-FR">Possède ventilateur</NameAlias>
+        <NameAlias lang="ja-JP">送風機有無</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="fr-FR">Le registre terminal possède dans son  intérieur un ventilateur (registre motorisé)</DefinitionAlias>
+        <DefinitionAlias lang="ja-JP">内部に送風機を持つ時にTRUE</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="d972db00d1be11e1800000215ad4efdf">
+      <Name>NominalInletAirPressure</Name>
+      <Definition>Nominal airflow inlet static pressure.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPressureMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Nominal Inlet Air Pressure</NameAlias>
+        <NameAlias lang="fr-FR">Pression nominale à l'entrée d'air</NameAlias>
+        <NameAlias lang="ja-JP">設計入口空気圧</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="fr-FR">Pression statique en débit d'air nominal à l'entrée</DefinitionAlias>
+        <DefinitionAlias lang="ja-JP">入口静圧の設計値</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="df68bc00d1be11e1800000215ad4efdf">
+      <Name>NominalDamperDiameter</Name>
+      <Definition>Nominal damper diameter.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Nominal Damper Diameter</NameAlias>
+        <NameAlias lang="fr-FR">Diamètre nominal clapet</NameAlias>
+        <NameAlias lang="ja-JP">設計ダンパ直径</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="fr-FR">Diamètre nominal clapet</DefinitionAlias>
+        <DefinitionAlias lang="ja-JP">ダンパ直径の設計値</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="e4c60680d1be11e1800000215ad4efdf">
+      <Name>HousingThickness</Name>
+      <Definition>Air terminal box housing material thickness.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcLengthMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Housing Thickness</NameAlias>
+        <NameAlias lang="fr-FR">Epaisseur de l'enveloppe</NameAlias>
+        <NameAlias lang="ja-JP">ハウジング板厚</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="fr-FR">Epaisseur du matériau réalisant l'enveloppe du registre terminal de ventilation</DefinitionAlias>
+        <DefinitionAlias lang="ja-JP">ターミナルのハウジング材の板厚</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="eabbe780d1be11e1800000215ad4efdf">
+      <Name>OperationTemperatureRange</Name>
+      <Definition>Allowable operational range of the ambient air temperature.</Definition>
+      <PropertyType>
+        <TypePropertyBoundedValue>
+          <DataType type="IfcThermodynamicTemperatureMeasure" />
+        </TypePropertyBoundedValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Operation Temperature Range</NameAlias>
+        <NameAlias lang="fr-FR">Plage de température d'exploitation</NameAlias>
+        <NameAlias lang="ja-JP">動作温度範囲</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="fr-FR">Plage opérationnelle possible de la température de l'air ambiant</DefinitionAlias>
+        <DefinitionAlias lang="ja-JP">許容周囲温度範囲</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="f1e2f580d1be11e1800000215ad4efdf">
+      <Name>ReturnAirFractionRange</Name>
+      <Definition>Allowable return air fraction range as a fraction of discharge airflow.</Definition>
+      <PropertyType>
+        <TypePropertyBoundedValue>
+          <DataType type="IfcPositiveRatioMeasure" />
+        </TypePropertyBoundedValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Return Air Fraction Range</NameAlias>
+        <NameAlias lang="fr-FR">Plage pour la fraction d'air repris</NameAlias>
+        <NameAlias lang="ja-JP">還気風量比</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="fr-FR">Plage possiblede la fraction d'air repris en tant que fraction de l'air rejeté</DefinitionAlias>
+        <DefinitionAlias lang="ja-JP">送風量の一部としての許容還気風量</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+  </PropertyDefs>
+  <PsetDefinitionAliases>
+    <PsetDefinitionAlias lang="en" />
+    <PsetDefinitionAlias lang="ja-JP">ターミナルボックスタイプの共通属性。</PsetDefinitionAlias>
+  </PsetDefinitionAliases>
+</PropertySetDef>

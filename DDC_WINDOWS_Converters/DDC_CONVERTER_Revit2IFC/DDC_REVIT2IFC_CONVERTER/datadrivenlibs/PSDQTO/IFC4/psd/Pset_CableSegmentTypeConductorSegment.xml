@@ -1,0 +1,375 @@
+<?xml version="1.0"?>
+<PropertySetDef xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ifdguid="24ddb700d1c811e1800000215ad4efdf" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4" />
+  <Name>Pset_CableSegmentTypeConductorSegment</Name>
+  <Definition>An electrical conductor is a single linear element with the specific purpose to lead electric current. The core of one lead is normally single wired or multiwired which are intertwined. According to IEC 60050: IEV 195-01-07, a conductor is a conductive part intended to carry a specified electric current.</Definition>
+  <Applicability />
+  <ApplicableClasses>
+    <ClassName>IfcCableSegment/CONDUCTORSEGMENT</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcCableSegment/CONDUCTORSEGMENT</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef ifdguid="2a3b0180d1c811e1800000215ad4efdf">
+      <Name>CrossSectionalArea</Name>
+      <Definition>Cross section area of the phase(s) lead(s).</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcAreaMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Cross Sectional Area</NameAlias>
+        <NameAlias lang="ja-JP">断面積</NameAlias>
+        <NameAlias lang="ko-KR">단면적 영역</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="ja-JP">位相、リードの断面積。</DefinitionAlias>
+        <DefinitionAlias lang="ko-KR">리드 단면적.</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="30c97900d1c811e1800000215ad4efdf">
+      <Name>Function</Name>
+      <Definition>Type of function for which the conductor is intended.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_FunctionEnum">
+            <EnumItem>LINE</EnumItem>
+            <EnumItem>NEUTRAL</EnumItem>
+            <EnumItem>PROTECTIVEEARTH</EnumItem>
+            <EnumItem>PROTECTIVEEARTHNEUTRAL</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+          <ConstantList>
+            <ConstantDef>
+              <Name>LINE</Name>
+              <NameAliases>
+                <NameAlias lang="en">Line</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>NEUTRAL</Name>
+              <NameAliases>
+                <NameAlias lang="en">Neutral</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>PROTECTIVEEARTH</Name>
+              <NameAliases>
+                <NameAlias lang="en">Protective Earth</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>PROTECTIVEEARTHNEUTRAL</Name>
+              <NameAliases>
+                <NameAlias lang="en">Protective Earth Neutral</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>OTHER</Name>
+              <NameAliases>
+                <NameAlias lang="en">(other)</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Value is not listed.</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>NOTKNOWN</Name>
+              <NameAliases>
+                <NameAlias lang="en">(unknown)</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Value is unknown.</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>UNSET</Name>
+              <NameAliases>
+                <NameAlias lang="en">(unset)</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Value has not been specified.</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+          </ConstantList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Function</NameAlias>
+        <NameAlias lang="ja-JP">機能</NameAlias>
+        <NameAlias lang="ko-KR">기능</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="ja-JP">導体の機能のタイプ。</DefinitionAlias>
+        <DefinitionAlias lang="ko-KR">도체의 기능 유형.</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="40e15880d1c811e1800000215ad4efdf">
+      <Name>Material</Name>
+      <Definition>Type of material from which the conductor is constructed.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_MaterialEnum">
+            <EnumItem>ALUMINIUM</EnumItem>
+            <EnumItem>COPPER</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+          <ConstantList>
+            <ConstantDef>
+              <Name>ALUMINIUM</Name>
+              <NameAliases>
+                <NameAlias lang="en">Aluminium</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>COPPER</Name>
+              <NameAliases>
+                <NameAlias lang="en">Copper</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>OTHER</Name>
+              <NameAliases>
+                <NameAlias lang="en">(other)</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Value is not listed.</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>NOTKNOWN</Name>
+              <NameAliases>
+                <NameAlias lang="en">(unknown)</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Value is unknown.</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>UNSET</Name>
+              <NameAliases>
+                <NameAlias lang="en">(unset)</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Value has not been specified.</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+          </ConstantList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Material</NameAlias>
+        <NameAlias lang="ja-JP">材料</NameAlias>
+        <NameAlias lang="ko-KR">도체의 기능 유형.</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="ja-JP">導体を構成する材料のタイプ。</DefinitionAlias>
+        <DefinitionAlias lang="ko-KR">도체를 구성하는 재료의 종류.</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="4ccd1a80d1c811e1800000215ad4efdf">
+      <Name>Construction</Name>
+      <Definition>Purpose of informing on how the vonductor is constucted (interwined or solid). I.e. Solid (IEV 461-01-06), stranded (IEV 461-01-07), solid-/finestranded(IEV 461-01-11) (not flexible/flexible).</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_ConstructionEnum">
+            <EnumItem>SOLIDCONDUCTOR</EnumItem>
+            <EnumItem>STRANDEDCONDUCTOR</EnumItem>
+            <EnumItem>FLEXIBLESTRANDEDCONDUCTOR</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+          <ConstantList>
+            <ConstantDef>
+              <Name>SOLIDCONDUCTOR</Name>
+              <NameAliases>
+                <NameAlias lang="en">Solid Conductor</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>STRANDEDCONDUCTOR</Name>
+              <NameAliases>
+                <NameAlias lang="en">Stranded Conductor</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>FLEXIBLESTRANDEDCONDUCTOR</Name>
+              <NameAliases>
+                <NameAlias lang="en">Flexible Stranded Conductor</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>OTHER</Name>
+              <NameAliases>
+                <NameAlias lang="en">(other)</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Value is not listed.</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>NOTKNOWN</Name>
+              <NameAliases>
+                <NameAlias lang="en">(unknown)</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Value is unknown.</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>UNSET</Name>
+              <NameAliases>
+                <NameAlias lang="en">(unset)</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Value has not been specified.</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+          </ConstantList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Construction</NameAlias>
+        <NameAlias lang="ja-JP">構造</NameAlias>
+        <NameAlias lang="ko-KR">구조</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="ja-JP">導体の構成（より線か単線）の定義。すなわち単線（IEV 461-01-06）、より線（IEV 461-01-07）、フレキシブル導体（IEV 461-01-11）（フレキシブルか否か）で定義。</DefinitionAlias>
+        <DefinitionAlias lang="ko-KR">도체 구성 (연선 또는 단선)의 정의 즉 단선 (IEV 461-01-06), 트위스트 (IEV 461-01-07), 플렉서블 도체 (IEV 461-01-11) (유연한 아닌지 가) 정의</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="59ea0980d1c811e1800000215ad4efdf">
+      <Name>Shape</Name>
+      <Definition>Indication of the shape of the conductor.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_ShapeEnum">
+            <EnumItem>HELICALCONDUCTOR</EnumItem>
+            <EnumItem>CIRCULARCONDUCTOR</EnumItem>
+            <EnumItem>SECTORCONDUCTOR</EnumItem>
+            <EnumItem>RECTANGULARCONDUCTOR</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+          <ConstantList>
+            <ConstantDef>
+              <Name>HELICALCONDUCTOR</Name>
+              <NameAliases>
+                <NameAlias lang="en">Helical Conductor</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>CIRCULARCONDUCTOR</Name>
+              <NameAliases>
+                <NameAlias lang="en">Circular Conductor</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>SECTORCONDUCTOR</Name>
+              <NameAliases>
+                <NameAlias lang="en">Sector Conductor</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>RECTANGULARCONDUCTOR</Name>
+              <NameAliases>
+                <NameAlias lang="en">Rectangular Conductor</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>OTHER</Name>
+              <NameAliases>
+                <NameAlias lang="en">(other)</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Value is not listed.</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>NOTKNOWN</Name>
+              <NameAliases>
+                <NameAlias lang="en">(unknown)</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Value is unknown.</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>UNSET</Name>
+              <NameAliases>
+                <NameAlias lang="en">(unset)</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Value has not been specified.</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+          </ConstantList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Shape</NameAlias>
+        <NameAlias lang="ja-JP">形状</NameAlias>
+        <NameAlias lang="ko-KR">형상</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="ja-JP">導体の形状を表示。</DefinitionAlias>
+        <DefinitionAlias lang="ko-KR">도체의 형상을 표시합니다.</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+  </PropertyDefs>
+  <PsetDefinitionAliases>
+    <PsetDefinitionAlias lang="en" />
+    <PsetDefinitionAlias lang="ja-JP">電気導体は電流を導く目的で使用される線状の導体である。
+1本の導体の中心は、1本のワイヤーまたは、寄り合わせた複数のワイヤーからなる。IEC 60050：IEV 195-01-07によると、導体は指定された電流を運ぶことを目的とする伝導部分である。</PsetDefinitionAlias>
+  </PsetDefinitionAliases>
+</PropertySetDef>

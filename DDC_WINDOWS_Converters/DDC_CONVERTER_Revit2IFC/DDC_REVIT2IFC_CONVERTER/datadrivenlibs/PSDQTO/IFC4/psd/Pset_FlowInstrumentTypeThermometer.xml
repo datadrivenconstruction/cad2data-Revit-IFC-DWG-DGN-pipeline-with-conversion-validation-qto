@@ -1,0 +1,118 @@
+<?xml version="1.0"?>
+<PropertySetDef xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ifdguid="d213f780d1e711e1800000215ad4efdf" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4" />
+  <Name>Pset_FlowInstrumentTypeThermometer</Name>
+  <Definition>A device that reads and displays a temperature value at a point.</Definition>
+  <Applicability />
+  <ApplicableClasses>
+    <ClassName>IfcFlowInstrument/THERMOMETER</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcFlowInstrument/THERMOMETER</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef ifdguid="d7714200d1e711e1800000215ad4efdf">
+      <Name>ThermometerType</Name>
+      <Definition>Identifies the means by which temperature is displayed.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_ThermometerType">
+            <EnumItem>DIAL</EnumItem>
+            <EnumItem>DIGITAL</EnumItem>
+            <EnumItem>STEM</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+          <ConstantList>
+            <ConstantDef>
+              <Name>DIAL</Name>
+              <NameAliases>
+                <NameAlias lang="en">Dial</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>DIGITAL</Name>
+              <NameAliases>
+                <NameAlias lang="en">Digital</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>STEM</Name>
+              <NameAliases>
+                <NameAlias lang="en">Stem</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>OTHER</Name>
+              <NameAliases>
+                <NameAlias lang="en">(other)</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Value is not listed.</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>NOTKNOWN</Name>
+              <NameAliases>
+                <NameAlias lang="en">(unknown)</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Value is unknown.</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>UNSET</Name>
+              <NameAliases>
+                <NameAlias lang="en">(unset)</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Value has not been specified.</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+          </ConstantList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Thermometer Type</NameAlias>
+        <NameAlias lang="ja-JP">温度計タイプ</NameAlias>
+        <NameAlias lang="ko-KR">온도계 유형</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="ja-JP">温度が表示される手段を識別する。</DefinitionAlias>
+        <DefinitionAlias lang="ko-KR">온도가 표시되는 방법을 확인한다.</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="e5bf5e00d1e711e1800000215ad4efdf">
+      <Name>DisplaySize</Name>
+      <Definition>The physical size of the display. In the case of a stem thermometer, this will be the length of the stem. For a dial thermometer, it will be the diameter of the dial.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Display Size</NameAlias>
+        <NameAlias lang="ja-JP">表示サイズ</NameAlias>
+        <NameAlias lang="ko-KR">디스플레이 크기</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="ja-JP">表示のサイズ。 棒温度計の場合では、軸の長さになる。 ダイヤル温度計に関しては、ダイヤルの直径になる。</DefinitionAlias>
+        <DefinitionAlias lang="ko-KR">표시의 크기입니다. 막대 온도계의 경우, 축의 길이가된다. 다이얼 온도계에 대해서는 다이얼 직경된다.</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+  </PropertyDefs>
+  <PsetDefinitionAliases>
+    <PsetDefinitionAlias lang="en" />
+    <PsetDefinitionAlias lang="ja-JP">温度を測定し表示するデバイス。</PsetDefinitionAlias>
+  </PsetDefinitionAliases>
+</PropertySetDef>

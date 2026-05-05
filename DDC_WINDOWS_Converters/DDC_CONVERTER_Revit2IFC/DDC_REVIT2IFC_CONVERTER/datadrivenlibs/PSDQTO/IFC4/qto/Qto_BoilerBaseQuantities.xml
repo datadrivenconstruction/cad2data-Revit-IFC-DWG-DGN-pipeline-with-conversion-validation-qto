@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<QtoSetDef xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.buildingsmart-tech.org/xml/qto/QTO_IFC4.xsd">
+  <IfcVersion version="IFC4" />
+  <Name>Qto_BoilerBaseQuantities</Name>
+  <Definition>Base quantities that are common to the definition of all types of boilers.</Definition>
+  <Applicability />
+  <ApplicableClasses>
+    <ClassName>IfcBoiler</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcBoiler</ApplicableTypeValue>
+  <QtoDefs>
+    <QtoDef>
+      <Name>GrossWeight</Name>
+      <Definition>Weight of the element, not including contained fluid.</Definition>
+      <QtoType>Q_WEIGHT</QtoType>
+      <NameAliases>
+        <NameAlias lang="en">Gross Weight</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+      </DefinitionAliases>
+    </QtoDef>
+    <QtoDef>
+      <Name>NetWeight</Name>
+      <Definition>Weight of the element, including contained fluid as designed.</Definition>
+      <QtoType>Q_WEIGHT</QtoType>
+      <NameAliases>
+        <NameAlias lang="en">Net Weight</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+      </DefinitionAliases>
+    </QtoDef>
+    <QtoDef>
+      <Name>TotalSurfaceArea</Name>
+      <Definition>Total surface area of the element.</Definition>
+      <QtoType>Q_AREA</QtoType>
+      <NameAliases>
+        <NameAlias lang="en">Total Surface Area</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+      </DefinitionAliases>
+    </QtoDef>
+  </QtoDefs>
+  <QtoDefinitionAliases>
+    <QtoDefinitionAlias lang="en" />
+  </QtoDefinitionAliases>
+</QtoSetDef>

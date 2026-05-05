@@ -1,0 +1,226 @@
+<?xml version="1.0"?>
+<PropertySetDef xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ifdguid="fa3b3080d1be11e1800000215ad4efdf" templatetype="PSET_OCCURRENCEDRIVEN" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4" />
+  <Name>Pset_AirTerminalOccurrence</Name>
+  <Definition>Air terminal occurrence attributes attached to an instance of IfcAirTerminal.</Definition>
+  <Applicability />
+  <ApplicableClasses>
+    <ClassName>IfcAirTerminal</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcAirTerminal</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef ifdguid="00311180d1bf11e1800000215ad4efdf">
+      <Name>AirflowType</Name>
+      <Definition>Enumeration defining the functional type of air flow through the terminal.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_AirTerminalAirflowType">
+            <EnumItem>SUPPLYAIR</EnumItem>
+            <EnumItem>RETURNAIR</EnumItem>
+            <EnumItem>EXHAUSTAIR</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+          <ConstantList>
+            <ConstantDef>
+              <Name>SUPPLYAIR</Name>
+              <NameAliases>
+                <NameAlias lang="en">Supply Air</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>RETURNAIR</Name>
+              <NameAliases>
+                <NameAlias lang="en">Return Air</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>EXHAUSTAIR</Name>
+              <NameAliases>
+                <NameAlias lang="en">Exhaust Air</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>OTHER</Name>
+              <NameAliases>
+                <NameAlias lang="en">(other)</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Value is not listed.</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>NOTKNOWN</Name>
+              <NameAliases>
+                <NameAlias lang="en">(unknown)</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Value is unknown.</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>UNSET</Name>
+              <NameAliases>
+                <NameAlias lang="en">(unset)</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Value has not been specified.</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+          </ConstantList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Airflow Type</NameAlias>
+        <NameAlias lang="fr-FR">Type de débit d'air</NameAlias>
+        <NameAlias lang="ja-JP">エアフロータイプ</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="fr-FR">Enumération définissant le type fonctionnel de débit à travers le terminal</DefinitionAlias>
+        <DefinitionAlias lang="ja-JP">ターミナルを通過する気流の機能タイプ（給気、還気、排気他）</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="89dd48d1b3184f2599c12f06ce904666">
+      <Name>AirFlowRate</Name>
+      <Definition>The actual airflow rate as designed.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcVolumetricFlowRateMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Air Flow Rate</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="0fb05a80d1bf11e1800000215ad4efdf">
+      <Name>Location</Name>
+      <Definition>Location  (a single type of diffuser can be used for multiple locations); high means close to ceiling.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_AirTerminalLocation">
+            <EnumItem>SIDEWALLHIGH</EnumItem>
+            <EnumItem>SIDEWALLLOW</EnumItem>
+            <EnumItem>CEILINGPERIMETER</EnumItem>
+            <EnumItem>CEILINGINTERIOR</EnumItem>
+            <EnumItem>FLOOR</EnumItem>
+            <EnumItem>SILL</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+          <ConstantList>
+            <ConstantDef>
+              <Name>SIDEWALLHIGH</Name>
+              <NameAliases>
+                <NameAlias lang="en">Side Wall High</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>SIDEWALLLOW</Name>
+              <NameAliases>
+                <NameAlias lang="en">Side Wall Low</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>CEILINGPERIMETER</Name>
+              <NameAliases>
+                <NameAlias lang="en">Ceiling Perimeter</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>CEILINGINTERIOR</Name>
+              <NameAliases>
+                <NameAlias lang="en">Ceiling Interior</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>FLOOR</Name>
+              <NameAliases>
+                <NameAlias lang="en">Floor</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>SILL</Name>
+              <NameAliases>
+                <NameAlias lang="en">Sill</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>OTHER</Name>
+              <NameAliases>
+                <NameAlias lang="en">(other)</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Value is not listed.</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>NOTKNOWN</Name>
+              <NameAliases>
+                <NameAlias lang="en">(unknown)</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Value is unknown.</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>UNSET</Name>
+              <NameAliases>
+                <NameAlias lang="en">(unset)</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Value has not been specified.</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+          </ConstantList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Location</NameAlias>
+        <NameAlias lang="fr-FR">Emplacement</NameAlias>
+        <NameAlias lang="ja-JP">位置</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="fr-FR">Emplacement (un seul type de diffuseur peut être utilisé pour des emplaments multiples); Haut signifie proche du plafond.</DefinitionAlias>
+        <DefinitionAlias lang="ja-JP">制気口の取り付け位置（壁面高所・低部、天井ぺり、天井中央、床、床下他）</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+  </PropertyDefs>
+  <PsetDefinitionAliases>
+    <PsetDefinitionAlias lang="en" />
+    <PsetDefinitionAlias lang="ja-JP">IfcAirTerminalのインスタンスの属性を設定。</PsetDefinitionAlias>
+  </PsetDefinitionAliases>
+</PropertySetDef>

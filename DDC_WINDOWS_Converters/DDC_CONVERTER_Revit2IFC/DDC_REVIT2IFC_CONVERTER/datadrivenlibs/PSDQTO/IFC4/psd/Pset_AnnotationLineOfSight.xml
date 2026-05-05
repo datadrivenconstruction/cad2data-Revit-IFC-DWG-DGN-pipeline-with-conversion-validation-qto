@@ -1,0 +1,113 @@
+<?xml version="1.0"?>
+<PropertySetDef xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ifdguid="3bccdb00d1c111e1800000215ad4efdf" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4" />
+  <Name>Pset_AnnotationLineOfSight</Name>
+  <Definition>Specifies the properties of the line of sight at a point of connection between two elements. Typically used to define the line of sight visibility at the junction between two roads (particularly between an access road and a public road).</Definition>
+  <Applicability />
+  <ApplicableClasses>
+    <ClassName>IfcAnnotation/LineOfSight</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcAnnotation/LineOfSight</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef ifdguid="41c2bc00d1c111e1800000215ad4efdf">
+      <Name>SetbackDistance</Name>
+      <Definition>Setback distance from the point of connection on the major element along the axis of the minor element (e.g. distance from a public road at which the line of sigfht is measured.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Setback Distance</NameAlias>
+        <NameAlias lang="fr-FR">DistanceRecul</NameAlias>
+        <NameAlias lang="ja-JP">後退距離</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="fr-FR">Distance de recul le long de l'axe de l'élément secondaire depuis le point de jonction sur l'élément principal (par exemple, distance depuis la route principale à partir de laquelle la visibilité est appréciée).</DefinitionAlias>
+        <DefinitionAlias lang="ja-JP">副要素の軸に沿った主要素の接続点からの後退距離（例えば、可視線が測定される公道からの距離）。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="47b89d00d1c111e1800000215ad4efdf">
+      <Name>VisibleAngleLeft</Name>
+      <Definition>Angle of visibility to the left of the access.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositivePlaneAngleMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Visible Angle Left</NameAlias>
+        <NameAlias lang="fr-FR">VisibiliteAngleGauche</NameAlias>
+        <NameAlias lang="ja-JP">左側可視角度</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="fr-FR">Angle de visibilité à la gauche de l'accès.</DefinitionAlias>
+        <DefinitionAlias lang="ja-JP">左側の経路に可視出来る角度。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="4d15e780d1c111e1800000215ad4efdf">
+      <Name>VisibleAngleRight</Name>
+      <Definition>Angle of visibility to the right of the access.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositivePlaneAngleMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Visible Angle Right</NameAlias>
+        <NameAlias lang="fr-FR">VisibiliteAngleDroit</NameAlias>
+        <NameAlias lang="ja-JP">右側可視角度</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="fr-FR">Angle de visibilité à la droite de l'accès.</DefinitionAlias>
+        <DefinitionAlias lang="ja-JP">右側の経路に可視出来る角度。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="51da9b80d1c111e1800000215ad4efdf">
+      <Name>RoadVisibleDistanceLeft</Name>
+      <Definition>Distance visible to the left of the access.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Road Visible Distance Left</NameAlias>
+        <NameAlias lang="fr-FR">DistanceVisibiliteCoteGauche</NameAlias>
+        <NameAlias lang="ja-JP">左側道路可視距離</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="fr-FR">Distance de visibilité à la gauche de l'accès.</DefinitionAlias>
+        <DefinitionAlias lang="ja-JP">左側の経路に可視出来る距離。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="57d07c80d1c111e1800000215ad4efdf">
+      <Name>RoadVisibleDistanceRight</Name>
+      <Definition>Distance visible to the right of the access.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Road Visible Distance Right</NameAlias>
+        <NameAlias lang="fr-FR">DistanceVisibiliteCoteDroit</NameAlias>
+        <NameAlias lang="ja-JP">右側道路可視距離</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="fr-FR">Distance de visibilité à la droite de l'accès.</DefinitionAlias>
+        <DefinitionAlias lang="ja-JP">右側の経路に可視出来る距離。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+  </PropertyDefs>
+  <PsetDefinitionAliases>
+    <PsetDefinitionAlias lang="en" />
+    <PsetDefinitionAlias lang="fr-FR">Définition de l'IAI : spécifie les propriétés du point de vue à un point de jonction entre deux éléments. Par exemple, visibilité à la jonction entre deux routes (notamment entre un chemin d'accès et une route principale).</PsetDefinitionAlias>
+    <PsetDefinitionAlias lang="ja-JP">二つの要素間の接続点での視線を設定する指定プロパティ。一般的に、2つの道路の間（特に公道と取付け道路（区画道路）との間）の接合部で可視線を定義するために使用される。</PsetDefinitionAlias>
+  </PsetDefinitionAliases>
+</PropertySetDef>

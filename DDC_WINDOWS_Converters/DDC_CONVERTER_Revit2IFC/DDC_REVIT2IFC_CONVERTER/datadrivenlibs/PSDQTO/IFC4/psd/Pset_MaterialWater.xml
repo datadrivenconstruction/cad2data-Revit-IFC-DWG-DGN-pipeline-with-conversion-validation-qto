@@ -1,0 +1,121 @@
+<?xml version="1.0"?>
+<PropertySetDef xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ifdguid="1dc99f80d1ee11e1800000215ad4efdf" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4" />
+  <Name>Pset_MaterialWater</Name>
+  <Definition>A set of extended material properties for of water typically used within the context of building services and flow distribution systems.</Definition>
+  <Applicability />
+  <ApplicableClasses>
+    <ClassName>IfcMaterial</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcMaterial</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef ifdguid="215d2680d1ee11e1800000215ad4efdf">
+      <Name>IsPotable</Name>
+      <Definition>If TRUE, then the water is considered potable.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcBoolean" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Is Potable</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="27530780d1ee11e1800000215ad4efdf">
+      <Name>Hardness</Name>
+      <Definition>Water hardness as positive, multivalent ion concentration in the water (usually concentrations of calcium and magnesium ions in terms of calcium carbonate).</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcIonConcentrationMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Hardness</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="2cb05200d1ee11e1800000215ad4efdf">
+      <Name>AlkalinityConcentration</Name>
+      <Definition>Maximum alkalinity concentration (maximum sum of concentrations of each of the negative ions substances measured as CaCO3).</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcIonConcentrationMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Alkalinity Concentration</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="320d9c80d1ee11e1800000215ad4efdf">
+      <Name>AcidityConcentration</Name>
+      <Definition>Maximum CaCO3 equivalent that would neutralize the acid.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcIonConcentrationMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Acidity Concentration</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="3639ba00d1ee11e1800000215ad4efdf">
+      <Name>ImpuritiesContent</Name>
+      <Definition>Fraction of impurities such as dust to the total amount of water. This is measured in weight of impurities per weight of water and is therefore unitless.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcNormalisedRatioMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Impurities Content</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="3afe6e00d1ee11e1800000215ad4efdf">
+      <Name>DissolvedSolidsContent</Name>
+      <Definition>Fraction of the dissolved solids to the total amount of water. This is measured in weight of dissolved solids per weight of water and is therefore unitless.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcNormalisedRatioMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Dissolved Solids Content</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="3fc32200d1ee11e1800000215ad4efdf">
+      <Name>PHLevel</Name>
+      <Definition>Maximum water PH in a range from 0-14.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPHMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">PHLevel</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+      </DefinitionAliases>
+    </PropertyDef>
+  </PropertyDefs>
+  <PsetDefinitionAliases>
+    <PsetDefinitionAlias lang="en" />
+  </PsetDefinitionAliases>
+</PropertySetDef>

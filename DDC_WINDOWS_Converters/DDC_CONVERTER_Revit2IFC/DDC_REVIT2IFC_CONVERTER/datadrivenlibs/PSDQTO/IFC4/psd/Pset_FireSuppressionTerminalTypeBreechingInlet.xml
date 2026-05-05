@@ -1,0 +1,208 @@
+<?xml version="1.0"?>
+<PropertySetDef xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ifdguid="4352ab00d1e611e1800000215ad4efdf" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4" />
+  <Name>Pset_FireSuppressionTerminalTypeBreechingInlet</Name>
+  <Definition>Symmetrical pipe fitting that unites two or more inlets into a single pipe (BS6100 330 114 adapted).</Definition>
+  <Applicability />
+  <ApplicableClasses>
+    <ClassName>IfcFireSuppressionTerminal/BREECHINGINLET</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcFireSuppressionTerminal/BREECHINGINLET</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef ifdguid="49488c00d1e611e1800000215ad4efdf">
+      <Name>BreechingInletType</Name>
+      <Definition>Defines the type of breeching inlet.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_BreechingInletType">
+            <EnumItem>TWOWAY</EnumItem>
+            <EnumItem>FOURWAY</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>USERDEFINED</EnumItem>
+            <EnumItem>NOTDEFINED</EnumItem>
+          </EnumList>
+          <ConstantList>
+            <ConstantDef>
+              <Name>TWOWAY</Name>
+              <NameAliases>
+                <NameAlias lang="en">Two-way</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>FOURWAY</Name>
+              <NameAliases>
+                <NameAlias lang="en">Four-way</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>OTHER</Name>
+              <NameAliases>
+                <NameAlias lang="en">(other)</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Value is not listed.</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>USERDEFINED</Name>
+              <NameAliases>
+                <NameAlias lang="en">Userdefined</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>NOTDEFINED</Name>
+              <NameAliases>
+                <NameAlias lang="en">Notdefined</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+          </ConstantList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Breeching Inlet Type</NameAlias>
+        <NameAlias lang="ja-JP">送水口タイプ</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="ja-JP">送水口タイプの定義。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="54032100d1e611e1800000215ad4efdf">
+      <Name>InletDiameter</Name>
+      <Definition>The inlet diameter of the breeching inlet.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Inlet Diameter</NameAlias>
+        <NameAlias lang="ja-JP">入口口径</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="ja-JP">入口の直径。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="59606b80d1e611e1800000215ad4efdf">
+      <Name>OutletDiameter</Name>
+      <Definition>The outlet diameter of the breeching inlet.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Outlet Diameter</NameAlias>
+        <NameAlias lang="ja-JP">出口口径</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="ja-JP">出口の直径。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="5ebdb600d1e611e1800000215ad4efdf">
+      <Name>CouplingType</Name>
+      <Definition>Defines the type coupling on the inlet of the breeching inlet.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_BreechingInletCouplingType">
+            <EnumItem>INSTANTANEOUS_FEMALE</EnumItem>
+            <EnumItem>INSTANTANEOUS_MALE</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>USERDEFINED</EnumItem>
+            <EnumItem>NOTDEFINED</EnumItem>
+          </EnumList>
+          <ConstantList>
+            <ConstantDef>
+              <Name>INSTANTANEOUS_FEMALE</Name>
+              <NameAliases>
+                <NameAlias lang="en">Instantaneous Female</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>INSTANTANEOUS_MALE</Name>
+              <NameAliases>
+                <NameAlias lang="en">Instantaneous Male</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>OTHER</Name>
+              <NameAliases>
+                <NameAlias lang="en">(other)</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Value is not listed.</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>USERDEFINED</Name>
+              <NameAliases>
+                <NameAlias lang="en">Userdefined</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>NOTDEFINED</Name>
+              <NameAliases>
+                <NameAlias lang="en">Notdefined</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+          </ConstantList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Coupling Type</NameAlias>
+        <NameAlias lang="ja-JP">カップリングタイプ</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="ja-JP">送水口入口のカップリングタイプ。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="6a10e180d1e611e1800000215ad4efdf">
+      <Name>HasCaps</Name>
+      <Definition>Does the inlet connection have protective caps.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcBoolean" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Has Caps</NameAlias>
+        <NameAlias lang="ja-JP">保護キャップ</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="ja-JP">入口接続が保護キャップを持っているか。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+  </PropertyDefs>
+  <PsetDefinitionAliases>
+    <PsetDefinitionAlias lang="en" />
+    <PsetDefinitionAlias lang="ja-JP">ひとつのパイプ（適合BS6100330114）に2つ以上の入口をもつ対称配管継手。</PsetDefinitionAlias>
+  </PsetDefinitionAliases>
+</PropertySetDef>

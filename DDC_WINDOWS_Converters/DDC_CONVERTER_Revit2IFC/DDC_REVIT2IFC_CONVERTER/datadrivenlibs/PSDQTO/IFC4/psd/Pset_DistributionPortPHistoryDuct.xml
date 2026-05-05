@@ -1,0 +1,107 @@
+<?xml version="1.0"?>
+<PropertySetDef xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ifdguid="9dd227358d2b430cb8c8ac3b8b7f8f72" templatetype="PSET_PERFORMANCEDRIVEN" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4" />
+  <Name>Pset_DistributionPortPHistoryDuct</Name>
+  <Definition>Fluid flow performance history attached to an instance of IfcPerformanceHistory assigned to IfcDistributionPort.  This replaces the deprecated IfcFluidFlowProperties for performance values.</Definition>
+  <Applicability />
+  <ApplicableClasses>
+    <ClassName>IfcDistributionPort/DUCT</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcDistributionPort/DUCT</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef ifdguid="cbe855427fd14da0a29dd807677eb4a9">
+      <Name>Temperature</Name>
+      <Definition>Temperature of the fluid. For air this value represents the dry bulb temperature.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcTimeSeries" />
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Temperature</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="c04ff2c7bd4148da8d8e037447267a2f">
+      <Name>WetBulbTemperature</Name>
+      <Definition>Wet bulb temperature of the fluid; only applicable if the fluid is air.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcTimeSeries" />
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Wet Bulb Temperature</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="7e8e87f0549843c0a39e88ac3f175c6e">
+      <Name>VolumetricFlowRate</Name>
+      <Definition>The volumetric flow rate of the fluid.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcTimeSeries" />
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Volumetric Flow Rate</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="be32824c472c44e8ab71cf06b1d088c9">
+      <Name>MassFlowRate</Name>
+      <Definition>The mass flow rate of the fluid.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcTimeSeries" />
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Mass Flow Rate</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="39ebdb53ec0a4cfb9c16d3b93e4b79d3">
+      <Name>FlowCondition</Name>
+      <Definition>Defines the flow condition as a percentage of the cross-sectional area.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcTimeSeries" />
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Flow Condition</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="80b98e43359d4dc2bc6f1e3c586498e1">
+      <Name>Velocity</Name>
+      <Definition>The velocity of the fluid.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcTimeSeries" />
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Velocity</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="8148600227f74025863b0dda2b5a372e">
+      <Name>Pressure</Name>
+      <Definition>The pressure of the fluid.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcTimeSeries" />
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Pressure</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+      </DefinitionAliases>
+    </PropertyDef>
+  </PropertyDefs>
+  <PsetDefinitionAliases>
+    <PsetDefinitionAlias lang="en" />
+  </PsetDefinitionAliases>
+</PropertySetDef>

@@ -1,0 +1,139 @@
+<?xml version="1.0"?>
+<PropertySetDef xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ifdguid="cf061080d1c111e1800000215ad4efdf" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4" />
+  <Name>Pset_AudioVisualApplianceTypeAmplifier</Name>
+  <Definition>An audio-visual amplifier is a device that renders audio from a single external source connected from a port.  HISTORY: Added in IFC4.</Definition>
+  <Applicability />
+  <ApplicableClasses>
+    <ClassName>IfcAudioVisualAppliance/AMPLIFIER</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcAudioVisualAppliance/AMPLIFIER</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef ifdguid="d7f6e200d1c111e1800000215ad4efdf">
+      <Name>AmplifierType</Name>
+      <Definition>Indicates the type of amplifier.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_AudioVisualAmplifierType">
+            <EnumItem>FIXED</EnumItem>
+            <EnumItem>VARIABLE</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET.</EnumItem>
+          </EnumList>
+          <ConstantList>
+            <ConstantDef>
+              <Name>FIXED</Name>
+              <NameAliases>
+                <NameAlias lang="en">Fixed</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>VARIABLE</Name>
+              <NameAliases>
+                <NameAlias lang="en">Variable</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>OTHER</Name>
+              <NameAliases>
+                <NameAlias lang="en">(other)</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Value is not listed.</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>NOTKNOWN</Name>
+              <NameAliases>
+                <NameAlias lang="en">(unknown)</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Value is unknown.</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>UNSET.</Name>
+              <NameAliases>
+                <NameAlias lang="en">Unset.</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+          </ConstantList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Amplifier Type</NameAlias>
+        <NameAlias lang="ja-JP">アンプ形式</NameAlias>
+        <NameAlias lang="ko-KR">앰프 형식</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="ja-JP">アンプの形式を示す。</DefinitionAlias>
+        <DefinitionAlias lang="ko-KR">앰프의 형식을 보여준다.</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="e644fe00d1c111e1800000215ad4efdf">
+      <Name>AudioAmplification</Name>
+      <Definition>Indicates audio amplification frequency ranges.</Definition>
+      <PropertyType>
+        <TypePropertyTableValue>
+          <Expression />
+          <DefiningValue>
+            <DataType type="IfcFrequencyMeasure" />
+          </DefiningValue>
+          <DefinedValue>
+            <DataType type="IfcSoundPowerMeasure" />
+          </DefinedValue>
+        </TypePropertyTableValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Audio Amplification</NameAlias>
+        <NameAlias lang="ja-JP">オーディオアンプ</NameAlias>
+        <NameAlias lang="ko-KR">오디오 앰프</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="ja-JP">再生周波数帯域を示す。</DefinitionAlias>
+        <DefinitionAlias lang="ko-KR">재생 주파수 대역을 나타낸다.</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="ee9d3900d1c111e1800000215ad4efdf">
+      <Name>AudioMode</Name>
+      <Definition>Indicates audio sound modes and corresponding labels, if applicable.</Definition>
+      <PropertyType>
+        <TypePropertyTableValue>
+          <Expression />
+          <DefiningValue>
+            <DataType type="IfcIdentifier" />
+          </DefiningValue>
+          <DefinedValue>
+            <DataType type="IfcLabel" />
+          </DefinedValue>
+        </TypePropertyTableValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Audio Mode</NameAlias>
+        <NameAlias lang="ja-JP">オーディオモード</NameAlias>
+        <NameAlias lang="ko-KR">오디오 모드</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="ja-JP">オーディオサウンドモードの設定。</DefinitionAlias>
+        <DefinitionAlias lang="ko-KR">오디오 사운드 모드 설정.</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+  </PropertyDefs>
+  <PsetDefinitionAliases>
+    <PsetDefinitionAlias lang="en" />
+    <PsetDefinitionAlias lang="ja-JP">ポートに接続された外部ソースからの音源を増幅する装置。</PsetDefinitionAlias>
+  </PsetDefinitionAliases>
+</PropertySetDef>

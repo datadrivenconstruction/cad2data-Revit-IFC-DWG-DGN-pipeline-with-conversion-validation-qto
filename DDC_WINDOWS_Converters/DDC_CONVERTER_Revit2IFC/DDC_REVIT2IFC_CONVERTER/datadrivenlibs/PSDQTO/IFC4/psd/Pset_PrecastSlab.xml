@@ -1,0 +1,136 @@
+<?xml version="1.0"?>
+<PropertySetDef xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ifdguid="2a052b00d1f511e1800000215ad4efdf" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4" />
+  <Name>Pset_PrecastSlab</Name>
+  <Definition>Layout and component information defining how prestressed slab components are laid out in a precast slab assembly. The values are global defaults for the slab as a whole, but can be overridden by local placements of the individual com</Definition>
+  <Applicability />
+  <ApplicableClasses>
+    <ClassName>IfcSlab</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcSlab</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef ifdguid="2ffb0c00d1f511e1800000215ad4efdf">
+      <Name>TypeDesignator</Name>
+      <Definition>Type designator for the precast concrete slab, expressing mainly the component type. Possible values are “Hollow-core”, “Double-tee”, “Flat plank”, etc.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcLabel" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Type Designator</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="36898380d1f511e1800000215ad4efdf">
+      <Name>ToppingType</Name>
+      <Definition>Defines if a topping is applied and what kind. Values are “Full topping”, “Perimeter Wash”, “None”</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcLabel" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Topping Type</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="3c7f6480d1f511e1800000215ad4efdf">
+      <Name>EdgeDistanceToFirstAxis</Name>
+      <Definition>The distance from the left (‘West’) edge of the slab (in the direction of span of the components) to the axis of the first component.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Edge Distance To First Axis</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="430ddc00d1f511e1800000215ad4efdf">
+      <Name>DistanceBetweenComponentAxes</Name>
+      <Definition>The distance between the axes of the components, measured along the ‘South’ edge of the slab.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Distance Between Component Axes</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="4a34ea00d1f511e1800000215ad4efdf">
+      <Name>AngleToFirstAxis</Name>
+      <Definition>The angle of rotation of the axis of the first component relative to the ‘West’ edge of the slab.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPlaneAngleMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Angle To First Axis</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="4ef99e00d1f511e1800000215ad4efdf">
+      <Name>AngleBetweenComponentAxes</Name>
+      <Definition>The angle between the axes of each pair of components.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPlaneAngleMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Angle Between Component Axes</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="5456e880d1f511e1800000215ad4efdf">
+      <Name>NominalThickness</Name>
+      <Definition>The nominal overall thickness of the slab.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Nominal Thickness</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="5b7df680d1f511e1800000215ad4efdf">
+      <Name>NominalToppingThickness</Name>
+      <Definition>The nominal thickness of the topping.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Nominal Topping Thickness</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+      </DefinitionAliases>
+    </PropertyDef>
+  </PropertyDefs>
+  <PsetDefinitionAliases>
+    <PsetDefinitionAlias lang="en" />
+  </PsetDefinitionAliases>
+</PropertySetDef>

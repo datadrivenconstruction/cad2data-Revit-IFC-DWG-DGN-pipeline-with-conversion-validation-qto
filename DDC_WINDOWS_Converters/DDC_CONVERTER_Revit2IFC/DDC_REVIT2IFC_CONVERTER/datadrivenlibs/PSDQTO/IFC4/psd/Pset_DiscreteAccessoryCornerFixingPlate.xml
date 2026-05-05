@@ -1,0 +1,93 @@
+<?xml version="1.0"?>
+<PropertySetDef xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ifdguid="46dc3700d1d211e1800000215ad4efdf" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4" />
+  <Name>Pset_DiscreteAccessoryCornerFixingPlate</Name>
+  <Definition>Properties specific to corner fixing plates.</Definition>
+  <Applicability />
+  <ApplicableClasses>
+    <ClassName>IfcDiscreteAccessory/Corner fixing plate</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcDiscreteAccessory/Corner fixing plate</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef ifdguid="4ba0eb00d1d211e1800000215ad4efdf">
+      <Name>CornerFixingPlateLength</Name>
+      <Definition>The length of the L-shaped corner plate.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Corner Fixing Plate Length</NameAlias>
+        <NameAlias lang="ja-JP">長さ</NameAlias>
+        <NameAlias lang="ko-KR">길이</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="ja-JP">L型コーナープレートの長さ。</DefinitionAlias>
+        <DefinitionAlias lang="ko-KR">L 형 코너 플레이트의 길이</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="50fe3580d1d211e1800000215ad4efdf">
+      <Name>CornerFixingPlateThickness</Name>
+      <Definition>The thickness of the L-shaped corner plate.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Corner Fixing Plate Thickness</NameAlias>
+        <NameAlias lang="ja-JP">板厚</NameAlias>
+        <NameAlias lang="ko-KR">두께</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="ja-JP">L型コーナープレートの板厚。</DefinitionAlias>
+        <DefinitionAlias lang="ko-KR">L 형 코너 플레이트의 두께</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="565b8000d1d211e1800000215ad4efdf">
+      <Name>CornerFixingPlateFlangeWidthInPlaneZ</Name>
+      <Definition>The flange width of the L-shaped corner plate in plane Z.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Corner Fixing Plate Flange Width In Plane Z</NameAlias>
+        <NameAlias lang="ja-JP">フランジ幅Z</NameAlias>
+        <NameAlias lang="ko-KR">플랜지 폭 Z</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="ja-JP">L型コーナープレートのZ面のフランジ幅。</DefinitionAlias>
+        <DefinitionAlias lang="ko-KR">L 형 코너 플레이트 Z면 플랜지 폭</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="5bb8ca80d1d211e1800000215ad4efdf">
+      <Name>CornerFixingPlateFlangeWidthInPlaneX</Name>
+      <Definition>The flange width of the L-shaped corner plate in plane X.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Corner Fixing Plate Flange Width In Plane X</NameAlias>
+        <NameAlias lang="ja-JP">フランジ幅X</NameAlias>
+        <NameAlias lang="ko-KR">플랜지 폭 X</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="ja-JP">L型コーナープレートのX面のフランジ幅。</DefinitionAlias>
+        <DefinitionAlias lang="ko-KR">L 형 코너 플레이트 X면 플랜지 폭</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+  </PropertyDefs>
+  <PsetDefinitionAliases>
+    <PsetDefinitionAlias lang="en" />
+    <PsetDefinitionAlias lang="ja-JP">コーナーを固定するプレートの固有特性。</PsetDefinitionAlias>
+  </PsetDefinitionAliases>
+</PropertySetDef>

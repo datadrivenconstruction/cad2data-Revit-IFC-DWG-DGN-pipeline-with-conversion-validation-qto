@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+<PropertySetDef xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ifdguid="daface00d1d311e1800000215ad4efdf" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4" />
+  <Name>Pset_DistributionChamberElementTypeInspectionPit</Name>
+  <Definition>Recess or chamber formed to permit access for inspection of substructure and services (definition modified from BS6100 221 4128).</Definition>
+  <Applicability />
+  <ApplicableClasses>
+    <ClassName>IfcDistributionChamberElement/INSPECTIONPIT</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcDistributionChamberElement/INSPECTIONPIT</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef ifdguid="e0581880d1d311e1800000215ad4efdf">
+      <Name>Length</Name>
+      <Definition>The length of the pit.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Length</NameAlias>
+        <NameAlias lang="ja-JP">長さ</NameAlias>
+        <NameAlias lang="ko-KR">길이</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="ja-JP">ピット長さ。</DefinitionAlias>
+        <DefinitionAlias lang="ko-KR">피트 길이</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="e6e69000d1d311e1800000215ad4efdf">
+      <Name>Width</Name>
+      <Definition>The width of the pit.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Width</NameAlias>
+        <NameAlias lang="ja-JP">幅</NameAlias>
+        <NameAlias lang="ko-KR">폭</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="ja-JP">ピット幅。</DefinitionAlias>
+        <DefinitionAlias lang="ko-KR">피트 폭</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="ec43da80d1d311e1800000215ad4efdf">
+      <Name>Depth</Name>
+      <Definition>The depth of the pit.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Depth</NameAlias>
+        <NameAlias lang="ja-JP">深さ</NameAlias>
+        <NameAlias lang="ko-KR">깊이</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="ja-JP">ピット深さ。</DefinitionAlias>
+        <DefinitionAlias lang="ko-KR">구덩이 깊이</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+  </PropertyDefs>
+  <PsetDefinitionAliases>
+    <PsetDefinitionAlias lang="en" />
+    <PsetDefinitionAlias lang="ja-JP">基礎の点検とサービスのためにアクセスできるピット（凹所）あるいはチャンバ（空間）。</PsetDefinitionAlias>
+  </PsetDefinitionAliases>
+</PropertySetDef>

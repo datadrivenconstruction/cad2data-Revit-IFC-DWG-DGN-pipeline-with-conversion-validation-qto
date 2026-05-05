@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<PropertySetDef xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ifdguid="30d97100d1e811e1800000215ad4efdf" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4" />
+  <Name>Pset_FlowMeterTypeEnergyMeter</Name>
+  <Definition>Device that measures, indicates and sometimes records, the energy usage in a system.</Definition>
+  <Applicability />
+  <ApplicableClasses>
+    <ClassName>IfcFlowMeter/ENERGYMETER</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcFlowMeter/ENERGYMETER</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef ifdguid="3636bb80d1e811e1800000215ad4efdf">
+      <Name>NominalCurrent</Name>
+      <Definition>The nominal current that is designed to be measured.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcElectricCurrentMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Nominal Current</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="3afb6f80d1e811e1800000215ad4efdf">
+      <Name>MaximumCurrent</Name>
+      <Definition>The maximum allowed current that a device is certified to handle.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcElectricCurrentMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Maximum Current</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="4058ba00d1e811e1800000215ad4efdf">
+      <Name>MultipleTarriff</Name>
+      <Definition>Indicates whether meter has built-in support for multiple tarriffs (variable energy cost rates).</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcBoolean" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Multiple Tarriff</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+      </DefinitionAliases>
+    </PropertyDef>
+  </PropertyDefs>
+  <PsetDefinitionAliases>
+    <PsetDefinitionAlias lang="en" />
+  </PsetDefinitionAliases>
+</PropertySetDef>

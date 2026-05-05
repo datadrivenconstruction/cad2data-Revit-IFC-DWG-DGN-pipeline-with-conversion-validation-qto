@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+<QtoSetDef xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.buildingsmart-tech.org/xml/qto/QTO_IFC4.xsd">
+  <IfcVersion version="IFC4" />
+  <Name>Qto_DoorBaseQuantities</Name>
+  <Definition>Base quantities that are common to the definition of all occurrences of doors.</Definition>
+  <Applicability />
+  <ApplicableClasses>
+    <ClassName>IfcDoor</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcDoor</ApplicableTypeValue>
+  <QtoDefs>
+    <QtoDef>
+      <Name>Width</Name>
+      <Definition>Total outer width of the door lining. It should only be provided, if it is a rectangular door.</Definition>
+      <QtoType>Q_LENGTH</QtoType>
+      <NameAliases>
+        <NameAlias lang="de-DE">Breite</NameAlias>
+        <NameAlias lang="en">Width</NameAlias>
+        <NameAlias lang="ja-JP">幅</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="de-DE">Gesamte Breite des Türrahmens. Wird nur für rechteckige Türen angegeben.</DefinitionAlias>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="ja-JP">ドアライニングの外側幅。長方形のドアの場合のみ。</DefinitionAlias>
+      </DefinitionAliases>
+    </QtoDef>
+    <QtoDef>
+      <Name>Height</Name>
+      <Definition>Total outer heigth of the door lining. It should only be provided, if it is a rectangular door.</Definition>
+      <QtoType>Q_LENGTH</QtoType>
+      <NameAliases>
+        <NameAlias lang="de-DE">Höhe</NameAlias>
+        <NameAlias lang="en">Height</NameAlias>
+        <NameAlias lang="ja-JP">高さ</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="de-DE">Gesamte Höhe des Türrahmens. Wird nur für rechteckige Türen angegeben.</DefinitionAlias>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="ja-JP">ドアライニングの外側幅。長方形のドアの場合のみ。</DefinitionAlias>
+      </DefinitionAliases>
+    </QtoDef>
+    <QtoDef>
+      <Name>Perimeter</Name>
+      <Definition>Total perimeter of the outer lining of the door.</Definition>
+      <QtoType>Q_LENGTH</QtoType>
+      <NameAliases>
+        <NameAlias lang="de-DE">Umfang</NameAlias>
+        <NameAlias lang="en">Perimeter</NameAlias>
+        <NameAlias lang="ja-JP">周囲長</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="de-DE">Gesamter Umfang, der durch den Türrahmen beschrieben wird.</DefinitionAlias>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="ja-JP">ドアライニングの外側周囲長。</DefinitionAlias>
+      </DefinitionAliases>
+    </QtoDef>
+    <QtoDef>
+      <Name>Area</Name>
+      <Definition>Total area of the outer lining of the door.</Definition>
+      <QtoType>Q_AREA</QtoType>
+      <NameAliases>
+        <NameAlias lang="de-DE">Fläche</NameAlias>
+        <NameAlias lang="en">Area</NameAlias>
+        <NameAlias lang="ja-JP">面積</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="de-DE">Gesamte Fläche, die durch den Türrahmen beschrieben wird.</DefinitionAlias>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="ja-JP">ドアライニングの面積。</DefinitionAlias>
+      </DefinitionAliases>
+    </QtoDef>
+  </QtoDefs>
+  <QtoDefinitionAliases>
+    <QtoDefinitionAlias lang="de-DE">Basismengen für alle Bauelemente vom Typ Tür.</QtoDefinitionAlias>
+    <QtoDefinitionAlias lang="en" />
+    <QtoDefinitionAlias lang="ja-JP">ドアに関わる共通の基本数量情報の定義。</QtoDefinitionAlias>
+  </QtoDefinitionAliases>
+</QtoSetDef>

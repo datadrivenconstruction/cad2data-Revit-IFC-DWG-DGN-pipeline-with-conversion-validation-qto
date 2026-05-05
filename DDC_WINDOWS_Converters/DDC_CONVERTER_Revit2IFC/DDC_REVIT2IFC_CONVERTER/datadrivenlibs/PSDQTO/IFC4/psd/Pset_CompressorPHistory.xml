@@ -1,0 +1,226 @@
+<?xml version="1.0"?>
+<PropertySetDef xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ifdguid="d382f700d1ca11e1800000215ad4efdf" templatetype="PSET_PERFORMANCEDRIVEN" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4" />
+  <Name>Pset_CompressorPHistory</Name>
+  <Definition>Compressor performance history attributes.</Definition>
+  <Applicability />
+  <ApplicableClasses>
+    <ClassName>IfcCompressor</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcCompressor</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef ifdguid="da116e80d1ca11e1800000215ad4efdf">
+      <Name>CompressorCapacity</Name>
+      <Definition>The product of the  ideal capacity and the overall volumetric efficiency of the compressor.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcTimeSeries" />
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Compressor Capacity</NameAlias>
+        <NameAlias lang="fr-FR">PuissanceCompresseur</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="fr-FR">Le produit de la puissance optimale par le rendement global du compresseur.</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="dd0c5f00d1ca11e1800000215ad4efdf">
+      <Name>EnergyEfficiencyRatio</Name>
+      <Definition>Energy efficiency ratio (EER).</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcTimeSeries" />
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Energy Efficiency Ratio</NameAlias>
+        <NameAlias lang="fr-FR">CoefficientEfficacitéThermique</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="fr-FR">EER, coefficient d'efficacité Thermique</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="e09fe600d1ca11e1800000215ad4efdf">
+      <Name>CoefficientOfPerformance</Name>
+      <Definition>Coefficient of performance (COP).</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcTimeSeries" />
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Coefficient Of Performance</NameAlias>
+        <NameAlias lang="fr-FR">CoefficientPerformance</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="fr-FR">Coefficient de performance (COP).</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="e4336d00d1ca11e1800000215ad4efdf">
+      <Name>VolumetricEfficiency</Name>
+      <Definition>Ratio of the actual volume of gas entering the compressor to the theoretical displacement of the compressor.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcTimeSeries" />
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Volumetric Efficiency</NameAlias>
+        <NameAlias lang="fr-FR">RendementVolumétrique</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="fr-FR">Rapport entre le volume effectif de gaz rentrant dans le compresseur et le volume déplacé théorique du compresseur.</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="e72e5d80d1ca11e1800000215ad4efdf">
+      <Name>CompressionEfficiency</Name>
+      <Definition>Ratio of the work required for isentropic compression of the gas to the work delivered to the gas within the compression volume (as obtained by measurement).</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcTimeSeries" />
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Compression Efficiency</NameAlias>
+        <NameAlias lang="fr-FR">RendementCompression</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="fr-FR">Rapport entre le travail requis pour une compression isentropique du gaz et le travail fourni au gaz dans le volume comprimé (telq qu'obtenu par mesure).</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="ea294e00d1ca11e1800000215ad4efdf">
+      <Name>MechanicalEfficiency</Name>
+      <Definition>Ratio of the work (as measured) delivered to the gas to the work input to the compressor shaft.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcTimeSeries" />
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Mechanical Efficiency</NameAlias>
+        <NameAlias lang="fr-FR">RendementMécanique</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="fr-FR">Rapport entre le travail fourni (tel que mesuré) au gaz et le travail fourni à l'arbre du compresseur.</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="ed243e80d1ca11e1800000215ad4efdf">
+      <Name>IsentropicEfficiency</Name>
+      <Definition>Ratio of the work required for isentropic compression of the gas to work input to the compressor shaft.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcTimeSeries" />
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Isentropic Efficiency</NameAlias>
+        <NameAlias lang="fr-FR">RendementIsentropique</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="fr-FR">Rapport entre le travail requis pour une compression isentropique du gaz et le travail fourni à l'arbre du compresseur.</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="f0b7c580d1ca11e1800000215ad4efdf">
+      <Name>CompressorTotalEfficiency</Name>
+      <Definition>Ratio of the thermal cooling capacity to electrical input.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcTimeSeries" />
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Compressor Total Efficiency</NameAlias>
+        <NameAlias lang="fr-FR">RendementGlobalIsentropique</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="fr-FR">Rapport entre la puissance frigorifique et l'énergie électrique absorbée.</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="f4e3e300d1ca11e1800000215ad4efdf">
+      <Name>ShaftPower</Name>
+      <Definition>The actual shaft power input to the compressor.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcTimeSeries" />
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Shaft Power</NameAlias>
+        <NameAlias lang="fr-FR">PuissanceArbre</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="fr-FR">La puissance mécanique appliquée au niveau de l'arbre du compresseur.</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="f8776a00d1ca11e1800000215ad4efdf">
+      <Name>InputPower</Name>
+      <Definition>Input power to the compressor motor.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcTimeSeries" />
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Input Power</NameAlias>
+        <NameAlias lang="fr-FR">PuissanceEntréeMoteur</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="fr-FR">Puissance fournie au moteur du compresseur.</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="fc0af100d1ca11e1800000215ad4efdf">
+      <Name>LubricantPumpHeatGain</Name>
+      <Definition>Lubricant pump heat gain.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcTimeSeries" />
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Lubricant Pump Heat Gain</NameAlias>
+        <NameAlias lang="fr-FR">GainThermiqueLubrifiantPompe</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="fr-FR">Gain thermique par lubrification de la pompe à chaleur.</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="ff05e180d1ca11e1800000215ad4efdf">
+      <Name>FrictionHeatGain</Name>
+      <Definition>Friction heat gain.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcTimeSeries" />
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Friction Heat Gain</NameAlias>
+        <NameAlias lang="fr-FR">GainThermiqueFriction</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="fr-FR">Gain thermique par friction.</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="0200d200d1cb11e1800000215ad4efdf">
+      <Name>CompressorTotalHeatGain</Name>
+      <Definition>Compressor total heat gain.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcTimeSeries" />
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Compressor Total Heat Gain</NameAlias>
+        <NameAlias lang="fr-FR">GainThermiqueTotalCompresseur</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="fr-FR">Gain thermique total au niveau du compresseur.</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="05945900d1cb11e1800000215ad4efdf">
+      <Name>FullLoadRatio</Name>
+      <Definition>Ratio of actual power to full load power as a quadratic function of part load, at certain condensing and evaporating temperature, FracFullLoadPower = f ( PartLoadRatio).</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcTimeSeries" />
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Full Load Ratio</NameAlias>
+        <NameAlias lang="fr-FR">CoefficientChargeTotale</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="fr-FR">Rapport entre puissance actuelle sur la puissance à pleine charge, comme fonction quadratique de la charge partielle, à une température de condensation et une température d'évaporation donnée, FracFullLoadPower = f (RapportChargePartielle).</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+  </PropertyDefs>
+  <PsetDefinitionAliases>
+    <PsetDefinitionAlias lang="en" />
+  </PsetDefinitionAliases>
+</PropertySetDef>

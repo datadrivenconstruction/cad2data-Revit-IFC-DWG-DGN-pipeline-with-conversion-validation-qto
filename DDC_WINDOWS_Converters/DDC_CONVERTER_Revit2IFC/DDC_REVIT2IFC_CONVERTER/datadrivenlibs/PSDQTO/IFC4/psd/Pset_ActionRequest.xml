@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<PropertySetDef xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ifdguid="d4ad2780d1bc11e1800000215ad4efdf" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4" />
+  <Name>Pset_ActionRequest</Name>
+  <Definition>An action request is a request for an action to fulfill a need.  HISTORY: IFC4: Removed RequestSourceType, RequestDescription, Status</Definition>
+  <Applicability />
+  <ApplicableClasses>
+    <ClassName>IfcActionRequest</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcActionRequest</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef ifdguid="e098e980d1bc11e1800000215ad4efdf">
+      <Name>RequestSourceLabel</Name>
+      <Definition>A specific name or label that further qualifies the identity of a request source. In the event of an email, this may be the email address.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcLabel" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Request Source Label</NameAlias>
+        <NameAlias lang="ja-JP">要請ソースタイプ</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="ja-JP">要請がなされる源のあらかじめ定義されたタイプの識別子。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="eabae800d1bc11e1800000215ad4efdf">
+      <Name>RequestSourceName</Name>
+      <Definition>The person making the request, where known.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcPerson" />
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Request Source Name</NameAlias>
+        <NameAlias lang="ja-JP">要請ソースラベル</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="ja-JP">要請源の識別を確認するための特定の名称またはラベル。電子メールの場合、電子メールアドレスに相当する。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="f0b0c900d1bc11e1800000215ad4efdf">
+      <Name>RequestComments</Name>
+      <Definition>Comments that may be made on the request.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcText" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Request Comments</NameAlias>
+        <NameAlias lang="ja-JP">要請ソース名</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="ja-JP">要請を作成する人物の名称。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+  </PropertyDefs>
+  <PsetDefinitionAliases>
+    <PsetDefinitionAlias lang="en" />
+    <PsetDefinitionAlias lang="ja-JP">ファシリティマネジメントにおける施策への要請事項に関するプロパティセット定義。</PsetDefinitionAlias>
+  </PsetDefinitionAliases>
+</PropertySetDef>

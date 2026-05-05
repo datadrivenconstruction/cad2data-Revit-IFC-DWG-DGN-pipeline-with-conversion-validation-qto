@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<PropertySetDef xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ifdguid="d2e96100d1c811e1800000215ad4efdf" templatetype="PSET_PERFORMANCEDRIVEN" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4" />
+  <Name>Pset_ChillerPHistory</Name>
+  <Definition>Chiller performance history attributes.</Definition>
+  <Applicability />
+  <ApplicableClasses>
+    <ClassName>IfcChiller</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcChiller</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef ifdguid="d8df4200d1c811e1800000215ad4efdf">
+      <Name>Capacity</Name>
+      <Definition>The product of the  ideal capacity and the overall volumetric efficiency of the compressor.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcTimeSeries" />
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Capacity</NameAlias>
+        <NameAlias lang="fr-FR">Puissance</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="fr-FR">Le produit de la puissance optimale par le rendement global du compresseur.</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="dbda3280d1c811e1800000215ad4efdf">
+      <Name>EnergyEfficiencyRatio</Name>
+      <Definition>The Energy efficiency ratio (EER) is the ratio of net cooling capacity to the total input rate of electric power applied.  By definition, the units are BTU/hour per Watt.
+The input electric power may be obtained from Pset_DistributionPortPHistoryElectrical.RealPower on the 'Power' port of the IfcChiller.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcTimeSeries" />
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Energy Efficiency Ratio</NameAlias>
+        <NameAlias lang="fr-FR">CoefficientEfficacitéEnergétique</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="fr-FR">L'EER ou Energy Efficiency Ratio est le coefficient d'efficacité frigorifique, rapport entre entre l'énergie utile frigorifique divisée parénergie absorbée au compresseur.
+Par définition, l'unité est le BTU/hour par Watt.
+La puissance électrique fournie peut être obtenue depuis Pset_DistributionPortHistoryElectrical.RealPower sur le port "Power"  du IfcChiller.</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="e0065000d1c811e1800000215ad4efdf">
+      <Name>CoefficientOfPerformance</Name>
+      <Definition>The Coefficient of performance (COP) is the ratio of heat removed to energy input. 
+The energy input may be obtained by multiplying 
+Pset_DistributionPortPHistoryGas.FlowRate on the 'Fuel' port of the IfcChiller by Pset_MaterialFuel.LowerHeatingValue.  
+The IfcDistributionPort for fuel has an associated IfcMaterial with fuel properties and is assigned to an IfcPerformanceHistory object nested within this IfcPerformanceHistory object.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcTimeSeries" />
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Coefficient Of Performance</NameAlias>
+        <NameAlias lang="fr-FR">CoefficientDePerformance</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="fr-FR">Le coefficient de performance (COP) est le rapport entre l'énergie calorifique fournie sur l'énergie abosrbée.
+L'énergie fournie peut être obtenue en multipliant Pset_DistributionPortHistoryGas.flowRate depuis le port du IfcChiller par Pset_MaterialFuel.LowerHeatingValue.
+Le IfcDistributionPort pour combustible est associé à IfcMaterial pour les propriétés du combustible et est atrribué à l'objet IfcPerformanceHistory situé à l'intérieur même de cet objet IfcPerformanceHistory.</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+  </PropertyDefs>
+  <PsetDefinitionAliases>
+    <PsetDefinitionAlias lang="en" />
+  </PsetDefinitionAliases>
+</PropertySetDef>

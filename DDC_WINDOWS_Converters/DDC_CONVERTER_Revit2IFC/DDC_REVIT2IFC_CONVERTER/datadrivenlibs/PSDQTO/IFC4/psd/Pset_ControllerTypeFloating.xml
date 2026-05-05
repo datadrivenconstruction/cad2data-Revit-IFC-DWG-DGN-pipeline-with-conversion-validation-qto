@@ -1,0 +1,440 @@
+<?xml version="1.0"?>
+<PropertySetDef xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ifdguid="29f13500d1cd11e1800000215ad4efdf" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4" />
+  <Name>Pset_ControllerTypeFloating</Name>
+  <Definition>Properties for signal handling for an analog controller taking disparate valued multiple inputs and creating a single valued output.  HISTORY: IFC4 adapted from Pset_ControllerTypeCommon and applicable predefined type made specific to FLOATING; ACCUMULATOR and PULSECONVERTER types added; additional properties added to replace Pset_AnalogInput and Pset_AnalogOutput.</Definition>
+  <Applicability />
+  <ApplicableClasses>
+    <ClassName>IfcController/FLOATING</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcController/FLOATING</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef ifdguid="2eb5e900d1cd11e1800000215ad4efdf">
+      <Name>ControlType</Name>
+      <Definition>The type of signal modification effected and applicable ports: 
+
+CONSTANT: No inputs; SignalOffset is written to the output value.
+MODIFIER: Single analog input is read, added to SignalOffset, multiplied by SignalFactor, and written to the output value.
+ABSOLUTE: Single analog input is read and absolute value is written to the output value.
+INVERSE: Single analog input is read, 1.0 is divided by the input value and written to the output value.
+HYSTERISIS: Single analog input is read, delayed according to SignalTime, and written to the output value.
+RUNNINGAVERAGE: Single analog input is read, averaged over SignalTime, and written to the output value.
+DERIVATIVE: Single analog input is read and the rate of change during the SignalTime is written to the output value.
+INTEGRAL: Single analog input is read and the average value during the SignalTime is written to the output value.
+BINARY: Single binary input is read and SignalOffset is written to the output value if True.
+ACCUMULATOR: Single binary input is read, and for each pulse the SignalOffset is added to the accumulator, and while the accumulator is greater than the SignalFactor, the accumulator is decremented by SignalFactor and the integer result is incremented by one.
+PULSECONVERTER: Single integer input is read, and for each increment the SignalMultiplier is added and written to the output value.
+SUM: Two analog inputs are read, added, and written to the output value.
+SUBTRACT: Two analog inputs are read, subtracted, and written to the output value.
+PRODUCT: Two analog inputs are read, multiplied, and written to the output value.
+DIVIDE: Two analog inputs are read, divided, and written to the output value.
+AVERAGE: Two analog inputs are read and the average is written to the output value.
+MAXIMUM: Two analog inputs are read and the maximum is written to the output value.
+MINIMUM: Two analog inputs are read and the minimum is written to the output value..
+INPUT: Controller element is a dedicated input.
+OUTPUT: Controller element is a dedicated output.
+VARIABLE: Controller element is an in-memory variable.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_ControllerTypeFloating">
+            <EnumItem>CONSTANT</EnumItem>
+            <EnumItem>MODIFIER</EnumItem>
+            <EnumItem>ABSOLUTE</EnumItem>
+            <EnumItem>INVERSE</EnumItem>
+            <EnumItem>HYSTERESIS</EnumItem>
+            <EnumItem>RUNNINGAVERAGE</EnumItem>
+            <EnumItem>DERIVATIVE</EnumItem>
+            <EnumItem>INTEGRAL</EnumItem>
+            <EnumItem>BINARY</EnumItem>
+            <EnumItem>ACCUMULATOR</EnumItem>
+            <EnumItem>PULSECONVERTER</EnumItem>
+            <EnumItem>LOWERLIMITCONTROL</EnumItem>
+            <EnumItem>UPPERLIMITCONTROL</EnumItem>
+            <EnumItem>SUM</EnumItem>
+            <EnumItem>SUBTRACT</EnumItem>
+            <EnumItem>PRODUCT</EnumItem>
+            <EnumItem>DIVIDE</EnumItem>
+            <EnumItem>AVERAGE</EnumItem>
+            <EnumItem>MAXIMUM</EnumItem>
+            <EnumItem>MINIMUM</EnumItem>
+            <EnumItem>REPORT</EnumItem>
+            <EnumItem>SPLIT</EnumItem>
+            <EnumItem>INPUT</EnumItem>
+            <EnumItem>OUTPUT</EnumItem>
+            <EnumItem>VARIABLE</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+          <ConstantList>
+            <ConstantDef>
+              <Name>CONSTANT</Name>
+              <NameAliases>
+                <NameAlias lang="en">Constant</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">No inputs</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>MODIFIER</Name>
+              <NameAliases>
+                <NameAlias lang="en">Modifier</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Single analog input is read, added to SignalOffset, multiplied by SignalFactor, and written to the output value</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>ABSOLUTE</Name>
+              <NameAliases>
+                <NameAlias lang="en">Absolute</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Single analog input is read and absolute value is written to the output value</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>INVERSE</Name>
+              <NameAliases>
+                <NameAlias lang="en">Inverse</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Single analog input is read, 1</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>HYSTERESIS</Name>
+              <NameAliases>
+                <NameAlias lang="en">Hysteresis</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>RUNNINGAVERAGE</Name>
+              <NameAliases>
+                <NameAlias lang="en">Running Average</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Single analog input is read, averaged over SignalTime, and written to the output value</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>DERIVATIVE</Name>
+              <NameAliases>
+                <NameAlias lang="en">Derivative</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Single analog input is read and the rate of change during the SignalTime is written to the output value</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>INTEGRAL</Name>
+              <NameAliases>
+                <NameAlias lang="en">Integral</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Single analog input is read and the average value during the SignalTime is written to the output value</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>BINARY</Name>
+              <NameAliases>
+                <NameAlias lang="en">Binary</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Single binary input is read and SignalOffset is written to the output value if True</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>ACCUMULATOR</Name>
+              <NameAliases>
+                <NameAlias lang="en">Accumulator</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Single binary input is read, and for each pulse the SignalOffset is added to the accumulator, and while the accumulator is greater than the SignalFactor, the accumulator is decremented by SignalFactor and the integer result is incremented by one</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>PULSECONVERTER</Name>
+              <NameAliases>
+                <NameAlias lang="en">Pulse Converter</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Single integer input is read, and for each increment the SignalMultiplier is added and written to the output value</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>LOWERLIMITCONTROL</Name>
+              <NameAliases>
+                <NameAlias lang="en">Lower Limit Control</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>UPPERLIMITCONTROL</Name>
+              <NameAliases>
+                <NameAlias lang="en">Upper Limit Control</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>SUM</Name>
+              <NameAliases>
+                <NameAlias lang="en">Sum</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Two analog inputs are read, added, and written to the output value</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>SUBTRACT</Name>
+              <NameAliases>
+                <NameAlias lang="en">Subtract</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Two analog inputs are read, subtracted, and written to the output value</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>PRODUCT</Name>
+              <NameAliases>
+                <NameAlias lang="en">Product</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Two analog inputs are read, multiplied, and written to the output value</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>DIVIDE</Name>
+              <NameAliases>
+                <NameAlias lang="en">Divide</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Two analog inputs are read, divided, and written to the output value</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>AVERAGE</Name>
+              <NameAliases>
+                <NameAlias lang="en">Average</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Single analog input is read, averaged over SignalTime, and written to the output value</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>MAXIMUM</Name>
+              <NameAliases>
+                <NameAlias lang="en">Maximum</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Two analog inputs are read and the maximum is written to the output value</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>MINIMUM</Name>
+              <NameAliases>
+                <NameAlias lang="en">Minimum</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Two analog inputs are read and the minimum is written to the output value</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>REPORT</Name>
+              <NameAliases>
+                <NameAlias lang="en">Report</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>SPLIT</Name>
+              <NameAliases>
+                <NameAlias lang="en">Split</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>INPUT</Name>
+              <NameAliases>
+                <NameAlias lang="en">Input</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Controller element is a dedicated input</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>OUTPUT</Name>
+              <NameAliases>
+                <NameAlias lang="en">Output</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Controller element is a dedicated output</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>VARIABLE</Name>
+              <NameAliases>
+                <NameAlias lang="en">Variable</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Controller element is an in-memory variable</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>OTHER</Name>
+              <NameAliases>
+                <NameAlias lang="en">(other)</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Value is not listed.</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>NOTKNOWN</Name>
+              <NameAliases>
+                <NameAlias lang="en">(unknown)</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Value is unknown.</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>UNSET</Name>
+              <NameAliases>
+                <NameAlias lang="en">(unset)</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Value has not been specified.</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+          </ConstantList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Control Type</NameAlias>
+        <NameAlias lang="ko-KR">FLOATING 유형</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="ko-KR">컨트롤러는 항상 하나의 출력 포트와 가변 입력 포트 유형에 따라있는 한결 : output = SignalOffset 수정자 : output = input * SignalFactor + SignalOffset 절대치 : output = | input | 역수 : output = 1.0 / input 지연 : output = 지연 (input, SignalTime 후) 이동 평균 : output = 평균 (inputN, SignalTime 사이) 미분 : output = 미분 (inputN, SignalTime 사이) 적분 : output = 적분 (inputN, SignalTime 사이) 바이너리 : output = SignalOffset ※ input = TRUE의 경우 누적 : output = accumulator       ※ accumulator = 펄스 카운트 * SignalOffset       ※ if (accumulator&gt; SignalFactor) accumulator - = SignalFactor       ??? 펄스 카운터 : output = input * SignalMultiplier       ※ input 펄스 카운트, SignalMultiplier은 원인 불명       ??? 총 : output = input1 + input2 뺄셈 : output = input1 - input2 적립 : output = input1 * input2 나누기 : output = input1 / input2 평균 : output = (input1 + input2) / 2 최대 : output = input1 or input2 ※보다 큰 최소 : output = input1 or input2 ※보다 작은</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="56a54c80d1cd11e1800000215ad4efdf">
+      <Name>Labels</Name>
+      <Definition>Table mapping values to labels, where such labels indicate transition points such as 'Hi', 'Lo', 'HiHi', or 'LoLo'.</Definition>
+      <PropertyType>
+        <TypePropertyTableValue>
+          <Expression />
+          <DefiningValue>
+            <DataType type="IfcReal" />
+          </DefiningValue>
+          <DefinedValue>
+            <DataType type="IfcLabel" />
+          </DefinedValue>
+        </TypePropertyTableValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Labels</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="5efd8780d1cd11e1800000215ad4efdf">
+      <Name>Range</Name>
+      <Definition>The physical range of values supported by the device.</Definition>
+      <PropertyType>
+        <TypePropertyBoundedValue>
+          <DataType type="IfcReal" />
+        </TypePropertyBoundedValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Range</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="63c23b80d1cd11e1800000215ad4efdf">
+      <Name>Value</Name>
+      <Definition>The expected range and default value.  While the property data type is IfcReal (to support all cases including when the units are unknown), a unit may optionally be provided to indicate the measure and unit.  The LowerLimitValue and UpperLimitValue must fall within the physical Range and may be used to determine extents when charting Pset_ControllerPHistory.Value.</Definition>
+      <PropertyType>
+        <TypePropertyBoundedValue>
+          <DataType type="IfcReal" />
+        </TypePropertyBoundedValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Value</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="69b81c80d1cd11e1800000215ad4efdf">
+      <Name>SignalOffset</Name>
+      <Definition>Offset constant added to modfied signal.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcReal" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Signal Offset</NameAlias>
+        <NameAlias lang="ko-KR">옵셋</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="ko-KR">오프셋 상수 변경 신호에 추가됨</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="6de43a00d1cd11e1800000215ad4efdf">
+      <Name>SignalFactor</Name>
+      <Definition>Factor multiplied onto offset signal.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcReal" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Signal Factor</NameAlias>
+        <NameAlias lang="ko-KR">요소</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="ko-KR">인자는 오프셋 신호 곱셈</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="72a8ee00d1cd11e1800000215ad4efdf">
+      <Name>SignalTime</Name>
+      <Definition>Time factor used for integral and running average controllers.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcTimeMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Signal Time</NameAlias>
+        <NameAlias lang="ko-KR">시간 요소</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="ko-KR">시간 요소는 INTEGRAL (적분)과 AVERAGE ((이동) 평균) 컨트롤러에 사용됨</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+  </PropertyDefs>
+  <PsetDefinitionAliases>
+    <PsetDefinitionAlias lang="en" />
+  </PsetDefinitionAliases>
+</PropertySetDef>

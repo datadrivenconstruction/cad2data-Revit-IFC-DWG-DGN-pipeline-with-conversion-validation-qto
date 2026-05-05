@@ -1,0 +1,429 @@
+<?xml version="1.0"?>
+<PropertySetDef xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ifdguid="413c1c80d1e511e1800000215ad4efdf" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4" />
+  <Name>Pset_FilterTypeAirParticleFilter</Name>
+  <Definition>Air particle filter type attributes.</Definition>
+  <Applicability />
+  <ApplicableClasses>
+    <ClassName>IfcFilter/AIRPARTICLEFILTER</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcFilter/AIRPARTICLEFILTER</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef ifdguid="4731fd80d1e511e1800000215ad4efdf">
+      <Name>AirParticleFilterType</Name>
+      <Definition>A panel dry type extended surface filter is a dry-type air filter with random fiber mats or blankets in the forms of pockets, V-shaped or radial pleats, and include the following:
+
+CoarseFilter: Filter with a efficiency lower than 30% for atmosphere dust-spot.
+CoarseMetalScreen: Filter made of metal screen.
+CoarseCellFoams: Filter made of cell foams.
+CoarseSpunGlass: Filter made of spun glass.
+MediumFilter: Filter with an efficiency between 30-98% for atmosphere dust-spot.
+MediumElectretFilter: Filter with fine electret synthetic fibers.
+MediumNaturalFiberFilter: Filter with natural fibers.
+HEPAFilter: High efficiency particulate air filter.
+ULPAFilter: Ultra low penetration air filter.
+MembraneFilters: Filter made of membrane for certain pore diameters in flat sheet and pleated form.
+A renewable media with a moving curtain viscous filter are random-fiber media coated with viscous substance in roll form or curtain where fresh media is fed across the face of the filter and the dirty media is rewound onto a roll at the bottom or to into a reservoir:
+RollForm: Viscous filter used in roll form.
+AdhesiveReservoir: Viscous filter used in moving curtain form.
+A renewable moving curtain dry media filter is a random-fiber dry media of relatively high porosity used in moving-curtain(roll) filters.
+An electrical filter uses electrostatic precipitation to remove and collect particulate contaminants.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_FilterAirParticleFilterType">
+            <EnumItem>COARSEMETALSCREEN</EnumItem>
+            <EnumItem>COARSECELLFOAMS</EnumItem>
+            <EnumItem>COARSESPUNGLASS</EnumItem>
+            <EnumItem>MEDIUMELECTRETFILTER</EnumItem>
+            <EnumItem>MEDIUMNATURALFIBERFILTER</EnumItem>
+            <EnumItem>HEPAFILTER</EnumItem>
+            <EnumItem>ULPAFILTER</EnumItem>
+            <EnumItem>MEMBRANEFILTERS</EnumItem>
+            <EnumItem>RENEWABLEMOVINGCURTIANDRYMEDIAFILTER</EnumItem>
+            <EnumItem>ELECTRICALFILTER</EnumItem>
+            <EnumItem>ROLLFORM</EnumItem>
+            <EnumItem>ADHESIVERESERVOIR</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+          <ConstantList>
+            <ConstantDef>
+              <Name>COARSEMETALSCREEN</Name>
+              <NameAliases>
+                <NameAlias lang="en">Coarse Metal Screen</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>COARSECELLFOAMS</Name>
+              <NameAliases>
+                <NameAlias lang="en">Coarse Cell Foams</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>COARSESPUNGLASS</Name>
+              <NameAliases>
+                <NameAlias lang="en">Coarse Spun Glass</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>MEDIUMELECTRETFILTER</Name>
+              <NameAliases>
+                <NameAlias lang="en">Medium Electret Filter</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>MEDIUMNATURALFIBERFILTER</Name>
+              <NameAliases>
+                <NameAlias lang="en">Medium Natural Fiber Filter</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>HEPAFILTER</Name>
+              <NameAliases>
+                <NameAlias lang="en">HEPA Filter</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>ULPAFILTER</Name>
+              <NameAliases>
+                <NameAlias lang="en">ULPA Filter</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>MEMBRANEFILTERS</Name>
+              <NameAliases>
+                <NameAlias lang="en">Membrane Filters</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>RENEWABLEMOVINGCURTIANDRYMEDIAFILTER</Name>
+              <NameAliases>
+                <NameAlias lang="en">Renewable Moving Curtian Dry Media Filter</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>ELECTRICALFILTER</Name>
+              <NameAliases>
+                <NameAlias lang="en">Electrical Filter</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>ROLLFORM</Name>
+              <NameAliases>
+                <NameAlias lang="en">Roll Form</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>ADHESIVERESERVOIR</Name>
+              <NameAliases>
+                <NameAlias lang="en">Adhesive Reservoir</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>OTHER</Name>
+              <NameAliases>
+                <NameAlias lang="en">(other)</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Value is not listed.</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>NOTKNOWN</Name>
+              <NameAliases>
+                <NameAlias lang="en">(unknown)</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Value is unknown.</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>UNSET</Name>
+              <NameAliases>
+                <NameAlias lang="en">(unset)</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Value has not been specified.</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+          </ConstantList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Air Particle Filter Type</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="63359f00d1e511e1800000215ad4efdf">
+      <Name>FrameMaterial</Name>
+      <Definition>Filter frame material.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcMaterialDefinition" />
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Frame Material</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="66308f80d1e511e1800000215ad4efdf">
+      <Name>SeparationType</Name>
+      <Definition>Air particulate filter media separation type.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_FilterAirParticleFilterSeparationType">
+            <EnumItem>BAG</EnumItem>
+            <EnumItem>PLEAT</EnumItem>
+            <EnumItem>TREADSEPARATION</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+          <ConstantList>
+            <ConstantDef>
+              <Name>BAG</Name>
+              <NameAliases>
+                <NameAlias lang="en">Bag</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>PLEAT</Name>
+              <NameAliases>
+                <NameAlias lang="en">Pleat</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>TREADSEPARATION</Name>
+              <NameAliases>
+                <NameAlias lang="en">Tread Separation</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>OTHER</Name>
+              <NameAliases>
+                <NameAlias lang="en">(other)</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Value is not listed.</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>NOTKNOWN</Name>
+              <NameAliases>
+                <NameAlias lang="en">(unknown)</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Value is unknown.</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>UNSET</Name>
+              <NameAliases>
+                <NameAlias lang="en">(unset)</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Value has not been specified.</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+          </ConstantList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Separation Type</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="747eab80d1e511e1800000215ad4efdf">
+      <Name>DustHoldingCapacity</Name>
+      <Definition>Maximum filter dust holding capacity.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcMassMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Dust Holding Capacity</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="79435f80d1e511e1800000215ad4efdf">
+      <Name>FaceSurfaceArea</Name>
+      <Definition>Face area of filter frame.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcAreaMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Face Surface Area</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="7fd1d700d1e511e1800000215ad4efdf">
+      <Name>MediaExtendedArea</Name>
+      <Definition>Total extended media area.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcAreaMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Media Extended Area</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="852f2180d1e511e1800000215ad4efdf">
+      <Name>NominalCountedEfficiency</Name>
+      <Definition>Nominal filter efficiency based the particle count concentration before and after the filter against particles with a certain size distribution.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcReal" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Nominal Counted Efficiency</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="8a8c6c00d1e511e1800000215ad4efdf">
+      <Name>NominalWeightedEfficiency</Name>
+      <Definition>Nominal filter efficiency based the particle weight concentration before and after the filter against particles with a certain size distribution.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcReal" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Nominal Weighted Efficiency</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="8fe9b680d1e511e1800000215ad4efdf">
+      <Name>PressureDropCurve</Name>
+      <Definition>Under certain dust holding weight, DelPressure = f (fluidflowRate)</Definition>
+      <PropertyType>
+        <TypePropertyTableValue>
+          <Expression />
+          <DefiningValue>
+            <DataType type="IfcVolumetricFlowRateMeasure" />
+          </DefiningValue>
+          <DefinedValue>
+            <DataType type="IfcPressureMeasure" />
+          </DefinedValue>
+        </TypePropertyTableValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Pressure Drop Curve</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="9a0bb500d1e511e1800000215ad4efdf">
+      <Name>CountedEfficiencyCurve</Name>
+      <Definition>Counted efficiency curve as a function of dust holding weight, efficiency = f (dust holding weight).</Definition>
+      <PropertyType>
+        <TypePropertyTableValue>
+          <Expression />
+          <DefiningValue>
+            <DataType type="IfcMassMeasure" />
+          </DefiningValue>
+          <DefinedValue>
+            <DataType type="IfcReal" />
+          </DefinedValue>
+        </TypePropertyTableValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Counted Efficiency Curve</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="a5f77700d1e511e1800000215ad4efdf">
+      <Name>WeightedEfficiencyCurve</Name>
+      <Definition>Weighted efficiency curve as a function of dust holding weight, efficiency = f (dust holding weight).</Definition>
+      <PropertyType>
+        <TypePropertyTableValue>
+          <Expression />
+          <DefiningValue>
+            <DataType type="IfcMassMeasure" />
+          </DefiningValue>
+          <DefinedValue>
+            <DataType type="IfcReal" />
+          </DefinedValue>
+        </TypePropertyTableValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Weighted Efficiency Curve</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+      </DefinitionAliases>
+    </PropertyDef>
+  </PropertyDefs>
+  <PsetDefinitionAliases>
+    <PsetDefinitionAlias lang="en" />
+  </PsetDefinitionAliases>
+</PropertySetDef>

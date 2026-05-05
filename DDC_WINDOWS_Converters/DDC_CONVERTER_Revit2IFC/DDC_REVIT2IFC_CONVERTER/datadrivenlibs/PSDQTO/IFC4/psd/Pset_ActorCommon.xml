@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+<PropertySetDef xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ifdguid="f7d7d700d1bc11e1800000215ad4efdf" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4" />
+  <Name>Pset_ActorCommon</Name>
+  <Definition>A property set that enables further classification of actors, including the ability to give a number of actors to be designated as a population, the number being specified as a property to be dealt with as a single value rather than having to aggregate a number of instances of IfcActor.</Definition>
+  <Applicability />
+  <ApplicableClasses>
+    <ClassName>IfcActor</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcActor</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef ifdguid="00c8a880d1bd11e1800000215ad4efdf">
+      <Name>NumberOfActors</Name>
+      <Definition>The number of actors that are to be dealt with together in the population.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcCountMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Number Of Actors</NameAlias>
+        <NameAlias lang="ja-JP">関与者数</NameAlias>
+        <NameAlias lang="zh-CN">参与者数</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="ja-JP">母集団において取り扱われる関与者の数。</DefinitionAlias>
+        <DefinitionAlias lang="zh-CN">该组参与者的总数。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="06be8980d1bd11e1800000215ad4efdf">
+      <Name>Category</Name>
+      <Definition>Designation of the category into which the actors in the population belong.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcLabel" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Category</NameAlias>
+        <NameAlias lang="ja-JP">部門</NameAlias>
+        <NameAlias lang="zh-CN">类别</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="ja-JP">母集団の中の関与者のカテゴリー（部門・分野）の指定。</DefinitionAlias>
+        <DefinitionAlias lang="zh-CN">该组参与者所属的类别。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="0c1bd400d1bd11e1800000215ad4efdf">
+      <Name>SkillLevel</Name>
+      <Definition>Skill level exhibited by the actor and which indicates an extent of their capability to perform actions on the artefacts upon which they can act.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcLabel" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Skill Level</NameAlias>
+        <NameAlias lang="ja-JP">技能段階</NameAlias>
+        <NameAlias lang="zh-CN">技能等级</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="ja-JP">関与者が示すスキルレベル（技能・技量段階）、および実行されるアクションへの能力を示すもの。</DefinitionAlias>
+        <DefinitionAlias lang="zh-CN">参与者具备的技能的等级，即他们在专业领域内所能展示的能力。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+  </PropertyDefs>
+  <PsetDefinitionAliases>
+    <PsetDefinitionAlias lang="en" />
+    <PsetDefinitionAlias lang="ja-JP">アクター（関係者）、ある指定された母集団に関与者数を与える能力、IfcActorのインスタンスの数の集合としてよりも一つの価値として扱うことの出来る特性として指定される数、などの分類を可能にするプロパティセット定義。</PsetDefinitionAlias>
+    <PsetDefinitionAlias lang="zh-CN">该属性集的作用为对参与者进一步分类，包括将一定数量的参与者归为一组的能力。本属性集的数量属性为一个单值，而不是作为多个IfcActor实例的集合。</PsetDefinitionAlias>
+  </PsetDefinitionAliases>
+</PropertySetDef>

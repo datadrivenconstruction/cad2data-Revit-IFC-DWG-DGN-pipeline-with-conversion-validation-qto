@@ -1,0 +1,136 @@
+<?xml version="1.0"?>
+<PropertySetDef xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ifdguid="e27ca000d1f011e1800000215ad4efdf" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4" />
+  <Name>Pset_MechanicalFastenerBolt</Name>
+  <Definition>Properties related to bolt-type fasteners. The properties of a whole set with bolt, washers and nut may be provided. Note, it is usually not necessary to transmit these properties in case of standardized bolts. Instead, the standard is referred to.</Definition>
+  <Applicability />
+  <ApplicableClasses>
+    <ClassName>IfcMechanicalFastener/BOLT</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcMechanicalFastener/BOLT</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef ifdguid="e7d9ea80d1f011e1800000215ad4efdf">
+      <Name>ThreadDiameter</Name>
+      <Definition>Nominal diameter of the thread, if different from the bolt's overall nominal diameter</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Thread Diameter</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="ee686200d1f011e1800000215ad4efdf">
+      <Name>ThreadLength</Name>
+      <Definition>Nominal length of the thread</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Thread Length</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="f45e4300d1f011e1800000215ad4efdf">
+      <Name>NutsCount</Name>
+      <Definition>Count of nuts to be mounted on one bolt</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcCountMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Nuts Count</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="fa542400d1f011e1800000215ad4efdf">
+      <Name>WashersCount</Name>
+      <Definition>Count of washers to be mounted on one bolt</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcCountMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Washers Count</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="ff18d800d1f011e1800000215ad4efdf">
+      <Name>HeadShape</Name>
+      <Definition>Shape of the bolt's head, e.g. 'Hexagon', 'Countersunk', 'Cheese'</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcLabel" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Head Shape</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="05a74f80d1f111e1800000215ad4efdf">
+      <Name>KeyShape</Name>
+      <Definition>If applicable, shape of the head's slot, e.g. 'Slot', 'Allen'</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcLabel" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Key Shape</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="0b9d3080d1f111e1800000215ad4efdf">
+      <Name>NutShape</Name>
+      <Definition>Shape of the nut, e.g. 'Hexagon', 'Cap', 'Castle', 'Wing'</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcLabel" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Nut Shape</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="1d7ed380d1f111e1800000215ad4efdf">
+      <Name>WasherShape</Name>
+      <Definition>Shape of the washers, e.g. 'Standard', 'Square'</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcLabel" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Washer Shape</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+      </DefinitionAliases>
+    </PropertyDef>
+  </PropertyDefs>
+  <PsetDefinitionAliases>
+    <PsetDefinitionAlias lang="en" />
+  </PsetDefinitionAliases>
+</PropertySetDef>

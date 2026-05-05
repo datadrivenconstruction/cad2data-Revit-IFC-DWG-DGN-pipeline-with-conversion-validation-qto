@@ -1,0 +1,140 @@
+<?xml version="1.0"?>
+<PropertySetDef xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ifdguid="33d95f00d1f211e1800000215ad4efdf" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4" />
+  <Name>Pset_PackingInstructions</Name>
+  <Definition>Packing instructions are specific instructions relating to the packing that is required for an artifact in the event of a move (or transport).</Definition>
+  <Applicability />
+  <ApplicableClasses>
+    <ClassName>IfcTask/MOVE</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcTask/MOVE</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef ifdguid="3b990380d1f211e1800000215ad4efdf">
+      <Name>PackingCareType</Name>
+      <Definition>Identifies the predefined types of care that may be required when handling the artefact during a move where:
+
+Fragile: artefact may be broken during a move through careless handling.
+HandleWithCare: artefact may be damaged during a move through careless handling.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_PackingCareType">
+            <EnumItem>FRAGILE</EnumItem>
+            <EnumItem>HANDLEWITHCARE</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+          <ConstantList>
+            <ConstantDef>
+              <Name>FRAGILE</Name>
+              <NameAliases>
+                <NameAlias lang="en">Fragile</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>HANDLEWITHCARE</Name>
+              <NameAliases>
+                <NameAlias lang="en">Handle With Care</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>OTHER</Name>
+              <NameAliases>
+                <NameAlias lang="en">(other)</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Value is not listed.</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>NOTKNOWN</Name>
+              <NameAliases>
+                <NameAlias lang="en">(unknown)</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Value is unknown.</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>UNSET</Name>
+              <NameAliases>
+                <NameAlias lang="en">(unset)</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Value has not been specified.</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+          </ConstantList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Packing Care Type</NameAlias>
+        <NameAlias lang="ja-JP">荷造り注意タイプ</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="ja-JP">引越しの最中の品物の取り扱いに要求される、あらかじめ定義されている注意タイプの識別子：
+
+Fragile: 注意深い取り扱いをしないと壊れる品物。
+HandleWithCare: 注意深い取り扱いでしないと損害を受ける品物。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="4784c580d1f211e1800000215ad4efdf">
+      <Name>WrappingMaterial</Name>
+      <Definition>Special requirements for material used to wrap an artefact.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcMaterialDefinition" />
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Wrapping Material</NameAlias>
+        <NameAlias lang="ja-JP">包装材料</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="ja-JP">品物の包装に使用される材料に関する特記事項。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="4eabd380d1f211e1800000215ad4efdf">
+      <Name>ContainerMaterial</Name>
+      <Definition>Special requirements for material used to contain an artefact.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcMaterialDefinition" />
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Container Material</NameAlias>
+        <NameAlias lang="ja-JP">コンテナー材料</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="ja-JP">品物の収容するのに使用される材料に関する特記事項。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="510e2d80d1f211e1800000215ad4efdf">
+      <Name>SpecialInstructions</Name>
+      <Definition>Special instructions for packing.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcText" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Special Instructions</NameAlias>
+        <NameAlias lang="ja-JP">特記事項</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="ja-JP">荷造りに関する特記事項。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+  </PropertyDefs>
+  <PsetDefinitionAliases>
+    <PsetDefinitionAlias lang="en" />
+    <PsetDefinitionAlias lang="ja-JP">引越しの際の品物(IfcElement)に対して要求される荷造り指示に関するプロパティセット定義。</PsetDefinitionAlias>
+  </PsetDefinitionAliases>
+</PropertySetDef>

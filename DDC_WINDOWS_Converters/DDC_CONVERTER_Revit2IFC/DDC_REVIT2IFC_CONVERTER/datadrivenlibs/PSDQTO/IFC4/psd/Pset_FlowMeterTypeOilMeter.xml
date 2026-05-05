@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<PropertySetDef xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ifdguid="7007c200d1e811e1800000215ad4efdf" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4" />
+  <Name>Pset_FlowMeterTypeOilMeter</Name>
+  <Definition>Device that measures, indicates and sometimes records, the volume of oil that passes through it without interrupting the flow.</Definition>
+  <Applicability />
+  <ApplicableClasses>
+    <ClassName>IfcFlowMeter/OILMETER</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcFlowMeter/OILMETER</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef ifdguid="75650c80d1e811e1800000215ad4efdf">
+      <Name>ConnectionSize</Name>
+      <Definition>Defines the size of inlet and outlet pipe connections to the meter.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Connection Size</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="7bf38400d1e811e1800000215ad4efdf">
+      <Name>MaximumFlowRate</Name>
+      <Definition>Maximum rate of flow which the meter is expected to pass.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcVolumetricFlowRateMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Maximum Flow Rate</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+      </DefinitionAliases>
+    </PropertyDef>
+  </PropertyDefs>
+  <PsetDefinitionAliases>
+    <PsetDefinitionAlias lang="en" />
+  </PsetDefinitionAliases>
+</PropertySetDef>

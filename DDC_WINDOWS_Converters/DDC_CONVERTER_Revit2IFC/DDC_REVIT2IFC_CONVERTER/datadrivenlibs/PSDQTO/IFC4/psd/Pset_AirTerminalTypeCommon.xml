@@ -1,0 +1,1236 @@
+<?xml version="1.0"?>
+<PropertySetDef xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ifdguid="4f774200d1bf11e1800000215ad4efdf" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4" />
+  <Name>Pset_AirTerminalTypeCommon</Name>
+  <Definition>Air terminal type common attributes.
+SoundLevel attribute deleted in IFC2x2 Pset Addendum: Use IfcSoundProperties instead.</Definition>
+  <Applicability />
+  <ApplicableClasses>
+    <ClassName>IfcAirTerminal</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcAirTerminal</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef ifdguid="5605b980d1bf11e1800000215ad4efdf">
+      <Name>Reference</Name>
+      <Definition>Reference ID for this specified type in this project (e.g. type 'A-1'), provided, if there is no classification reference to a recognized classification system used.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcIdentifier" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Reference</NameAlias>
+        <NameAlias lang="fr-FR">Référence</NameAlias>
+        <NameAlias lang="ja-JP">参照記号</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="fr-FR">Identification de référence pour ce type spécifique à ce projet, c'est-à-dire type'A-1', fourni à partir du moment où, s'il n'y a pas de référence de classification par rapport à un système de classification reconnu et en usage.</DefinitionAlias>
+        <DefinitionAlias lang="ja-JP">このプロジェクトにおける参照記号(例：A-1)。分類コードではなく内部で使用されるプロジェクトタイプとして使用されるもの。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="5c943100d1bf11e1800000215ad4efdf">
+      <Name>Status</Name>
+      <Definition>Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as "New" - element designed as new addition, "Existing" - element exists and remains, "Demolish" - element existed but is to be demolished,  "Temporary" - element will exists only temporary (like a temporary support structure).</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_ElementStatus">
+            <EnumItem>NEW</EnumItem>
+            <EnumItem>EXISTING</EnumItem>
+            <EnumItem>DEMOLISH</EnumItem>
+            <EnumItem>TEMPORARY</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+          <ConstantList>
+            <ConstantDef>
+              <Name>NEW</Name>
+              <Definition>element designed as new addition</Definition>
+              <NameAliases>
+                <NameAlias lang="en">New</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>EXISTING</Name>
+              <Definition>element exists and is to remain</Definition>
+              <NameAliases>
+                <NameAlias lang="en">Existing</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>DEMOLISH</Name>
+              <Definition>element exists but is to be demolished</Definition>
+              <NameAliases>
+                <NameAlias lang="en">Demolish</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>TEMPORARY</Name>
+              <Definition>element will exist only temporarily (such as a temporary support structure)</Definition>
+              <NameAliases>
+                <NameAlias lang="en">Temporary</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>OTHER</Name>
+              <NameAliases>
+                <NameAlias lang="en">(other)</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Value is not listed.</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>NOTKNOWN</Name>
+              <NameAliases>
+                <NameAlias lang="en">(unknown)</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Value is unknown.</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>UNSET</Name>
+              <NameAliases>
+                <NameAlias lang="en">(unset)</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Value has not been specified.</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+          </ConstantList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Status</NameAlias>
+        <NameAlias lang="fr-FR">Etat</NameAlias>
+        <NameAlias lang="ja-JP">状態</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="fr-FR">Etat de l'élément, utilisé avant tout pour les projets de rénovation et réaménagement. L'état assigné peut être "Nouveau" - l'élément prévu pour du neuf, "Existant" - l'élément existait et est maintenu, "Démoli" - l'élément existait mais doit être démoli/supprimé, "Provisoire" - l'élément existera à titre provisoire seulement (comme un support structurel par exemple).</DefinitionAlias>
+        <DefinitionAlias lang="ja-JP">要素（主にリノベーションまたは改修プロジェクトにおいて）の状態。 状態は、「新規(New)」－新しく追加される要素。「既存」－要素は存在し、かつ残りもの。「破壊」－要素は存在したが、廃棄されるもの。「一時的」－一時的に存在する要素（一時的にサポートしている構造のようなもの）。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="6b7ae380d1bf11e1800000215ad4efdf">
+      <Name>Shape</Name>
+      <Definition>Shape of the air terminal. Slot is typically a long narrow supply device with an aspect ratio generally greater than 10 to 1.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_AirTerminalShape">
+            <EnumItem>ROUND</EnumItem>
+            <EnumItem>RECTANGULAR</EnumItem>
+            <EnumItem>SQUARE</EnumItem>
+            <EnumItem>SLOT</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+          <ConstantList>
+            <ConstantDef>
+              <Name>ROUND</Name>
+              <NameAliases>
+                <NameAlias lang="en">Round</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>RECTANGULAR</Name>
+              <NameAliases>
+                <NameAlias lang="en">Rectangular</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>SQUARE</Name>
+              <NameAliases>
+                <NameAlias lang="en">Square</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>SLOT</Name>
+              <NameAliases>
+                <NameAlias lang="en">Slot</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>OTHER</Name>
+              <NameAliases>
+                <NameAlias lang="en">(other)</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Value is not listed.</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>NOTKNOWN</Name>
+              <NameAliases>
+                <NameAlias lang="en">(unknown)</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Value is unknown.</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>UNSET</Name>
+              <NameAliases>
+                <NameAlias lang="en">(unset)</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Value has not been specified.</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+          </ConstantList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Shape</NameAlias>
+        <NameAlias lang="fr-FR">Forme</NameAlias>
+        <NameAlias lang="ja-JP">形状</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="fr-FR">Forme du terminal de ventilation. La fente est généralement un long et étroit appareil d'apport avec un rapport de forme généralement supérieur à 10 pour 1.</DefinitionAlias>
+        <DefinitionAlias lang="ja-JP">ターミナルの形状（円状、四角形、正方形、スロット他）。　スロット（溝状）は一般的にアスペクト比１０以上が典型的である。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="7b92c300d1bf11e1800000215ad4efdf">
+      <Name>FaceType</Name>
+      <Definition>Identifies how the terminal face of an AirTerminal is constructed.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_AirTerminalFaceType">
+            <EnumItem>FOURWAYPATTERN</EnumItem>
+            <EnumItem>SINGLEDEFLECTION</EnumItem>
+            <EnumItem>DOUBLEDEFLECTION</EnumItem>
+            <EnumItem>SIGHTPROOF</EnumItem>
+            <EnumItem>EGGCRATE</EnumItem>
+            <EnumItem>PERFORATED</EnumItem>
+            <EnumItem>LOUVERED</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+          <ConstantList>
+            <ConstantDef>
+              <Name>FOURWAYPATTERN</Name>
+              <NameAliases>
+                <NameAlias lang="en">Fourway Pattern</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>SINGLEDEFLECTION</Name>
+              <NameAliases>
+                <NameAlias lang="en">Single Deflection</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>DOUBLEDEFLECTION</Name>
+              <NameAliases>
+                <NameAlias lang="en">Double Deflection</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>SIGHTPROOF</Name>
+              <NameAliases>
+                <NameAlias lang="en">Sight Proof</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>EGGCRATE</Name>
+              <NameAliases>
+                <NameAlias lang="en">Egg Crate</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>PERFORATED</Name>
+              <NameAliases>
+                <NameAlias lang="en">Perforated</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>LOUVERED</Name>
+              <NameAliases>
+                <NameAlias lang="en">Louvered</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>OTHER</Name>
+              <NameAliases>
+                <NameAlias lang="en">(other)</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Value is not listed.</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>NOTKNOWN</Name>
+              <NameAliases>
+                <NameAlias lang="en">(unknown)</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Value is unknown.</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>UNSET</Name>
+              <NameAliases>
+                <NameAlias lang="en">(unset)</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Value has not been specified.</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+          </ConstantList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Face Type</NameAlias>
+        <NameAlias lang="fr-FR">TypeCôté</NameAlias>
+        <NameAlias lang="ja-JP">表面タイプ</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="fr-FR">Caractérise comment le côté du terminal d'un terminal de ventilation est fabriqué.</DefinitionAlias>
+        <DefinitionAlias lang="ja-JP">ターミナル表面の形式定義</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="9107ed00d1bf11e1800000215ad4efdf">
+      <Name>SlotWidth</Name>
+      <Definition>Slot width.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Slot Width</NameAlias>
+        <NameAlias lang="fr-FR">EpaisseurFente</NameAlias>
+        <NameAlias lang="ja-JP">スロット巾</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="fr-FR">Epaisseur de la fente</DefinitionAlias>
+        <DefinitionAlias lang="ja-JP">スロット巾</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="96653780d1bf11e1800000215ad4efdf">
+      <Name>SlotLength</Name>
+      <Definition>Slot length.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Slot Length</NameAlias>
+        <NameAlias lang="fr-FR">ElongueurFente</NameAlias>
+        <NameAlias lang="ja-JP">スロット長</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="fr-FR">Longueur de la fente</DefinitionAlias>
+        <DefinitionAlias lang="ja-JP">スロット長</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="9c5b1880d1bf11e1800000215ad4efdf">
+      <Name>NumberOfSlots</Name>
+      <Definition>Number of slots.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcInteger" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Number Of Slots</NameAlias>
+        <NameAlias lang="fr-FR">NombreDeFentes</NameAlias>
+        <NameAlias lang="ja-JP">スロット数</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="fr-FR">Nombre de fentes</DefinitionAlias>
+        <DefinitionAlias lang="ja-JP">スロット数</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="a250f980d1bf11e1800000215ad4efdf">
+      <Name>FlowPattern</Name>
+      <Definition>Flow pattern.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_AirTerminalFlowPattern">
+            <EnumItem>LINEARSINGLE</EnumItem>
+            <EnumItem>LINEARDOUBLE</EnumItem>
+            <EnumItem>LINEARFOURWAY</EnumItem>
+            <EnumItem>RADIAL</EnumItem>
+            <EnumItem>SWIRL</EnumItem>
+            <EnumItem>DISPLACMENT</EnumItem>
+            <EnumItem>COMPACTJET</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+          <ConstantList>
+            <ConstantDef>
+              <Name>LINEARSINGLE</Name>
+              <NameAliases>
+                <NameAlias lang="en">Linear Single</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>LINEARDOUBLE</Name>
+              <NameAliases>
+                <NameAlias lang="en">Linear Double</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>LINEARFOURWAY</Name>
+              <NameAliases>
+                <NameAlias lang="en">Linear Four-way</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>RADIAL</Name>
+              <NameAliases>
+                <NameAlias lang="en">Radial</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>SWIRL</Name>
+              <NameAliases>
+                <NameAlias lang="en">Swirl</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>DISPLACMENT</Name>
+              <NameAliases>
+                <NameAlias lang="en">Displacment</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>COMPACTJET</Name>
+              <NameAliases>
+                <NameAlias lang="en">Compact Jet</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>OTHER</Name>
+              <NameAliases>
+                <NameAlias lang="en">(other)</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Value is not listed.</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>NOTKNOWN</Name>
+              <NameAliases>
+                <NameAlias lang="en">(unknown)</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Value is unknown.</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>UNSET</Name>
+              <NameAliases>
+                <NameAlias lang="en">(unset)</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Value has not been specified.</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+          </ConstantList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Flow Pattern</NameAlias>
+        <NameAlias lang="fr-FR">FormeFlux</NameAlias>
+        <NameAlias lang="ja-JP">流れ種類</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="fr-FR">Forme du flux</DefinitionAlias>
+        <DefinitionAlias lang="ja-JP">流れ種類（単一直線、腹式直線、４方向、放射状、SWIRL、DISPLACEMENT、COMPACT他）</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="b72d8d00d1bf11e1800000215ad4efdf">
+      <Name>AirFlowrateRange</Name>
+      <Definition>Air flowrate range within which the air terminal is designed to operate.</Definition>
+      <PropertyType>
+        <TypePropertyBoundedValue>
+          <DataType type="IfcVolumetricFlowRateMeasure" />
+        </TypePropertyBoundedValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Air Flowrate Range</NameAlias>
+        <NameAlias lang="fr-FR">PlageDébitVentilation</NameAlias>
+        <NameAlias lang="ja-JP">流量範囲</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="fr-FR">Plage de débit de ventilation dans laquelle le terminal de ventilation est prévu de fonctionner.</DefinitionAlias>
+        <DefinitionAlias lang="ja-JP">操作されるターミナル内の空気流の範囲</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="be549b00d1bf11e1800000215ad4efdf">
+      <Name>TemperatureRange</Name>
+      <Definition>Temperature range within which the air terminal is designed to operate.</Definition>
+      <PropertyType>
+        <TypePropertyBoundedValue>
+          <DataType type="IfcThermodynamicTemperatureMeasure" />
+        </TypePropertyBoundedValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Temperature Range</NameAlias>
+        <NameAlias lang="fr-FR">PlageTemperature</NameAlias>
+        <NameAlias lang="ja-JP">温度範囲</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="fr-FR">Plage de température dans laquelle le terminal de ventilation est prévu de fonctionner.</DefinitionAlias>
+        <DefinitionAlias lang="ja-JP">操作されるターミナルの温度範囲</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="c6acd600d1bf11e1800000215ad4efdf">
+      <Name>DischargeDirection</Name>
+      <Definition>Discharge direction of the air terminal.
+
+Parallel: discharges parallel to mounting surface designed so that flow attaches to the surface.
+Perpendicular:  discharges away from mounting surface.
+Adjustable: both parallel and perpendicular discharge.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_AirTerminalDischargeDirection">
+            <EnumItem>PARALLEL</EnumItem>
+            <EnumItem>PERPENDICULAR</EnumItem>
+            <EnumItem>ADJUSTABLE</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+          <ConstantList>
+            <ConstantDef>
+              <Name>PARALLEL</Name>
+              <NameAliases>
+                <NameAlias lang="en">Parallel</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>PERPENDICULAR</Name>
+              <NameAliases>
+                <NameAlias lang="en">Perpendicular</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>ADJUSTABLE</Name>
+              <NameAliases>
+                <NameAlias lang="en">Adjustable</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>OTHER</Name>
+              <NameAliases>
+                <NameAlias lang="en">(other)</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Value is not listed.</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>NOTKNOWN</Name>
+              <NameAliases>
+                <NameAlias lang="en">(unknown)</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Value is unknown.</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>UNSET</Name>
+              <NameAliases>
+                <NameAlias lang="en">(unset)</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Value has not been specified.</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+          </ConstantList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Discharge Direction</NameAlias>
+        <NameAlias lang="fr-FR">DirectionEmission</NameAlias>
+        <NameAlias lang="ja-JP">吐き出し方向</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="fr-FR">Direction d'émission du terminal de ventilation.
+
+Parallèle: émission parallèle à la surface de fixation conçu de façon à ce que le flux se colle à la surface.
+Perpendiculaire: émission s'éloignant de la surface de fixation.
+Réglable: émission parallèle et aussi s'éloignant de la surface de fixation.</DefinitionAlias>
+        <DefinitionAlias lang="ja-JP">ターミナルの吐き出し方向
+水平：取り付け面と水平に吐き出し
+垂直：取り付け面から離れた方向に吐き出し
+調節可能：水平・垂直方向両方に調整</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="d4faf200d1bf11e1800000215ad4efdf">
+      <Name>ThrowLength</Name>
+      <Definition>The horizontal or vertical axial distance an airstream travels after leaving an AirTerminal before the maximum stream velocity is reduced to a specified terminal velocity under isothermal conditions at the upper value of the AirFlowrateRange.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcLengthMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Throw Length</NameAlias>
+        <NameAlias lang="fr-FR">Longueur de jet</NameAlias>
+        <NameAlias lang="ja-JP">到達距離</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="fr-FR">La distance axiale horizontale ou verticale un jet d'air parcourt après avoir quitté un terminal de ventilation avant que la vittesse d'éjection maximale est réduite à une vitessedu terminal spécifique dans des conditions isothermes pour la valeur la plus élevée de la plage de débit d'air.</DefinitionAlias>
+        <DefinitionAlias lang="ja-JP">ターミナルからの水平または垂直の到達距離
+流量範囲の最大値での吐き出し速度が設定された流速に減速するまでの上限値</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="ddebc380d1bf11e1800000215ad4efdf">
+      <Name>AirDiffusionPerformanceIndex</Name>
+      <Definition>The Air Diffusion Performance Index (ADPI) is used for cooling mode conditions. If several measurements of air velocity and air temperature are made throughout the occupied zone of a space, the ADPI is the percentage of locations where measurements were taken that meet the specifications for effective draft temperature and air velocity.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcReal" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Air Diffusion Performance Index</NameAlias>
+        <NameAlias lang="fr-FR">Indice de performance de diffusion de l'air</NameAlias>
+        <NameAlias lang="ja-JP">空気拡散性能指標</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="fr-FR">L'Indice de Performance de Diffusion d'Air (ADPI) est utilisé pour des conditions en mode rafraîchissement. Si plusieurs mesures de vitesses et températures de l'air sont réalisées à travers toute une zone occupée d'un espace,  l'ADPI est le pourcentage des emplacements où les mesures ont été réalisées et qui vérifient les caractéristiques pour une température de courant d'air et de vitesse d'air effectives.</DefinitionAlias>
+        <DefinitionAlias lang="ja-JP">空気拡散性能指標（ADPI)は冷房時に使用される。
+空気速度および気温のいくつかの測定が空間の居住域の隅々でなされる場合、ADPIは有効な草案の温度および空気速度のための仕様に遭遇する測定が得られた位置の割合である。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="e3490e00d1bf11e1800000215ad4efdf">
+      <Name>FinishType</Name>
+      <Definition>The type of finish for the air terminal.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_AirTerminalFinishType">
+            <EnumItem>ANNODIZED</EnumItem>
+            <EnumItem>PAINTED</EnumItem>
+            <EnumItem>NONE</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+          <ConstantList>
+            <ConstantDef>
+              <Name>ANNODIZED</Name>
+              <NameAliases>
+                <NameAlias lang="en">Annodized</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>PAINTED</Name>
+              <NameAliases>
+                <NameAlias lang="en">Painted</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>NONE</Name>
+              <NameAliases>
+                <NameAlias lang="en">None</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>OTHER</Name>
+              <NameAliases>
+                <NameAlias lang="en">(other)</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Value is not listed.</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>NOTKNOWN</Name>
+              <NameAliases>
+                <NameAlias lang="en">(unknown)</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Value is unknown.</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>UNSET</Name>
+              <NameAliases>
+                <NameAlias lang="en">(unset)</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Value has not been specified.</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+          </ConstantList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Finish Type</NameAlias>
+        <NameAlias lang="fr-FR">TypeFinition</NameAlias>
+        <NameAlias lang="ja-JP">仕上げ形式</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="fr-FR">Le type de finition du terminal de ventilation.</DefinitionAlias>
+        <DefinitionAlias lang="ja-JP">ターミナルの仕上げの形式（ANNODIZED,塗装他）</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="f065fd00d1bf11e1800000215ad4efdf">
+      <Name>FinishColor</Name>
+      <Definition>The finish color for the air terminal.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcLabel" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Finish Color</NameAlias>
+        <NameAlias lang="fr-FR">CouleurFinition</NameAlias>
+        <NameAlias lang="ja-JP">仕上げ色</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="fr-FR">La couleur de finition du terminal de ventilation.</DefinitionAlias>
+        <DefinitionAlias lang="ja-JP">ターミナルの仕上げ色</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="f6f47480d1bf11e1800000215ad4efdf">
+      <Name>MountingType</Name>
+      <Definition>The way the air terminal is mounted to the ceiling, wall, etc.
+
+Surface: mounted to the surface of something (e.g., wall, duct, etc.).
+Flat flush: mounted flat and flush with a surface.
+Lay-in: mounted in a lay-in type ceiling (e.g., a dropped ceiling grid).</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_AirTerminalMountingType">
+            <EnumItem>SURFACE</EnumItem>
+            <EnumItem>FLATFLUSH</EnumItem>
+            <EnumItem>LAYIN</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+          <ConstantList>
+            <ConstantDef>
+              <Name>SURFACE</Name>
+              <NameAliases>
+                <NameAlias lang="en">Surface</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>FLATFLUSH</Name>
+              <NameAliases>
+                <NameAlias lang="en">Flat Flush</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>LAYIN</Name>
+              <NameAliases>
+                <NameAlias lang="en">Layin</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>OTHER</Name>
+              <NameAliases>
+                <NameAlias lang="en">(other)</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Value is not listed.</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>NOTKNOWN</Name>
+              <NameAliases>
+                <NameAlias lang="en">(unknown)</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Value is unknown.</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>UNSET</Name>
+              <NameAliases>
+                <NameAlias lang="en">(unset)</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Value has not been specified.</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+          </ConstantList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Mounting Type</NameAlias>
+        <NameAlias lang="fr-FR">ModeFixation</NameAlias>
+        <NameAlias lang="ja-JP">取り付け形式</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="fr-FR">La façon d'être fixé pour le terminal de ventilation au plafond, mur, etc.
+
+Surface: Fixé sur la surface de quelque chose (Ex: mur, conduit, etc.)
+Alignement plat: Fixé plat et dans l'alignement d'une surface.
+Insertion: Fixé dans un type de plafond avec capacité d'insertion (Ex: faux-plafondsuspendu)</DefinitionAlias>
+        <DefinitionAlias lang="ja-JP">ターミナルが天井や壁などに取り付けられる方法。
+表面、水平、LAYIN他
+表面：何か（壁・ダクト等）の表面に取り付け
+FLATFLUSH：表面に水平・Flushni取り付け
+LAYIN：天井にlay-in形式での取り付け（下がり天井格子など）</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="070c5400d1c011e1800000215ad4efdf">
+      <Name>CoreType</Name>
+      <Definition>Identifies the way the core of the AirTerminal is constructed.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_AirTerminalCoreType">
+            <EnumItem>SHUTTERBLADE</EnumItem>
+            <EnumItem>CURVEDBLADE</EnumItem>
+            <EnumItem>REMOVABLE</EnumItem>
+            <EnumItem>REVERSIBLE</EnumItem>
+            <EnumItem>NONE</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+          <ConstantList>
+            <ConstantDef>
+              <Name>SHUTTERBLADE</Name>
+              <NameAliases>
+                <NameAlias lang="en">Shutter Blade</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>CURVEDBLADE</Name>
+              <NameAliases>
+                <NameAlias lang="en">Curved Blade</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>REMOVABLE</Name>
+              <NameAliases>
+                <NameAlias lang="en">Removable</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>REVERSIBLE</Name>
+              <NameAliases>
+                <NameAlias lang="en">Reversible</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>NONE</Name>
+              <NameAliases>
+                <NameAlias lang="en">None</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>OTHER</Name>
+              <NameAliases>
+                <NameAlias lang="en">(other)</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Value is not listed.</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>NOTKNOWN</Name>
+              <NameAliases>
+                <NameAlias lang="en">(unknown)</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Value is unknown.</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>UNSET</Name>
+              <NameAliases>
+                <NameAlias lang="en">(unset)</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Value has not been specified.</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+          </ConstantList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Core Type</NameAlias>
+        <NameAlias lang="fr-FR">TypePartieCentrale</NameAlias>
+        <NameAlias lang="ja-JP">コア形式</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="fr-FR">Caractérise comment la partie centrale du terminal de ventilation est fabriquée.</DefinitionAlias>
+        <DefinitionAlias lang="ja-JP">取り付けられたターミナルのコアの定義方法（SHUTTERBLADE, CURVEDBLADE, REMOVABLE, REVERSIBLEなど）</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="1ab7ba80d1c011e1800000215ad4efdf">
+      <Name>CoreSetHorizontal</Name>
+      <Definition>Degree of horizontal (in the X-axis of the LocalPlacement) blade set from the centerline.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPlaneAngleMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Core Set Horizontal</NameAlias>
+        <NameAlias lang="fr-FR">PositionHorizontaleCentre</NameAlias>
+        <NameAlias lang="ja-JP">水平羽根角度</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="fr-FR">Degré d'inclinaison horizontale (selon l'axe X par rapport au positionnement local) de la lame mesuré depuis la ligne médiane.</DefinitionAlias>
+        <DefinitionAlias lang="ja-JP">水平翼の中心線からの水平（ローカル座標のＸ軸）面の羽根角度</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="1f7c6e80d1c011e1800000215ad4efdf">
+      <Name>CoreSetVertical</Name>
+      <Definition>Degree of vertical (in the Y-axis of the LocalPlacement) blade set from the centerline.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPlaneAngleMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Core Set Vertical</NameAlias>
+        <NameAlias lang="fr-FR">PositionVerticalCentre</NameAlias>
+        <NameAlias lang="ja-JP">垂直羽根角度</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="fr-FR">Degré d'inclinaison verticale (selon l'axe Y par rapport au positionnement local) de la lame mesuré depuis la ligne médiane.</DefinitionAlias>
+        <DefinitionAlias lang="ja-JP">垂直翼の中心線からの垂直（ローカル座標のＹ軸）方向の羽根角度</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="25724f80d1c011e1800000215ad4efdf">
+      <Name>HasIntegralControl</Name>
+      <Definition>If TRUE, a self powered temperature control is included in the AirTerminal.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcBoolean" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Has Integral Control</NameAlias>
+        <NameAlias lang="fr-FR">PossèdeContrôleTotal</NameAlias>
+        <NameAlias lang="ja-JP">自己制御有無</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="fr-FR">Si VRAI, une commande interne de la température est incluse dans le terminal de ventilation.</DefinitionAlias>
+        <DefinitionAlias lang="ja-JP">もし真なら、ターミナルに自身による温度制御が含まれる</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="2a370380d1c011e1800000215ad4efdf">
+      <Name>FlowControlType</Name>
+      <Definition>Type of flow control element that may be included as a part of the construction of the air terminal.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_AirTerminalFlowControlType">
+            <EnumItem>DAMPER</EnumItem>
+            <EnumItem>BELLOWS</EnumItem>
+            <EnumItem>NONE</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+          <ConstantList>
+            <ConstantDef>
+              <Name>DAMPER</Name>
+              <NameAliases>
+                <NameAlias lang="en">Damper</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>BELLOWS</Name>
+              <NameAliases>
+                <NameAlias lang="en">Bellows</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>NONE</Name>
+              <NameAliases>
+                <NameAlias lang="en">None</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>OTHER</Name>
+              <NameAliases>
+                <NameAlias lang="en">(other)</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Value is not listed.</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>NOTKNOWN</Name>
+              <NameAliases>
+                <NameAlias lang="en">(unknown)</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Value is unknown.</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>UNSET</Name>
+              <NameAliases>
+                <NameAlias lang="en">(unset)</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Value has not been specified.</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+          </ConstantList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Flow Control Type</NameAlias>
+        <NameAlias lang="fr-FR">NatureCommandeFlux</NameAlias>
+        <NameAlias lang="ja-JP">流量制御形式</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="fr-FR">Nature de la commande de flux d'un élément qui pourrait être inclus en tant que tel dans le terminal de ventilation.</DefinitionAlias>
+        <DefinitionAlias lang="ja-JP">ターミナルの構成の一部として含まれる流量制御の形式
+（ダンパー、ベローズ、無し…）</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="39b64c80d1c011e1800000215ad4efdf">
+      <Name>HasSoundAttenuator</Name>
+      <Definition>If TRUE, the air terminal has sound attenuation.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcBoolean" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Has Sound Attenuator</NameAlias>
+        <NameAlias lang="fr-FR">PossèdeCorrectionAcoustique</NameAlias>
+        <NameAlias lang="ja-JP">消音有無</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="fr-FR">Si VRAI, le terminal de ventilation possède une correction acoustique.</DefinitionAlias>
+        <DefinitionAlias lang="ja-JP">ターミナルに消音が付いている場合に真</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="3f139700d1c011e1800000215ad4efdf">
+      <Name>HasThermalInsulation</Name>
+      <Definition>If TRUE, the air terminal has thermal insulation.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcBoolean" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Has Thermal Insulation</NameAlias>
+        <NameAlias lang="fr-FR">PossèdeIsolationThermique</NameAlias>
+        <NameAlias lang="ja-JP">断熱有無</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="fr-FR">Si VRAI, le terminal de ventilation possède une isolation thermique.</DefinitionAlias>
+        <DefinitionAlias lang="ja-JP">ターミナルに断熱がある場合に真</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="4470e180d1c011e1800000215ad4efdf">
+      <Name>NeckArea</Name>
+      <Definition>Neck area of the air terminal.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcAreaMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Neck Area</NameAlias>
+        <NameAlias lang="fr-FR">ZoneReduction</NameAlias>
+        <NameAlias lang="ja-JP">ネック面積</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="fr-FR">Partie la plus étroite du terminal de ventilation.</DefinitionAlias>
+        <DefinitionAlias lang="ja-JP">ターミナルのネック面積</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="49ce2c00d1c011e1800000215ad4efdf">
+      <Name>EffectiveArea</Name>
+      <Definition>Effective discharge area of the air terminal.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcAreaMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Effective Area</NameAlias>
+        <NameAlias lang="fr-FR">ZoneEfficace</NameAlias>
+        <NameAlias lang="ja-JP">有効面積</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="fr-FR">Zone d'émission efficace du terminal de ventilation.</DefinitionAlias>
+        <DefinitionAlias lang="ja-JP">ターミナルの有効吹き出し範囲</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="505ca380d1c011e1800000215ad4efdf">
+      <Name>AirFlowrateVersusFlowControlElement</Name>
+      <Definition>Air flowrate versus flow control element position at nominal pressure drop.</Definition>
+      <PropertyType>
+        <TypePropertyTableValue>
+          <Expression />
+          <DefiningValue>
+            <DataType type="IfcVolumetricFlowRateMeasure" />
+          </DefiningValue>
+          <DefinedValue>
+            <DataType type="IfcPositiveRatioMeasure" />
+          </DefinedValue>
+        </TypePropertyTableValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Air Flowrate Versus Flow Control Element</NameAlias>
+        <NameAlias lang="fr-FR">DébitAirContreElementControleFlux</NameAlias>
+        <NameAlias lang="ja-JP">流量制御特性</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="fr-FR">Débit d'air par rapport à la position de l'élément de contrôle du flux en perte de charge nominale</DefinitionAlias>
+        <DefinitionAlias lang="ja-JP">標準の圧力低下における流量制御装置の位置に対する流量</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+  </PropertyDefs>
+  <PsetDefinitionAliases>
+    <PsetDefinitionAlias lang="en" />
+    <PsetDefinitionAlias lang="ja-JP">エアターミナル型共通属性設定。
+SoundLevel属性はIFC2x2 psetの付録で削除された：IfcSoundPropertiesを代わりに使用します。</PsetDefinitionAlias>
+  </PsetDefinitionAliases>
+</PropertySetDef>

@@ -1,0 +1,305 @@
+<?xml version="1.0"?>
+<PropertySetDef xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ifdguid="25298280d1c711e1800000215ad4efdf" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4" />
+  <Name>Pset_CableSegmentTypeCableSegment</Name>
+  <Definition>Electrical cable with a specific purpose to lead electric current within a circuit or any other electric construction. Includes all types of electric cables, mainly several electrical segments wrapped together, e.g. cable, tube, busbar. Note that the number of conductors within a cable is determined by an aggregation mechanism that aggregates the conductors within the cable. A single-core cable is defined in IEV 461-06-02 as being 'a cable having only one core'; a multiconductor cable is defined in IEV 461-06-03 as b eing 'a cable having more than one conductor, some of which may be uninsulated'; a mulicore cable is defined in IEV 461-06-04 as being 'a cable having more than one core'.</Definition>
+  <Applicability />
+  <ApplicableClasses>
+    <ClassName>IfcCableSegment/CABLESEGMENT</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcCableSegment/CABLESEGMENT</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef ifdguid="2b1f6380d1c711e1800000215ad4efdf">
+      <Name>Standard</Name>
+      <Definition>The designation of the standard applicable for the definition of the Cable/Bus used.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcLabel" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Standard</NameAlias>
+        <NameAlias lang="ja-JP">標準</NameAlias>
+        <NameAlias lang="ko-KR">표준</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="ja-JP">使用されるケーブル、busbarの定義のために使用される標準仕様。</DefinitionAlias>
+        <DefinitionAlias lang="ko-KR">사용되는 케이블, busbar의 정의를 위해 사용되는 표준.</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="31154480d1c711e1800000215ad4efdf">
+      <Name>NumberOfCores</Name>
+      <Definition>The number of cores in Cable/Bus.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcInteger" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Number Of Cores</NameAlias>
+        <NameAlias lang="ja-JP">芯数</NameAlias>
+        <NameAlias lang="ko-KR">심수</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="ja-JP">ケーブルや母線の芯数を示す。</DefinitionAlias>
+        <DefinitionAlias lang="ko-KR">케이블과 모선의 심수 보여준다.</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="38d4e900d1c711e1800000215ad4efdf">
+      <Name>OverallDiameter</Name>
+      <Definition>The overall diameter of a Cable/Bus.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Overall Diameter</NameAlias>
+        <NameAlias lang="ja-JP">直径</NameAlias>
+        <NameAlias lang="ko-KR">직경</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="ja-JP">ケーブルや母線の外形寸法（直径）を示す。</DefinitionAlias>
+        <DefinitionAlias lang="ko-KR">케이블과 모선의 외형 치수 (직경)를 나타낸다.</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="3ecaca00d1c711e1800000215ad4efdf">
+      <Name>RatedVoltage</Name>
+      <Definition>The range of allowed voltage that a device is certified to handle. The upper bound of this value is the maximum.</Definition>
+      <PropertyType>
+        <TypePropertyBoundedValue>
+          <DataType type="IfcElectricVoltageMeasure" />
+        </TypePropertyBoundedValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Rated Voltage</NameAlias>
+        <NameAlias lang="ja-JP">定格電圧</NameAlias>
+        <NameAlias lang="ko-KR">정격 전압</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="ja-JP">使用できることが許可されている許容電圧。</DefinitionAlias>
+        <DefinitionAlias lang="ko-KR">사용할 수있는 권한이있는 허용 전압.</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="44c0ab00d1c711e1800000215ad4efdf">
+      <Name>RatedTemperature</Name>
+      <Definition>The range of allowed temerature that a device is certified to handle. The upper bound of this value is the maximum.</Definition>
+      <PropertyType>
+        <TypePropertyBoundedValue>
+          <DataType type="IfcThermodynamicTemperatureMeasure" />
+        </TypePropertyBoundedValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Rated Temperature</NameAlias>
+        <NameAlias lang="ja-JP">定格温度</NameAlias>
+        <NameAlias lang="ko-KR">정격 온도</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="ja-JP">使用できることが許可されている許容温度。</DefinitionAlias>
+        <DefinitionAlias lang="ko-KR">사용할 수있는 권한이있는 허용 온도</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="4ab68c00d1c711e1800000215ad4efdf">
+      <Name>ScreenDiameter</Name>
+      <Definition>The diameter of the screen around a cable or bus segment (if present).</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Screen Diameter</NameAlias>
+        <NameAlias lang="ja-JP">スクリーン径</NameAlias>
+        <NameAlias lang="ko-KR">스크린 지름</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="ja-JP">遮へい層の径、厚さ。</DefinitionAlias>
+        <DefinitionAlias lang="ko-KR">차폐 층의 직경, 두께.</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="5904a800d1c711e1800000215ad4efdf">
+      <Name>HasProtectiveEarth</Name>
+      <Definition>One core has protective earth marked insulation, Yellow/Green.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcBoolean" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Has Protective Earth</NameAlias>
+        <NameAlias lang="ja-JP">保護用接地の有無</NameAlias>
+        <NameAlias lang="ko-KR">보호 접지의 유무</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="ja-JP">各ケーブルは黄色や緑で塗色された絶縁体をもっている。</DefinitionAlias>
+        <DefinitionAlias lang="ko-KR">각 케이블은 노란색 또는 녹색으로 도색되었다 절연체를 가지고있다.</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="6de13b80d1c711e1800000215ad4efdf">
+      <Name>MaximumOperatingTemperature</Name>
+      <Definition>The maximum temperature at which a cable or bus is certified to operate.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcThermodynamicTemperatureMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Maximum Operating Temperature</NameAlias>
+        <NameAlias lang="ja-JP">許容最高温度</NameAlias>
+        <NameAlias lang="ko-KR">허용 최고 온도</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="ja-JP">ケーブルや母線の最大動作温度を示す。</DefinitionAlias>
+        <DefinitionAlias lang="ko-KR">케이블과 모선의 최대 작동 온도를 나타낸다.</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="7f2a4800d1c711e1800000215ad4efdf">
+      <Name>MaximumShortCircuitTemperature</Name>
+      <Definition>The maximum short circuit temperature at which a cable or bus is certified to operate.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcThermodynamicTemperatureMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Maximum Short Circuit Temperature</NameAlias>
+        <NameAlias lang="ja-JP">短絡許容最高温度</NameAlias>
+        <NameAlias lang="ko-KR">단락 허용 최고 온도</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="ja-JP">ケーブルや母線の最大短絡温度を示す。</DefinitionAlias>
+        <DefinitionAlias lang="ko-KR">케이블과 모선의 최대 단락 온도를 나타낸다.</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="87828300d1c711e1800000215ad4efdf">
+      <Name>SpecialConstruction</Name>
+      <Definition>Special construction capabilities like self-supporting, flat devidable cable or bus flat non devidable cable or bus supporting elements inside (steal, textile, concentric conductor). Note that materials used should be agreed between exchange participants before use.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcLabel" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Special Construction</NameAlias>
+        <NameAlias lang="ja-JP">特別な施工方法</NameAlias>
+        <NameAlias lang="ko-KR">특별한 시공 방법</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="ja-JP">特殊な構造を備えた性能－たとえば、平型フレキシブルケーブルあるいは硬い平型母線ケーブル、あるいは母線で内部に鉄製、繊維、同心導体で構成されているサポートを持っている。
+注記）使用する材料は、使用前に交流参加者間で合意すること。</DefinitionAlias>
+        <DefinitionAlias lang="ko-KR">특수한 구조를 갖춘 성능 - 예를 들어, 평형 플렉시블 케이블 또는 딱딱한 평형 모선 케이블 또는 모선 내부에 철제, 섬유, 동심 도체로 구성되어있는 지원이있다. 주) 사용하는 재료는 사용 전에 교류 참가자 사이에 동의한다.</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="8ea99100d1c711e1800000215ad4efdf">
+      <Name>Weight</Name>
+      <Definition>Weight of cable kg/km.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcMassMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Weight</NameAlias>
+        <NameAlias lang="ja-JP">重量</NameAlias>
+        <NameAlias lang="ko-KR">무게</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="ja-JP">ケーブルの重量。</DefinitionAlias>
+        <DefinitionAlias lang="ko-KR">케이블의 무게</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="936e4500d1c711e1800000215ad4efdf">
+      <Name>SelfExtinguishing60332_1</Name>
+      <Definition>Self Extinguishing cable/core according to IEC 60332.1.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcBoolean" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Self Extinguishing60332_1</NameAlias>
+        <NameAlias lang="ja-JP">自己消火ケーブル</NameAlias>
+        <NameAlias lang="ko-KR">자기 소화 케이블</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="ja-JP">IEC 60332.1.に規定されている自己消火ケーブル。</DefinitionAlias>
+        <DefinitionAlias lang="ko-KR">IEC 60332.1.에 규정되어있는 자기 소화 케이블</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="99642600d1c711e1800000215ad4efdf">
+      <Name>SelfExtinguishing60332_3</Name>
+      <Definition>Self Extinguishing cable/core according to IEC 60332.3.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcBoolean" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Self Extinguishing60332_3</NameAlias>
+        <NameAlias lang="ja-JP">自己消火ケーブル</NameAlias>
+        <NameAlias lang="ko-KR">자기 소화 케이블</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="ja-JP">IEC 60332.3.に規定されている自己消火ケーブル。</DefinitionAlias>
+        <DefinitionAlias lang="ko-KR">IEC 60332.3.에 규정되어있는 자기 소화 케이블</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="9ff29d80d1c711e1800000215ad4efdf">
+      <Name>HalogenProof</Name>
+      <Definition>Produces small amount of smoke and irritating Deaerator/Gas.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcBoolean" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Halogen Proof</NameAlias>
+        <NameAlias lang="ja-JP">エコケーブル</NameAlias>
+        <NameAlias lang="ko-KR">에코 케이블</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="ja-JP">煙や刺激臭のあるガスの発生が少ないケーブル。</DefinitionAlias>
+        <DefinitionAlias lang="ko-KR">연기와 자극적인 냄새가있는 가스의 발생이 적은 케이블</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="a54fe800d1c711e1800000215ad4efdf">
+      <Name>FunctionReliable</Name>
+      <Definition>Cable/bus maintain given properties/functions over a given (tested) time and conditions. According to IEC standard.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcBoolean" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Function Reliable</NameAlias>
+        <NameAlias lang="ja-JP">信頼性のある機能</NameAlias>
+        <NameAlias lang="ko-KR">신뢰할 수있는 기능</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="ja-JP">ケーブルや母線が与えられた時間と条件の中で規定される機能、性質を維持すること。これはIEC基準による。</DefinitionAlias>
+        <DefinitionAlias lang="ko-KR">케이블 및 모선 주어진 시간과 조건에서 규정하는 기능, 성질을 유지한다. 이것은 IEC 기준에 의한다.</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+  </PropertyDefs>
+  <PsetDefinitionAliases>
+    <PsetDefinitionAlias lang="en" />
+    <PsetDefinitionAlias lang="ja-JP">IAIにて定義されるもので、電気回路やその他電源回路などで送電する目的を持った電気関係のケーブル。
+すべての種類の電気ケーブルを含み、主にいくつかの電気層にて保護されている。たとえばケーブル、busbar、チューブ。
+注記）導電帯の中のケーブルの数は集計システムで規定される。単芯ケーブルはIEV 461-06-02で規定される。複芯ケーブルはIEV 461-06-03にて規定される。それは一つ以上の導電帯を持ちいくつかは絶縁されていない。マルチコアケーブルはIEV 461-06-04で規定されて、少なくとも一つ以上のコアで形成されている。</PsetDefinitionAlias>
+  </PsetDefinitionAliases>
+</PropertySetDef>

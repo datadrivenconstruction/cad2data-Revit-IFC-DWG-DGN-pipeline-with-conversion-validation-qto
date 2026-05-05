@@ -1,0 +1,185 @@
+<?xml version="1.0"?>
+<PropertySetDef xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ifdguid="71d38480d1ec11e1800000215ad4efdf" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4" />
+  <Name>Pset_ManufacturerTypeInformation</Name>
+  <Definition>Defines characteristics of types (ranges) of manufactured products that may be given by the manufacturer. Note that the term 'manufactured' may also be used to refer to products that are supplied and identified by the supplier or that are assembled off site by a third party provider. 
+HISTORY: This property set replaces the entity IfcManufacturerInformation from previous IFC releases. IFC 2x4: AssemblyPlace property added.</Definition>
+  <Applicability />
+  <ApplicableClasses>
+    <ClassName>IfcElement</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcElement</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef ifdguid="78fa9280d1ec11e1800000215ad4efdf">
+      <Name>GlobalTradeItemNumber</Name>
+      <Definition>The Global Trade Item Number (GTIN) is an identifier for trade items developed by GS1 (www.gs1.org).</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcIdentifier" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Global Trade Item Number</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="7e57dd00d1ec11e1800000215ad4efdf">
+      <Name>ArticleNumber</Name>
+      <Definition>Article number or reference that is be applied to a configured product according to a standard scheme for article number definition as defined by the manufacturer. It is often used as the purchasing number.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcIdentifier" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Article Number</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="84e65480d1ec11e1800000215ad4efdf">
+      <Name>ModelReference</Name>
+      <Definition>The model number or designator of the product model (or product line) as assigned by the manufacturer of the manufactured item.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcLabel" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Model Reference</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="8c0d6280d1ec11e1800000215ad4efdf">
+      <Name>ModelLabel</Name>
+      <Definition>The descriptive model name of the product model (or product line) as assigned by the manufacturer of the manufactured item.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcLabel" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Model Label</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="929bda00d1ec11e1800000215ad4efdf">
+      <Name>Manufacturer</Name>
+      <Definition>The organization that manufactured and/or assembled the item.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcLabel" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Manufacturer</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="9891bb00d1ec11e1800000215ad4efdf">
+      <Name>ProductionYear</Name>
+      <Definition>The year of production of the manufactured item.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcLabel" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Production Year</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="9f203280d1ec11e1800000215ad4efdf">
+      <Name>AssemblyPlace</Name>
+      <Definition>Enumeration defining where the assembly is intended to take place, either in a factory or on the building site.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_AssemblyPlace">
+            <EnumItem>FACTORY</EnumItem>
+            <EnumItem>OFFSITE</EnumItem>
+            <EnumItem>SITE</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+          <ConstantList>
+            <ConstantDef>
+              <Name>FACTORY</Name>
+              <NameAliases>
+                <NameAlias lang="en">Factory</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>OFFSITE</Name>
+              <NameAliases>
+                <NameAlias lang="en">Offsite</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>SITE</Name>
+              <NameAliases>
+                <NameAlias lang="en">Site</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en" />
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>OTHER</Name>
+              <NameAliases>
+                <NameAlias lang="en">(other)</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Value is not listed.</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>NOTKNOWN</Name>
+              <NameAliases>
+                <NameAlias lang="en">(unknown)</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Value is unknown.</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>UNSET</Name>
+              <NameAliases>
+                <NameAlias lang="en">(unset)</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Value has not been specified.</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+          </ConstantList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Assembly Place</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+      </DefinitionAliases>
+    </PropertyDef>
+  </PropertyDefs>
+  <PsetDefinitionAliases>
+    <PsetDefinitionAlias lang="en" />
+  </PsetDefinitionAliases>
+</PropertySetDef>

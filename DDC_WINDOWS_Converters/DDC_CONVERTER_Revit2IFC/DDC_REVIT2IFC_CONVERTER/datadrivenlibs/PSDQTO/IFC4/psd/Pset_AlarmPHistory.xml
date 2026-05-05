@@ -1,0 +1,81 @@
+<?xml version="1.0"?>
+<PropertySetDef xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ifdguid="e4c70600d1c011e1800000215ad4efdf" templatetype="PSET_PERFORMANCEDRIVEN" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4" />
+  <Name>Pset_AlarmPHistory</Name>
+  <Definition>Properties for history of alarm values.  HISTORY: Added in IFC4.</Definition>
+  <Applicability />
+  <ApplicableClasses>
+    <ClassName>IfcAlarm</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcAlarm</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef ifdguid="ea245080d1c011e1800000215ad4efdf">
+      <Name>Enabled</Name>
+      <Definition>Indicates whether alarm is enabled or disabled over time.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcTimeSeries" />
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Enabled</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="ef819b00d1c011e1800000215ad4efdf">
+      <Name>Condition</Name>
+      <Definition>Indicates alarm condition over time.  The range of possible values and their meanings is defined by Pset_AlarmTypeCommon.Condition.  An empty value indicates no present alarm condition.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcTimeSeries" />
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Condition</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="f3adb880d1c011e1800000215ad4efdf">
+      <Name>Severity</Name>
+      <Definition>Indicates alarm severity over time, where the scale of values is determined by the control system configuration.  A zero value indicates no present alarm.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcTimeSeries" />
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Severity</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="f90b0300d1c011e1800000215ad4efdf">
+      <Name>Acknowledge</Name>
+      <Definition>Indicates acknowledgement status where False indicates acknowlegement is required and outstanding, True indicates condition has been acknowedged, and Unknown indicates no acknowledgement is required.  Upon resetting the condition, then acknowledgement reverts to Unknown.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcTimeSeries" />
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Acknowledge</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="fc9e8a00d1c011e1800000215ad4efdf">
+      <Name>User</Name>
+      <Definition>Indicates acknowledging user over time by identification corresponding to IfcPerson.Identification on an IfcActor.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcTimeSeries" />
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">User</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+      </DefinitionAliases>
+    </PropertyDef>
+  </PropertyDefs>
+  <PsetDefinitionAliases>
+    <PsetDefinitionAlias lang="en" />
+  </PsetDefinitionAliases>
+</PropertySetDef>

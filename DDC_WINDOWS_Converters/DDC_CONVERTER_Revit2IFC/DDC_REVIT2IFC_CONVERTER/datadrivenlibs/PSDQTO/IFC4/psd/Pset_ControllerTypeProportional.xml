@@ -1,0 +1,235 @@
+<?xml version="1.0"?>
+<PropertySetDef xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ifdguid="b7348980d1cd11e1800000215ad4efdf" templatetype="PSET_TYPEDRIVENOVERRIDE" xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd/PSD_IFC4.xsd">
+  <IfcVersion version="IFC4" />
+  <Name>Pset_ControllerTypeProportional</Name>
+  <Definition>Properties for signal handling for an proportional controller taking setpoint and feedback inputs and creating a single valued output. HISTORY: In IFC4, SignalFactor1, SignalFactor2 and SignalFactor3 changed to ProportionalConstant, IntegralConstant and DerivativeConstant.  SignalTime1 and SignalTime2 changed to SignalTimeIncrease and SignalTimeDecrease.</Definition>
+  <Applicability />
+  <ApplicableClasses>
+    <ClassName>IfcController/PROPORTIONAL</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcController/PROPORTIONAL</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef ifdguid="bd2a6a80d1cd11e1800000215ad4efdf">
+      <Name>ControlType</Name>
+      <Definition>The type of signal modification.
+PROPORTIONAL: Output is proportional to the control error. The gain of a proportional control (Kp) will have the effect of reducing the rise time and reducing , but never eliminating, the steady-state error of the variable controlled. 
+PROPORTIONALINTEGRAL: Part of the output is proportional to the control error and part is proportional to the time integral of the control error. Adding the gain of an integral control (Ki) will have the effect of eliminating the steady-state error of the variable controlled, but it may make the transient response worse. 
+PROPORTIONALINTEGRALDERIVATIVE: Part of the output is proportional to the control error, part is proportional to the time integral of the control error and part is proportional to the time derivative of the control error. Adding the gain of a derivative control (Kd) will have the effect of increasing the stability of the system, reducing the overshoot, and improving the transient response of the variable controlled.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_ControllerProportionalType">
+            <EnumItem>PROPORTIONAL</EnumItem>
+            <EnumItem>PROPORTIONALINTEGRAL</EnumItem>
+            <EnumItem>PROPORTIONALINTEGRALDERIVATIVE</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+          <ConstantList>
+            <ConstantDef>
+              <Name>PROPORTIONAL</Name>
+              <NameAliases>
+                <NameAlias lang="en">Proportional</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Output is proportional to the control error</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>PROPORTIONALINTEGRAL</Name>
+              <NameAliases>
+                <NameAlias lang="en">Proportional Integral</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Part of the output is proportional to the control error and part is proportional to the time integral of the control error</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>PROPORTIONALINTEGRALDERIVATIVE</Name>
+              <NameAliases>
+                <NameAlias lang="en">Proportional Integral Derivative</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Part of the output is proportional to the control error, part is proportional to the time integral of the control error and part is proportional to the time derivative of the control error</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>OTHER</Name>
+              <NameAliases>
+                <NameAlias lang="en">(other)</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Value is not listed.</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>NOTKNOWN</Name>
+              <NameAliases>
+                <NameAlias lang="en">(unknown)</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Value is unknown.</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+            <ConstantDef>
+              <Name>UNSET</Name>
+              <NameAliases>
+                <NameAlias lang="en">(unset)</NameAlias>
+              </NameAliases>
+              <DefinitionAliases>
+                <DefinitionAlias lang="en">Value has not been specified.</DefinitionAlias>
+              </DefinitionAliases>
+            </ConstantDef>
+          </ConstantList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Control Type</NameAlias>
+        <NameAlias lang="ko-KR">PROPORTIONAL 유형</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="ko-KR">신호 변경 유형   P (비례), I (적분), D (미분)의 조합 PROPORTIONAL :   P (비례) 제어 PROPORTIONALINTEGRAL :   PI (비례 적분) 제어 PROPORTIONALINTEGRALDERIVATIVE :   PID (비례 적분 미분) 제어</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="cc111d00d1cd11e1800000215ad4efdf">
+      <Name>Labels</Name>
+      <Definition>Table mapping values to labels, where such labels indicate transition points such as 'Hi', 'Lo', 'HiHi', or 'LoLo'.</Definition>
+      <PropertyType>
+        <TypePropertyTableValue>
+          <Expression />
+          <DefiningValue>
+            <DataType type="IfcReal" />
+          </DefiningValue>
+          <DefinedValue>
+            <DataType type="IfcLabel" />
+          </DefinedValue>
+        </TypePropertyTableValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Labels</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="d4695800d1cd11e1800000215ad4efdf">
+      <Name>Range</Name>
+      <Definition>The physical range of values.</Definition>
+      <PropertyType>
+        <TypePropertyBoundedValue>
+          <DataType type="IfcReal" />
+        </TypePropertyBoundedValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Range</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="da5f3900d1cd11e1800000215ad4efdf">
+      <Name>Value</Name>
+      <Definition>The expected range and default value.  While the property data type is IfcReal (to support all cases including when the units are unknown), a unit may optionally be provided to indicate the measure and unit.</Definition>
+      <PropertyType>
+        <TypePropertyBoundedValue>
+          <DataType type="IfcReal" />
+        </TypePropertyBoundedValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Value</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="e1864700d1cd11e1800000215ad4efdf">
+      <Name>ProportionalConstant</Name>
+      <Definition>The proportional gain factor of the controller (usually referred to as Kp).</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcReal" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Proportional Constant</NameAlias>
+        <NameAlias lang="ko-KR">비례 게인 (Kp)</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="ko-KR">비례 게인 (Kp)</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="e6e39180d1cd11e1800000215ad4efdf">
+      <Name>IntegralConstant</Name>
+      <Definition>The integral gain factor of the controller (usually referred to as Ki).  Asserted where ControlType is PROPORTIONALINTEGRAL or PROPORTIONALINTEGRALDERIVATIVE.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcReal" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Integral Constant</NameAlias>
+        <NameAlias lang="ko-KR">적분 게인 (Ki)</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="ko-KR">적분 게인 (Ki)</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="eba84580d1cd11e1800000215ad4efdf">
+      <Name>DerivativeConstant</Name>
+      <Definition>The derivative gain factor of the controller (usually referred to as Kd).  Asserted where ControlType is PROPORTIONALINTEGRALDERIVATIVE.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcReal" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Derivative Constant</NameAlias>
+        <NameAlias lang="ko-KR">미분 게인 (Kd)</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="ko-KR">미분 게인 (Kd)</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="f236bd00d1cd11e1800000215ad4efdf">
+      <Name>SignalTimeIncrease</Name>
+      <Definition>Time factor used for exponential increase.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcTimeMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Signal Time Increase</NameAlias>
+        <NameAlias lang="ko-KR">적분 시간 (Ti)</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="ko-KR">적분 시간 (Ti)</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="f7940780d1cd11e1800000215ad4efdf">
+      <Name>SignalTimeDecrease</Name>
+      <Definition>Time factor used for exponential decrease.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcTimeMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="en">Signal Time Decrease</NameAlias>
+        <NameAlias lang="ko-KR">미분 시간 (Td)</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="en" />
+        <DefinitionAlias lang="ko-KR">미분 시간 (Td)</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+  </PropertyDefs>
+  <PsetDefinitionAliases>
+    <PsetDefinitionAlias lang="en" />
+  </PsetDefinitionAliases>
+</PropertySetDef>
